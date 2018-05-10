@@ -17,15 +17,15 @@
 		<div class="box">
 			<div class="middle">
 				<!-- <app-wait></app-wait> -->
-				<!-- <div class="waitBox">
+				<div class="waitBox">
 					<div class="waitMiddle">
-						<div class="waitText">正在加载中，请稍后timeLasts</div>
+						<div class="waitText">正在加载中，请稍后<span id="timeLast"></span/></div>
 						<i class="fa fa-circle-o-notch fa-spin"></i>
 					</div>
-				</div> -->
+				</div>
 				<!-- <app-direction [angle]="targetId"></app-direction> -->
-				<div class="direction" id="direction">
-					<div class="wide deg0">
+				<div class="direction">
+					<div class="wide deg0" id="direction">
 						<div class="east">东</div>
 						<div class="south">南</div>
 						<div class="west">西</div>
@@ -40,13 +40,7 @@
 						</div>
 						<div class="pointBox" id="pointBox">
 							<div class="accurate" id="accurate">
-								<div>
-									<div>
-										<div class="point1">
-											<div class="selected">1</div>
-										</div>
-									</div>
-								</div>
+								<!-- 此处显示点阵 -->
 							</div>
 						</div>
 					</div>
