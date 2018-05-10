@@ -109,8 +109,12 @@ html {
 }
 
 body {
-    color: #00152f;
-    background-color: #eee;
+/*    color: #00152f;
+    background-color: #eee;*/
+    font-family: "Open Sans", "Arial", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", "WenQuanYi Micro Hei";
+    font-size: 62.5%;
+    margin: 0;
+    padding: 0;
 }
 
 ol,

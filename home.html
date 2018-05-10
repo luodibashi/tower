@@ -10,19 +10,60 @@
 		<link href="http://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 	  <script type="text/javascript" src="http://cdn.bootcss.com/jquery/2.2.2/jquery.min.js"></script>
 		<link href="./assets/css/global.css" rel="stylesheet"/>
-		<link href="./assets/css/home.css" rel="stylesheet"/>
 		<link rel="stylesheet/less" type="text/css" href="./assets/less/styles.less" />
+		<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.0.2/less.min.js" ></script>
 	</head>
 	<body>
-		<div id="box" class="box">
-			<div class="title">
-				标题
-			</div>
-			<div class="new">
-				这里是钢塔项目的插件
+		<div class="box">
+			<div class="middle">
+				<!-- <app-wait></app-wait> -->
+				<!-- <div class="waitBox">
+					<div class="waitMiddle">
+						<div class="waitText">正在加载中，请稍后timeLasts</div>
+						<i class="fa fa-circle-o-notch fa-spin"></i>
+					</div>
+				</div> -->
+				<!-- <app-direction [angle]="targetId"></app-direction> -->
+				<div class="direction" id="direction">
+					<div class="wide deg0">
+						<div class="east">东</div>
+						<div class="south">南</div>
+						<div class="west">西</div>
+						<div class="north">北</div>
+						<i class="fa fa-compass fa-rotate-100"></i>
+					</div>
+				</div>
+				<div class="content">
+					<div class="side">
+						<div id="baseImgBox">
+						<!-- <img class="base" id="baseImg" /> -->
+						</div>
+						<div class="pointBox" id="pointBox">
+							<div class="accurate" id="accurate">
+								<div>
+									<div>
+										<div class="point1">
+											<div class="selected">1</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="doBox">
+					<div class="left" id="left">向左</div>
+					<div class="right" id="right">向右</div>
+				</div>
 			</div>
 		</div>
+		<div class="menuBox">
+			<div class="one menuSelected" id="home">总览图</div>
+			<div class="one" id="strain">应变-温度测点</div>
+			<div class="one" id="pressure">风压测点</div>
+			<div class="one" id="structure">结构变形-GNSS测点</div>
+			<div class="one" id="weather">气象站</div>
+		</div>
 		<script type="text/javascript" src="./assets/js/home.js"></script>
-		<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.0.2/less.min.js" ></script>
 	</body>
 </html>
