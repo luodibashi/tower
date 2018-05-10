@@ -1,0 +1,2541 @@
+.selected {
+  border: 2px solid #a9da88 !important;
+  background: #a9da88 !important;
+}
+.box {
+  overflow: hidden;
+}
+.box .leftBox {
+  float: left;
+  width: 200px;
+}
+.box .leftBox .menu {
+  line-height: 3rem;
+  text-align: center;
+  background: #a9da88;
+  font-size: 1rem;
+  color: #3f5236;
+  border-bottom: 1px solid #92c57a;
+}
+.box .middle {
+  float: left;
+  position: relative;
+  width: 800px;
+  height: 663px;
+  overflow: hidden;
+}
+.box .middle .waitBox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #f1f1f1;
+  z-index: 1;
+}
+.box .middle .waitBox .waitMiddle {
+  height: 100%;
+  text-align: center;
+}
+.box .middle .waitBox .waitMiddle .waitText {
+  padding-top: 300px;
+  font-size: 1.2rem;
+  padding-bottom: 1rem;
+}
+.box .middle .waitBox .waitMiddle i {
+  font-size: 2rem;
+}
+.box .middle .direction {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  z-index: 10;
+}
+.box .middle .direction .wide {
+  width: 5rem;
+  height: 5rem;
+  position: relative;
+}
+.box .middle .direction .wide .east {
+  position: absolute;
+  top: 0;
+  left: 2.1rem;
+  color: #0f5213;
+  font-weight: 700;
+}
+.box .middle .direction .wide .south {
+  position: absolute;
+  right: 0;
+  top: 2.0rem;
+  color: #0f5213;
+  font-weight: 700;
+}
+.box .middle .direction .wide .west {
+  position: absolute;
+  bottom: 0;
+  left: 2.1rem;
+  color: #0f5213;
+  font-weight: 700;
+}
+.box .middle .direction .wide .north {
+  position: absolute;
+  left: 0;
+  top: 2.0rem;
+  color: #0f5213;
+  font-weight: 700;
+}
+.box .middle .direction .wide i {
+  line-height: 5rem;
+  width: 5rem;
+  text-align: center;
+  font-size: 3rem;
+  color: #b1c763;
+  transform: rotate(55deg);
+}
+.box .middle .direction .deg0 {
+  transform: rotate(0deg);
+}
+.box .middle .direction .deg0 .east,
+.box .middle .direction .deg0 .south,
+.box .middle .direction .deg0 .west,
+.box .middle .direction .deg0 .north {
+  transform: rotate(-360deg);
+}
+.box .middle .direction .deg30 {
+  transform: rotate(30deg);
+}
+.box .middle .direction .deg30 .east,
+.box .middle .direction .deg30 .south,
+.box .middle .direction .deg30 .west,
+.box .middle .direction .deg30 .north {
+  transform: rotate(-30deg);
+}
+.box .middle .direction .deg60 {
+  transform: rotate(60deg);
+}
+.box .middle .direction .deg60 .east,
+.box .middle .direction .deg60 .south,
+.box .middle .direction .deg60 .west,
+.box .middle .direction .deg60 .north {
+  transform: rotate(-60deg);
+}
+.box .middle .direction .deg90 {
+  transform: rotate(90deg);
+}
+.box .middle .direction .deg90 .east,
+.box .middle .direction .deg90 .south,
+.box .middle .direction .deg90 .west,
+.box .middle .direction .deg90 .north {
+  transform: rotate(-90deg);
+}
+.box .middle .direction .deg120 {
+  transform: rotate(120deg);
+}
+.box .middle .direction .deg120 .east,
+.box .middle .direction .deg120 .south,
+.box .middle .direction .deg120 .west,
+.box .middle .direction .deg120 .north {
+  transform: rotate(-120deg);
+}
+.box .middle .direction .deg150 {
+  transform: rotate(150deg);
+}
+.box .middle .direction .deg150 .east,
+.box .middle .direction .deg150 .south,
+.box .middle .direction .deg150 .west,
+.box .middle .direction .deg150 .north {
+  transform: rotate(-150deg);
+}
+.box .middle .direction .deg180 {
+  transform: rotate(180deg);
+}
+.box .middle .direction .deg180 .east,
+.box .middle .direction .deg180 .south,
+.box .middle .direction .deg180 .west,
+.box .middle .direction .deg180 .north {
+  transform: rotate(-180deg);
+}
+.box .middle .direction .deg210 {
+  transform: rotate(210deg);
+}
+.box .middle .direction .deg210 .east,
+.box .middle .direction .deg210 .south,
+.box .middle .direction .deg210 .west,
+.box .middle .direction .deg210 .north {
+  transform: rotate(-210deg);
+}
+.box .middle .direction .deg240 {
+  transform: rotate(240deg);
+}
+.box .middle .direction .deg240 .east,
+.box .middle .direction .deg240 .south,
+.box .middle .direction .deg240 .west,
+.box .middle .direction .deg240 .north {
+  transform: rotate(-240deg);
+}
+.box .middle .direction .deg270 {
+  transform: rotate(270deg);
+}
+.box .middle .direction .deg270 .east,
+.box .middle .direction .deg270 .south,
+.box .middle .direction .deg270 .west,
+.box .middle .direction .deg270 .north {
+  transform: rotate(-270deg);
+}
+.box .middle .direction .deg300 {
+  transform: rotate(300deg);
+}
+.box .middle .direction .deg300 .east,
+.box .middle .direction .deg300 .south,
+.box .middle .direction .deg300 .west,
+.box .middle .direction .deg300 .north {
+  transform: rotate(-300deg);
+}
+.box .middle .direction .deg330 {
+  transform: rotate(330deg);
+}
+.box .middle .direction .deg330 .east,
+.box .middle .direction .deg330 .south,
+.box .middle .direction .deg330 .west,
+.box .middle .direction .deg330 .north {
+  transform: rotate(-330deg);
+}
+.box .middle .content {
+  position: absolute;
+  left: -120px;
+  top: -40px;
+  width: 1024px;
+  height: 663px;
+}
+.box .middle .content .side {
+  position: relative;
+}
+.box .middle .content .side .base {
+  display: none;
+  width: 100%;
+}
+.box .middle .content .side .activation {
+  display: block;
+}
+.box .middle .content .side .pointBox {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+.box .middle .content .side .pointBox .accurate {
+  width: 42%;
+  height: 88%;
+  margin-left: 29%;
+  margin-top: 6%;
+  overflow: hidden;
+  position: relative;
+  opacity: 0.5;
+}
+.box .middle .content .side .pointBox .accurate .point1 {
+  position: absolute;
+  top: 4%;
+  left: 11%;
+}
+.box .middle .content .side .pointBox .accurate .point1 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point1 div:hover {
+  border: 2px solid #f7a545;
+}
+.box .middle .content .side .pointBox .accurate .point2 {
+  position: absolute;
+  top: 9%;
+  left: 5%;
+}
+.box .middle .content .side .pointBox .accurate .point2 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point2 div:hover {
+  border: 2px solid #f7a545;
+}
+.box .middle .content .side .pointBox .accurate .point3 {
+  position: absolute;
+  top: 14%;
+  left: 11%;
+}
+.box .middle .content .side .pointBox .accurate .point3 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point3 div:hover {
+  border: 2px solid #f7a545;
+}
+.box .middle .content .side .pointBox .accurate .point4 {
+  position: absolute;
+  top: 18%;
+  left: 11%;
+}
+.box .middle .content .side .pointBox .accurate .point4 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point4 div:hover {
+  border: 2px solid #f7a545;
+}
+.box .middle .content .side .pointBox .accurate .point5 {
+  position: absolute;
+  top: 22%;
+  left: 11%;
+}
+.box .middle .content .side .pointBox .accurate .point5 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point5 div:hover {
+  border: 2px solid #f7a545;
+}
+.box .middle .content .side .pointBox .accurate .point6 {
+  position: absolute;
+  top: 26%;
+  left: 6%;
+}
+.box .middle .content .side .pointBox .accurate .point6 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point6 div:hover {
+  border: 2px solid #f7a545;
+}
+.box .middle .content .side .pointBox .accurate .point7 {
+  position: absolute;
+  top: 31%;
+  left: 12%;
+}
+.box .middle .content .side .pointBox .accurate .point7 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point7 div:hover {
+  border: 2px solid #f7a545;
+}
+.box .middle .content .side .pointBox .accurate .point8 {
+  position: absolute;
+  top: 35%;
+  left: 12%;
+}
+.box .middle .content .side .pointBox .accurate .point8 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point8 div:hover {
+  border: 2px solid #f7a545;
+}
+.box .middle .content .side .pointBox .accurate .point9 {
+  position: absolute;
+  top: 39%;
+  left: 12%;
+}
+.box .middle .content .side .pointBox .accurate .point9 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point9 div:hover {
+  border: 2px solid #f7a545;
+}
+.box .middle .content .side .pointBox .accurate .point10 {
+  position: absolute;
+  top: 43%;
+  left: 9%;
+}
+.box .middle .content .side .pointBox .accurate .point10 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point10 div:hover {
+  border: 2px solid #f7a545;
+}
+.box .middle .content .side .pointBox .accurate .point11 {
+  position: absolute;
+  top: 48%;
+  left: 13%;
+}
+.box .middle .content .side .pointBox .accurate .point11 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point11 div:hover {
+  border: 2px solid #f7a545;
+}
+.box .middle .content .side .pointBox .accurate .point12 {
+  position: absolute;
+  top: 51%;
+  left: 13%;
+}
+.box .middle .content .side .pointBox .accurate .point12 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point12 div:hover {
+  border: 2px solid #f7a545;
+}
+.box .middle .content .side .pointBox .accurate .point13 {
+  position: absolute;
+  top: 55%;
+  left: 13%;
+}
+.box .middle .content .side .pointBox .accurate .point13 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point13 div:hover {
+  border: 2px solid #f7a545;
+}
+.box .middle .content .side .pointBox .accurate .point14 {
+  position: absolute;
+  top: 59%;
+  left: 10%;
+}
+.box .middle .content .side .pointBox .accurate .point14 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point14 div:hover {
+  border: 2px solid #f7a545;
+}
+.box .middle .content .side .pointBox .accurate .point15 {
+  position: absolute;
+  top: 62%;
+  left: 11%;
+}
+.box .middle .content .side .pointBox .accurate .point15 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point15 div:hover {
+  border: 2px solid #f7a545;
+}
+.box .middle .content .side .pointBox .accurate .point16 {
+  position: absolute;
+  top: 65%;
+  left: 9%;
+}
+.box .middle .content .side .pointBox .accurate .point16 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point16 div:hover {
+  border: 2px solid #f7a545;
+}
+.box .middle .content .side .pointBox .accurate .point17 {
+  position: absolute;
+  top: 69%;
+  left: 7%;
+}
+.box .middle .content .side .pointBox .accurate .point17 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point17 div:hover {
+  border: 2px solid #f7a545;
+}
+.box .middle .content .side .pointBox .accurate .point18 {
+  position: absolute;
+  top: 73%;
+  left: 5%;
+}
+.box .middle .content .side .pointBox .accurate .point18 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point18 div:hover {
+  border: 2px solid #f7a545;
+}
+.box .middle .content .side .pointBox .accurate .point19 {
+  position: absolute;
+  top: 76%;
+  left: 4%;
+}
+.box .middle .content .side .pointBox .accurate .point19 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point19 div:hover {
+  border: 2px solid #f7a545;
+}
+.box .middle .content .side .pointBox .accurate .point20 {
+  position: absolute;
+  top: 5%;
+  left: 15%;
+}
+.box .middle .content .side .pointBox .accurate .point20 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point20 div:hover {
+  border: 2px solid #ff9600;
+}
+.box .middle .content .side .pointBox .accurate .point21 {
+  position: absolute;
+  top: 10.5%;
+  left: 9%;
+}
+.box .middle .content .side .pointBox .accurate .point21 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point21 div:hover {
+  border: 2px solid #ff9600;
+}
+.box .middle .content .side .pointBox .accurate .point22 {
+  position: absolute;
+  top: 15%;
+  left: 15%;
+}
+.box .middle .content .side .pointBox .accurate .point22 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point22 div:hover {
+  border: 2px solid #ff9600;
+}
+.box .middle .content .side .pointBox .accurate .point23 {
+  position: absolute;
+  top: 19.5%;
+  left: 15%;
+}
+.box .middle .content .side .pointBox .accurate .point23 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point23 div:hover {
+  border: 2px solid #ff9600;
+}
+.box .middle .content .side .pointBox .accurate .point24 {
+  position: absolute;
+  top: 24.5%;
+  left: 15.5%;
+}
+.box .middle .content .side .pointBox .accurate .point24 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point24 div:hover {
+  border: 2px solid #ff9600;
+}
+.box .middle .content .side .pointBox .accurate .point25 {
+  position: absolute;
+  top: 29%;
+  left: 10%;
+}
+.box .middle .content .side .pointBox .accurate .point25 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point25 div:hover {
+  border: 2px solid #ff9600;
+}
+.box .middle .content .side .pointBox .accurate .point26 {
+  position: absolute;
+  top: 33%;
+  left: 15%;
+}
+.box .middle .content .side .pointBox .accurate .point26 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point26 div:hover {
+  border: 2px solid #ff9600;
+}
+.box .middle .content .side .pointBox .accurate .point27 {
+  position: absolute;
+  top: 37.5%;
+  left: 15.5%;
+}
+.box .middle .content .side .pointBox .accurate .point27 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point27 div:hover {
+  border: 2px solid #ff9600;
+}
+.box .middle .content .side .pointBox .accurate .point28 {
+  position: absolute;
+  top: 42%;
+  left: 17%;
+}
+.box .middle .content .side .pointBox .accurate .point28 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point28 div:hover {
+  border: 2px solid #ff9600;
+}
+.box .middle .content .side .pointBox .accurate .point29 {
+  position: absolute;
+  top: 46%;
+  left: 12%;
+}
+.box .middle .content .side .pointBox .accurate .point29 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point29 div:hover {
+  border: 2px solid #ff9600;
+}
+.box .middle .content .side .pointBox .accurate .point30 {
+  position: absolute;
+  top: 50%;
+  left: 18%;
+}
+.box .middle .content .side .pointBox .accurate .point30 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point30 div:hover {
+  border: 2px solid #ff9600;
+}
+.box .middle .content .side .pointBox .accurate .point31 {
+  position: absolute;
+  top: 54%;
+  left: 18%;
+}
+.box .middle .content .side .pointBox .accurate .point31 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point31 div:hover {
+  border: 2px solid #ff9600;
+}
+.box .middle .content .side .pointBox .accurate .point32 {
+  position: absolute;
+  top: 58.5%;
+  left: 18%;
+}
+.box .middle .content .side .pointBox .accurate .point32 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point32 div:hover {
+  border: 2px solid #ff9600;
+}
+.box .middle .content .side .pointBox .accurate .point33 {
+  position: absolute;
+  top: 63%;
+  left: 16%;
+}
+.box .middle .content .side .pointBox .accurate .point33 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point33 div:hover {
+  border: 2px solid #ff9600;
+}
+.box .middle .content .side .pointBox .accurate .point34 {
+  position: absolute;
+  top: 66.5%;
+  left: 15.5%;
+}
+.box .middle .content .side .pointBox .accurate .point34 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point34 div:hover {
+  border: 2px solid #ff9600;
+}
+.box .middle .content .side .pointBox .accurate .point35 {
+  position: absolute;
+  top: 71%;
+  left: 13%;
+}
+.box .middle .content .side .pointBox .accurate .point35 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point35 div:hover {
+  border: 2px solid #ff9600;
+}
+.box .middle .content .side .pointBox .accurate .point36 {
+  position: absolute;
+  top: 75.5%;
+  left: 11%;
+}
+.box .middle .content .side .pointBox .accurate .point36 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point36 div:hover {
+  border: 2px solid #ff9600;
+}
+.box .middle .content .side .pointBox .accurate .point37 {
+  position: absolute;
+  top: 80%;
+  left: 9%;
+}
+.box .middle .content .side .pointBox .accurate .point37 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point37 div:hover {
+  border: 2px solid #ff9600;
+}
+.box .middle .content .side .pointBox .accurate .point38 {
+  position: absolute;
+  top: 84%;
+  left: 7%;
+}
+.box .middle .content .side .pointBox .accurate .point38 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point38 div:hover {
+  border: 2px solid #ff9600;
+}
+.box .middle .content .side .pointBox .accurate .point39 {
+  position: absolute;
+  top: 6.5%;
+  left: 26.5%;
+}
+.box .middle .content .side .pointBox .accurate .point39 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point39 div:hover {
+  border: 2px solid #f7a545;
+}
+.box .middle .content .side .pointBox .accurate .point40 {
+  position: absolute;
+  top: 12%;
+  left: 23%;
+}
+.box .middle .content .side .pointBox .accurate .point40 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point40 div:hover {
+  border: 2px solid #f7a545;
+}
+.box .middle .content .side .pointBox .accurate .point41 {
+  position: absolute;
+  top: 16.5%;
+  left: 27%;
+}
+.box .middle .content .side .pointBox .accurate .point41 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point41 div:hover {
+  border: 2px solid #f7a545;
+}
+.box .middle .content .side .pointBox .accurate .point42 {
+  position: absolute;
+  top: 21.5%;
+  left: 28%;
+}
+.box .middle .content .side .pointBox .accurate .point42 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point42 div:hover {
+  border: 2px solid #f7a545;
+}
+.box .middle .content .side .pointBox .accurate .point43 {
+  position: absolute;
+  top: 26%;
+  left: 28%;
+}
+.box .middle .content .side .pointBox .accurate .point43 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point43 div:hover {
+  border: 2px solid #f7a545;
+}
+.box .middle .content .side .pointBox .accurate .point44 {
+  position: absolute;
+  top: 32%;
+  left: 24%;
+}
+.box .middle .content .side .pointBox .accurate .point44 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point44 div:hover {
+  border: 2px solid #f7a545;
+}
+.box .middle .content .side .pointBox .accurate .point45 {
+  position: absolute;
+  top: 36%;
+  left: 28.5%;
+}
+.box .middle .content .side .pointBox .accurate .point45 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point45 div:hover {
+  border: 2px solid #f7a545;
+}
+.box .middle .content .side .pointBox .accurate .point46 {
+  position: absolute;
+  top: 40%;
+  left: 28.5%;
+}
+.box .middle .content .side .pointBox .accurate .point46 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point46 div:hover {
+  border: 2px solid #f7a545;
+}
+.box .middle .content .side .pointBox .accurate .point47 {
+  position: absolute;
+  top: 44.5%;
+  left: 28.5%;
+}
+.box .middle .content .side .pointBox .accurate .point47 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point47 div:hover {
+  border: 2px solid #f7a545;
+}
+.box .middle .content .side .pointBox .accurate .point48 {
+  position: absolute;
+  top: 50%;
+  left: 26%;
+}
+.box .middle .content .side .pointBox .accurate .point48 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point48 div:hover {
+  border: 2px solid #f7a545;
+}
+.box .middle .content .side .pointBox .accurate .point49 {
+  position: absolute;
+  top: 53.5%;
+  left: 29%;
+}
+.box .middle .content .side .pointBox .accurate .point49 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point49 div:hover {
+  border: 2px solid #f7a545;
+}
+.box .middle .content .side .pointBox .accurate .point50 {
+  position: absolute;
+  top: 57.5%;
+  left: 29%;
+}
+.box .middle .content .side .pointBox .accurate .point50 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point50 div:hover {
+  border: 2px solid #f7a545;
+}
+.box .middle .content .side .pointBox .accurate .point51 {
+  position: absolute;
+  top: 62%;
+  left: 29%;
+}
+.box .middle .content .side .pointBox .accurate .point51 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point51 div:hover {
+  border: 2px solid #f7a545;
+}
+.box .middle .content .side .pointBox .accurate .point52 {
+  position: absolute;
+  top: 67%;
+  left: 27.5%;
+}
+.box .middle .content .side .pointBox .accurate .point52 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point52 div:hover {
+  border: 2px solid #f7a545;
+}
+.box .middle .content .side .pointBox .accurate .point53 {
+  position: absolute;
+  top: 71%;
+  left: 27.5%;
+}
+.box .middle .content .side .pointBox .accurate .point53 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point53 div:hover {
+  border: 2px solid #f7a545;
+}
+.box .middle .content .side .pointBox .accurate .point54 {
+  position: absolute;
+  top: 76.5%;
+  left: 26%;
+}
+.box .middle .content .side .pointBox .accurate .point54 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point54 div:hover {
+  border: 2px solid #f7a545;
+}
+.box .middle .content .side .pointBox .accurate .point55 {
+  position: absolute;
+  top: 81%;
+  left: 25%;
+}
+.box .middle .content .side .pointBox .accurate .point55 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point55 div:hover {
+  border: 2px solid #f7a545;
+}
+.box .middle .content .side .pointBox .accurate .point56 {
+  position: absolute;
+  top: 86%;
+  left: 23.5%;
+}
+.box .middle .content .side .pointBox .accurate .point56 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point56 div:hover {
+  border: 2px solid #f7a545;
+}
+.box .middle .content .side .pointBox .accurate .point57 {
+  position: absolute;
+  top: 91%;
+  left: 22%;
+}
+.box .middle .content .side .pointBox .accurate .point57 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point57 div:hover {
+  border: 2px solid #f7a545;
+}
+.box .middle .content .side .pointBox .accurate .point58 {
+  position: absolute;
+  top: 38px;
+  left: 47%;
+}
+.box .middle .content .side .pointBox .accurate .point58 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point58 div:hover {
+  border: 2px solid #ff9600;
+}
+.box .middle .content .side .pointBox .accurate .point59 {
+  position: absolute;
+  top: 13.5%;
+  left: 47%;
+}
+.box .middle .content .side .pointBox .accurate .point59 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point59 div:hover {
+  border: 2px solid #ff9600;
+}
+.box .middle .content .side .pointBox .accurate .point60 {
+  position: absolute;
+  top: 17.5%;
+  left: 47%;
+}
+.box .middle .content .side .pointBox .accurate .point60 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point60 div:hover {
+  border: 2px solid #ff9600;
+}
+.box .middle .content .side .pointBox .accurate .point61 {
+  position: absolute;
+  top: 22.5%;
+  left: 47%;
+}
+.box .middle .content .side .pointBox .accurate .point61 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point61 div:hover {
+  border: 2px solid #ff9600;
+}
+.box .middle .content .side .pointBox .accurate .point62 {
+  position: absolute;
+  top: 27.5%;
+  left: 47%;
+}
+.box .middle .content .side .pointBox .accurate .point62 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point62 div:hover {
+  border: 2px solid #ff9600;
+}
+.box .middle .content .side .pointBox .accurate .point63 {
+  position: absolute;
+  top: 33%;
+  left: 47%;
+}
+.box .middle .content .side .pointBox .accurate .point63 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point63 div:hover {
+  border: 2px solid #ff9600;
+}
+.box .middle .content .side .pointBox .accurate .point64 {
+  position: absolute;
+  top: 37%;
+  left: 47%;
+}
+.box .middle .content .side .pointBox .accurate .point64 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point64 div:hover {
+  border: 2px solid #ff9600;
+}
+.box .middle .content .side .pointBox .accurate .point65 {
+  position: absolute;
+  top: 42%;
+  left: 47%;
+}
+.box .middle .content .side .pointBox .accurate .point65 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point65 div:hover {
+  border: 2px solid #ff9600;
+}
+.box .middle .content .side .pointBox .accurate .point66 {
+  position: absolute;
+  top: 46%;
+  left: 47%;
+}
+.box .middle .content .side .pointBox .accurate .point66 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point66 div:hover {
+  border: 2px solid #ff9600;
+}
+.box .middle .content .side .pointBox .accurate .point67 {
+  position: absolute;
+  top: 52%;
+  left: 47%;
+}
+.box .middle .content .side .pointBox .accurate .point67 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point67 div:hover {
+  border: 2px solid #ff9600;
+}
+.box .middle .content .side .pointBox .accurate .point68 {
+  position: absolute;
+  top: 55%;
+  left: 47%;
+}
+.box .middle .content .side .pointBox .accurate .point68 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point68 div:hover {
+  border: 2px solid #ff9600;
+}
+.box .middle .content .side .pointBox .accurate .point69 {
+  position: absolute;
+  top: 59%;
+  left: 47%;
+}
+.box .middle .content .side .pointBox .accurate .point69 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point69 div:hover {
+  border: 2px solid #ff9600;
+}
+.box .middle .content .side .pointBox .accurate .point70 {
+  position: absolute;
+  top: 64%;
+  left: 47%;
+}
+.box .middle .content .side .pointBox .accurate .point70 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point70 div:hover {
+  border: 2px solid #ff9600;
+}
+.box .middle .content .side .pointBox .accurate .point71 {
+  position: absolute;
+  top: 69%;
+  left: 47%;
+}
+.box .middle .content .side .pointBox .accurate .point71 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point71 div:hover {
+  border: 2px solid #ff9600;
+}
+.box .middle .content .side .pointBox .accurate .point72 {
+  position: absolute;
+  top: 73%;
+  left: 47%;
+}
+.box .middle .content .side .pointBox .accurate .point72 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point72 div:hover {
+  border: 2px solid #ff9600;
+}
+.box .middle .content .side .pointBox .accurate .point73 {
+  position: absolute;
+  top: 79%;
+  left: 47%;
+}
+.box .middle .content .side .pointBox .accurate .point73 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point73 div:hover {
+  border: 2px solid #ff9600;
+}
+.box .middle .content .side .pointBox .accurate .point74 {
+  position: absolute;
+  top: 84%;
+  left: 47%;
+}
+.box .middle .content .side .pointBox .accurate .point74 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point74 div:hover {
+  border: 2px solid #ff9600;
+}
+.box .middle .content .side .pointBox .accurate .point75 {
+  position: absolute;
+  top: 89%;
+  left: 47%;
+}
+.box .middle .content .side .pointBox .accurate .point75 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point75 div:hover {
+  border: 2px solid #ff9600;
+}
+.box .middle .content .side .pointBox .accurate .point76 {
+  position: absolute;
+  top: 94%;
+  left: 47%;
+}
+.box .middle .content .side .pointBox .accurate .point76 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point76 div:hover {
+  border: 2px solid #ff9600;
+}
+.box .middle .content .side .pointBox .accurate .point77 {
+  position: absolute;
+  top: 6%;
+  right: 31%;
+}
+.box .middle .content .side .pointBox .accurate .point77 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point77 div:hover {
+  border: 2px solid #f7a545;
+}
+.box .middle .content .side .pointBox .accurate .point78 {
+  position: absolute;
+  top: 12.5%;
+  right: 27%;
+}
+.box .middle .content .side .pointBox .accurate .point78 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point78 div:hover {
+  border: 2px solid #f7a545;
+}
+.box .middle .content .side .pointBox .accurate .point79 {
+  position: absolute;
+  top: 17%;
+  right: 31.5%;
+}
+.box .middle .content .side .pointBox .accurate .point79 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point79 div:hover {
+  border: 2px solid #f7a545;
+}
+.box .middle .content .side .pointBox .accurate .point80 {
+  position: absolute;
+  top: 22%;
+  right: 31.5%;
+}
+.box .middle .content .side .pointBox .accurate .point80 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point80 div:hover {
+  border: 2px solid #f7a545;
+}
+.box .middle .content .side .pointBox .accurate .point81 {
+  position: absolute;
+  top: 26.5%;
+  right: 31.5%;
+}
+.box .middle .content .side .pointBox .accurate .point81 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point81 div:hover {
+  border: 2px solid #f7a545;
+}
+.box .middle .content .side .pointBox .accurate .point82 {
+  position: absolute;
+  top: 32%;
+  right: 28%;
+}
+.box .middle .content .side .pointBox .accurate .point82 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point82 div:hover {
+  border: 2px solid #f7a545;
+}
+.box .middle .content .side .pointBox .accurate .point83 {
+  position: absolute;
+  top: 36%;
+  right: 32%;
+}
+.box .middle .content .side .pointBox .accurate .point83 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point83 div:hover {
+  border: 2px solid #f7a545;
+}
+.box .middle .content .side .pointBox .accurate .point84 {
+  position: absolute;
+  top: 40.5%;
+  right: 32%;
+}
+.box .middle .content .side .pointBox .accurate .point84 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point84 div:hover {
+  border: 2px solid #f7a545;
+}
+.box .middle .content .side .pointBox .accurate .point85 {
+  position: absolute;
+  top: 45%;
+  right: 32%;
+}
+.box .middle .content .side .pointBox .accurate .point85 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point85 div:hover {
+  border: 2px solid #f7a545;
+}
+.box .middle .content .side .pointBox .accurate .point86 {
+  position: absolute;
+  top: 50%;
+  right: 31%;
+}
+.box .middle .content .side .pointBox .accurate .point86 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point86 div:hover {
+  border: 2px solid #f7a545;
+}
+.box .middle .content .side .pointBox .accurate .point87 {
+  position: absolute;
+  top: 53.5%;
+  right: 33%;
+}
+.box .middle .content .side .pointBox .accurate .point87 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point87 div:hover {
+  border: 2px solid #f7a545;
+}
+.box .middle .content .side .pointBox .accurate .point88 {
+  position: absolute;
+  top: 57.5%;
+  right: 33%;
+}
+.box .middle .content .side .pointBox .accurate .point88 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point88 div:hover {
+  border: 2px solid #f7a545;
+}
+.box .middle .content .side .pointBox .accurate .point89 {
+  position: absolute;
+  top: 61.5%;
+  right: 33%;
+}
+.box .middle .content .side .pointBox .accurate .point89 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point89 div:hover {
+  border: 2px solid #f7a545;
+}
+.box .middle .content .side .pointBox .accurate .point90 {
+  position: absolute;
+  top: 67%;
+  right: 31%;
+}
+.box .middle .content .side .pointBox .accurate .point90 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point90 div:hover {
+  border: 2px solid #f7a545;
+}
+.box .middle .content .side .pointBox .accurate .point91 {
+  position: absolute;
+  top: 71%;
+  right: 31.5%;
+}
+.box .middle .content .side .pointBox .accurate .point91 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point91 div:hover {
+  border: 2px solid #f7a545;
+}
+.box .middle .content .side .pointBox .accurate .point92 {
+  position: absolute;
+  top: 76%;
+  right: 30%;
+}
+.box .middle .content .side .pointBox .accurate .point92 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point92 div:hover {
+  border: 2px solid #f7a545;
+}
+.box .middle .content .side .pointBox .accurate .point93 {
+  position: absolute;
+  top: 81%;
+  right: 28.5%;
+}
+.box .middle .content .side .pointBox .accurate .point93 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point93 div:hover {
+  border: 2px solid #f7a545;
+}
+.box .middle .content .side .pointBox .accurate .point94 {
+  position: absolute;
+  top: 86%;
+  right: 27.5%;
+}
+.box .middle .content .side .pointBox .accurate .point94 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point94 div:hover {
+  border: 2px solid #f7a545;
+}
+.box .middle .content .side .pointBox .accurate .point95 {
+  position: absolute;
+  top: 91%;
+  right: 26%;
+}
+.box .middle .content .side .pointBox .accurate .point95 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point95 div:hover {
+  border: 2px solid #f7a545;
+}
+.box .middle .content .side .pointBox .accurate .point96 {
+  position: absolute;
+  top: 5%;
+  right: 18.5%;
+}
+.box .middle .content .side .pointBox .accurate .point96 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point96 div:hover {
+  border: 2px solid #ff9600;
+}
+.box .middle .content .side .pointBox .accurate .point97 {
+  position: absolute;
+  top: 10.5%;
+  right: 12.5%;
+}
+.box .middle .content .side .pointBox .accurate .point97 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point97 div:hover {
+  border: 2px solid #ff9600;
+}
+.box .middle .content .side .pointBox .accurate .point98 {
+  position: absolute;
+  top: 15.5%;
+  right: 20.5%;
+}
+.box .middle .content .side .pointBox .accurate .point98 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point98 div:hover {
+  border: 2px solid #ff9600;
+}
+.box .middle .content .side .pointBox .accurate .point99 {
+  position: absolute;
+  top: 20%;
+  right: 19.5%;
+}
+.box .middle .content .side .pointBox .accurate .point99 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point99 div:hover {
+  border: 2px solid #ff9600;
+}
+.box .middle .content .side .pointBox .accurate .point100 {
+  position: absolute;
+  top: 24.5%;
+  right: 19.5%;
+}
+.box .middle .content .side .pointBox .accurate .point100 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point100 div:hover {
+  border: 2px solid #ff9600;
+}
+.box .middle .content .side .pointBox .accurate .point101 {
+  position: absolute;
+  top: 29%;
+  right: 13.5%;
+}
+.box .middle .content .side .pointBox .accurate .point101 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point101 div:hover {
+  border: 2px solid #ff9600;
+}
+.box .middle .content .side .pointBox .accurate .point102 {
+  position: absolute;
+  top: 33.5%;
+  right: 20.5%;
+}
+.box .middle .content .side .pointBox .accurate .point102 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point102 div:hover {
+  border: 2px solid #ff9600;
+}
+.box .middle .content .side .pointBox .accurate .point103 {
+  position: absolute;
+  top: 38%;
+  right: 20.5%;
+}
+.box .middle .content .side .pointBox .accurate .point103 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point103 div:hover {
+  border: 2px solid #ff9600;
+}
+.box .middle .content .side .pointBox .accurate .point104 {
+  position: absolute;
+  top: 42%;
+  right: 20%;
+}
+.box .middle .content .side .pointBox .accurate .point104 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point104 div:hover {
+  border: 2px solid #ff9600;
+}
+.box .middle .content .side .pointBox .accurate .point105 {
+  position: absolute;
+  top: 46%;
+  right: 16.5%;
+}
+.box .middle .content .side .pointBox .accurate .point105 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point105 div:hover {
+  border: 2px solid #ff9600;
+}
+.box .middle .content .side .pointBox .accurate .point106 {
+  position: absolute;
+  top: 50.5%;
+  right: 21.5%;
+}
+.box .middle .content .side .pointBox .accurate .point106 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point106 div:hover {
+  border: 2px solid #ff9600;
+}
+.box .middle .content .side .pointBox .accurate .point107 {
+  position: absolute;
+  top: 54%;
+  right: 21.5%;
+}
+.box .middle .content .side .pointBox .accurate .point107 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point107 div:hover {
+  border: 2px solid #ff9600;
+}
+.box .middle .content .side .pointBox .accurate .point108 {
+  position: absolute;
+  top: 58%;
+  right: 21.5%;
+}
+.box .middle .content .side .pointBox .accurate .point108 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point108 div:hover {
+  border: 2px solid #ff9600;
+}
+.box .middle .content .side .pointBox .accurate .point109 {
+  position: absolute;
+  top: 62.5%;
+  right: 18.5%;
+}
+.box .middle .content .side .pointBox .accurate .point109 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point109 div:hover {
+  border: 2px solid #ff9600;
+}
+.box .middle .content .side .pointBox .accurate .point110 {
+  position: absolute;
+  top: 67%;
+  right: 19.5%;
+}
+.box .middle .content .side .pointBox .accurate .point110 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point110 div:hover {
+  border: 2px solid #ff9600;
+}
+.box .middle .content .side .pointBox .accurate .point111 {
+  position: absolute;
+  top: 71%;
+  right: 17.5%;
+}
+.box .middle .content .side .pointBox .accurate .point111 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point111 div:hover {
+  border: 2px solid #ff9600;
+}
+.box .middle .content .side .pointBox .accurate .point112 {
+  position: absolute;
+  top: 75%;
+  right: 15%;
+}
+.box .middle .content .side .pointBox .accurate .point112 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point112 div:hover {
+  border: 2px solid #ff9600;
+}
+.box .middle .content .side .pointBox .accurate .point113 {
+  position: absolute;
+  top: 79.5%;
+  right: 12.5%;
+}
+.box .middle .content .side .pointBox .accurate .point113 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point113 div:hover {
+  border: 2px solid #ff9600;
+}
+.box .middle .content .side .pointBox .accurate .point114 {
+  position: absolute;
+  top: 84%;
+  right: 10.5%;
+}
+.box .middle .content .side .pointBox .accurate .point114 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point114 div:hover {
+  border: 2px solid #ff9600;
+}
+.box .middle .content .side .pointBox .accurate .point115 {
+  position: absolute;
+  top: 4%;
+  right: 15%;
+}
+.box .middle .content .side .pointBox .accurate .point115 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point115 div:hover {
+  border: 2px solid #f7a545;
+}
+.box .middle .content .side .pointBox .accurate .point116 {
+  position: absolute;
+  top: 9%;
+  right: 9%;
+}
+.box .middle .content .side .pointBox .accurate .point116 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point116 div:hover {
+  border: 2px solid #f7a545;
+}
+.box .middle .content .side .pointBox .accurate .point117 {
+  position: absolute;
+  top: 14%;
+  right: 15%;
+}
+.box .middle .content .side .pointBox .accurate .point117 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point117 div:hover {
+  border: 2px solid #f7a545;
+}
+.box .middle .content .side .pointBox .accurate .point118 {
+  position: absolute;
+  top: 18%;
+  right: 15%;
+}
+.box .middle .content .side .pointBox .accurate .point118 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point118 div:hover {
+  border: 2px solid #f7a545;
+}
+.box .middle .content .side .pointBox .accurate .point119 {
+  position: absolute;
+  top: 22%;
+  right: 15%;
+}
+.box .middle .content .side .pointBox .accurate .point119 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point119 div:hover {
+  border: 2px solid #f7a545;
+}
+.box .middle .content .side .pointBox .accurate .point120 {
+  position: absolute;
+  top: 26%;
+  right: 10%;
+}
+.box .middle .content .side .pointBox .accurate .point120 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point120 div:hover {
+  border: 2px solid #f7a545;
+}
+.box .middle .content .side .pointBox .accurate .point121 {
+  position: absolute;
+  top: 31%;
+  right: 16%;
+}
+.box .middle .content .side .pointBox .accurate .point121 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point121 div:hover {
+  border: 2px solid #f7a545;
+}
+.box .middle .content .side .pointBox .accurate .point122 {
+  position: absolute;
+  top: 35%;
+  right: 16%;
+}
+.box .middle .content .side .pointBox .accurate .point122 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point122 div:hover {
+  border: 2px solid #f7a545;
+}
+.box .middle .content .side .pointBox .accurate .point123 {
+  position: absolute;
+  top: 39%;
+  right: 16%;
+}
+.box .middle .content .side .pointBox .accurate .point123 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point123 div:hover {
+  border: 2px solid #f7a545;
+}
+.box .middle .content .side .pointBox .accurate .point124 {
+  position: absolute;
+  top: 43%;
+  right: 13%;
+}
+.box .middle .content .side .pointBox .accurate .point124 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point124 div:hover {
+  border: 2px solid #f7a545;
+}
+.box .middle .content .side .pointBox .accurate .point125 {
+  position: absolute;
+  top: 48%;
+  right: 17%;
+}
+.box .middle .content .side .pointBox .accurate .point125 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point125 div:hover {
+  border: 2px solid #f7a545;
+}
+.box .middle .content .side .pointBox .accurate .point126 {
+  position: absolute;
+  top: 51%;
+  right: 17%;
+}
+.box .middle .content .side .pointBox .accurate .point126 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point126 div:hover {
+  border: 2px solid #f7a545;
+}
+.box .middle .content .side .pointBox .accurate .point127 {
+  position: absolute;
+  top: 55%;
+  right: 17%;
+}
+.box .middle .content .side .pointBox .accurate .point127 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point127 div:hover {
+  border: 2px solid #f7a545;
+}
+.box .middle .content .side .pointBox .accurate .point128 {
+  position: absolute;
+  top: 59%;
+  right: 14%;
+}
+.box .middle .content .side .pointBox .accurate .point128 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point128 div:hover {
+  border: 2px solid #f7a545;
+}
+.box .middle .content .side .pointBox .accurate .point129 {
+  position: absolute;
+  top: 62%;
+  right: 15%;
+}
+.box .middle .content .side .pointBox .accurate .point129 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point129 div:hover {
+  border: 2px solid #f7a545;
+}
+.box .middle .content .side .pointBox .accurate .point130 {
+  position: absolute;
+  top: 65%;
+  right: 13%;
+}
+.box .middle .content .side .pointBox .accurate .point130 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point130 div:hover {
+  border: 2px solid #f7a545;
+}
+.box .middle .content .side .pointBox .accurate .point131 {
+  position: absolute;
+  top: 69%;
+  right: 11%;
+}
+.box .middle .content .side .pointBox .accurate .point131 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point131 div:hover {
+  border: 2px solid #f7a545;
+}
+.box .middle .content .side .pointBox .accurate .point132 {
+  position: absolute;
+  top: 73%;
+  right: 9%;
+}
+.box .middle .content .side .pointBox .accurate .point132 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point132 div:hover {
+  border: 2px solid #f7a545;
+}
+.box .middle .content .side .pointBox .accurate .point133 {
+  position: absolute;
+  top: 76%;
+  right: 7%;
+}
+.box .middle .content .side .pointBox .accurate .point133 div {
+  margin: auto;
+  background: #939ab9;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #939ab9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box .middle .content .side .pointBox .accurate .point133 div:hover {
+  border: 2px solid #f7a545;
+}
+.box .middle .doBox {
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+.box .middle .doBox .left {
+  width: 50%;
+  background: #a4e800;
+  line-height: 3rem;
+  text-align: center;
+  float: left;
+  cursor: pointer;
+  font-size: 1.0rem;
+  color: #fff;
+}
+.box .middle .doBox .right {
+  width: 50%;
+  background: #96d400;
+  line-height: 3rem;
+  text-align: center;
+  float: right;
+  cursor: pointer;
+  font-size: 1.0rem;
+  color: #fff;
+}
+.menuBox {
+  overflow: hidden;
+  margin-top: 1rem;
+  width: 800px;
+}
+.menuBox .one {
+  float: left;
+  width: 20%;
+  text-align: center;
+  font-size: 1.0rem;
+  cursor: pointer;
+  color: #9a5454;
+  line-height: 3rem;
+  background: #ececec;
+}
+.menuBox .menuSelected {
+  background: #bdb2bb;
+  color: #fff;
+}
