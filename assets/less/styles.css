@@ -20,7 +20,7 @@
 .box .middle {
   float: left;
   position: relative;
-  width: 800px;
+  width: 450px;
   height: 663px;
   overflow: hidden;
 }
@@ -52,43 +52,43 @@
   z-index: 10;
 }
 .box .middle .direction .wide {
-  width: 5rem;
-  height: 5rem;
+  width: 4rem;
+  height: 4rem;
   position: relative;
 }
 .box .middle .direction .wide .east {
   position: absolute;
   top: 0;
-  left: 2.1rem;
+  left: 1.6rem;
   color: #0f5213;
   font-weight: 700;
 }
 .box .middle .direction .wide .south {
   position: absolute;
   right: 0;
-  top: 2.0rem;
+  top: 1.4rem;
   color: #0f5213;
   font-weight: 700;
 }
 .box .middle .direction .wide .west {
   position: absolute;
   bottom: 0;
-  left: 2.1rem;
+  left: 1.6rem;
   color: #0f5213;
   font-weight: 700;
 }
 .box .middle .direction .wide .north {
   position: absolute;
   left: 0;
-  top: 2.0rem;
+  top: 1.4rem;
   color: #0f5213;
   font-weight: 700;
 }
 .box .middle .direction .wide i {
-  line-height: 5rem;
-  width: 5rem;
+  line-height: 4rem;
+  width: 4rem;
   text-align: center;
-  font-size: 3rem;
+  font-size: 2rem;
   color: #b1c763;
   transform: rotate(55deg);
 }
@@ -202,8 +202,8 @@
 }
 .box .middle .content {
   position: absolute;
-  left: -120px;
-  top: -40px;
+  left: -282px;
+  top: -30px;
   width: 1024px;
   height: 663px;
 }
@@ -231,7 +231,7 @@
   margin-top: 6%;
   overflow: hidden;
   position: relative;
-  opacity: 0.5;
+  opacity: 0.6;
 }
 .box .middle .content .side .pointBox .accurate .point1 {
   position: absolute;
@@ -240,15 +240,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point1 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point1 div:hover {
-  border: 2px solid #f7a545;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point2 {
   position: absolute;
@@ -257,15 +257,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point2 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point2 div:hover {
-  border: 2px solid #f7a545;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point3 {
   position: absolute;
@@ -274,15 +274,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point3 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point3 div:hover {
-  border: 2px solid #f7a545;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point4 {
   position: absolute;
@@ -291,15 +291,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point4 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point4 div:hover {
-  border: 2px solid #f7a545;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point5 {
   position: absolute;
@@ -308,15 +308,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point5 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point5 div:hover {
-  border: 2px solid #f7a545;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point6 {
   position: absolute;
@@ -325,15 +325,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point6 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point6 div:hover {
-  border: 2px solid #f7a545;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point7 {
   position: absolute;
@@ -342,15 +342,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point7 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point7 div:hover {
-  border: 2px solid #f7a545;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point8 {
   position: absolute;
@@ -359,15 +359,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point8 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point8 div:hover {
-  border: 2px solid #f7a545;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point9 {
   position: absolute;
@@ -376,15 +376,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point9 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point9 div:hover {
-  border: 2px solid #f7a545;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point10 {
   position: absolute;
@@ -393,15 +393,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point10 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point10 div:hover {
-  border: 2px solid #f7a545;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point11 {
   position: absolute;
@@ -410,15 +410,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point11 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point11 div:hover {
-  border: 2px solid #f7a545;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point12 {
   position: absolute;
@@ -427,15 +427,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point12 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point12 div:hover {
-  border: 2px solid #f7a545;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point13 {
   position: absolute;
@@ -444,15 +444,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point13 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point13 div:hover {
-  border: 2px solid #f7a545;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point14 {
   position: absolute;
@@ -461,15 +461,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point14 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point14 div:hover {
-  border: 2px solid #f7a545;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point15 {
   position: absolute;
@@ -478,15 +478,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point15 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point15 div:hover {
-  border: 2px solid #f7a545;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point16 {
   position: absolute;
@@ -495,15 +495,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point16 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point16 div:hover {
-  border: 2px solid #f7a545;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point17 {
   position: absolute;
@@ -512,15 +512,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point17 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point17 div:hover {
-  border: 2px solid #f7a545;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point18 {
   position: absolute;
@@ -529,15 +529,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point18 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point18 div:hover {
-  border: 2px solid #f7a545;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point19 {
   position: absolute;
@@ -546,15 +546,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point19 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point19 div:hover {
-  border: 2px solid #f7a545;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point20 {
   position: absolute;
@@ -563,15 +563,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point20 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point20 div:hover {
-  border: 2px solid #ff9600;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point21 {
   position: absolute;
@@ -580,15 +580,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point21 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point21 div:hover {
-  border: 2px solid #ff9600;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point22 {
   position: absolute;
@@ -597,15 +597,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point22 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point22 div:hover {
-  border: 2px solid #ff9600;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point23 {
   position: absolute;
@@ -614,15 +614,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point23 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point23 div:hover {
-  border: 2px solid #ff9600;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point24 {
   position: absolute;
@@ -631,15 +631,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point24 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point24 div:hover {
-  border: 2px solid #ff9600;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point25 {
   position: absolute;
@@ -648,15 +648,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point25 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point25 div:hover {
-  border: 2px solid #ff9600;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point26 {
   position: absolute;
@@ -665,15 +665,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point26 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point26 div:hover {
-  border: 2px solid #ff9600;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point27 {
   position: absolute;
@@ -682,15 +682,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point27 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point27 div:hover {
-  border: 2px solid #ff9600;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point28 {
   position: absolute;
@@ -699,15 +699,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point28 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point28 div:hover {
-  border: 2px solid #ff9600;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point29 {
   position: absolute;
@@ -716,15 +716,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point29 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point29 div:hover {
-  border: 2px solid #ff9600;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point30 {
   position: absolute;
@@ -733,15 +733,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point30 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point30 div:hover {
-  border: 2px solid #ff9600;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point31 {
   position: absolute;
@@ -750,15 +750,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point31 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point31 div:hover {
-  border: 2px solid #ff9600;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point32 {
   position: absolute;
@@ -767,15 +767,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point32 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point32 div:hover {
-  border: 2px solid #ff9600;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point33 {
   position: absolute;
@@ -784,15 +784,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point33 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point33 div:hover {
-  border: 2px solid #ff9600;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point34 {
   position: absolute;
@@ -801,15 +801,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point34 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point34 div:hover {
-  border: 2px solid #ff9600;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point35 {
   position: absolute;
@@ -818,15 +818,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point35 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point35 div:hover {
-  border: 2px solid #ff9600;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point36 {
   position: absolute;
@@ -835,15 +835,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point36 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point36 div:hover {
-  border: 2px solid #ff9600;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point37 {
   position: absolute;
@@ -852,15 +852,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point37 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point37 div:hover {
-  border: 2px solid #ff9600;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point38 {
   position: absolute;
@@ -869,15 +869,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point38 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point38 div:hover {
-  border: 2px solid #ff9600;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point39 {
   position: absolute;
@@ -886,15 +886,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point39 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point39 div:hover {
-  border: 2px solid #f7a545;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point40 {
   position: absolute;
@@ -903,15 +903,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point40 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point40 div:hover {
-  border: 2px solid #f7a545;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point41 {
   position: absolute;
@@ -920,15 +920,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point41 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point41 div:hover {
-  border: 2px solid #f7a545;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point42 {
   position: absolute;
@@ -937,15 +937,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point42 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point42 div:hover {
-  border: 2px solid #f7a545;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point43 {
   position: absolute;
@@ -954,15 +954,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point43 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point43 div:hover {
-  border: 2px solid #f7a545;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point44 {
   position: absolute;
@@ -971,15 +971,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point44 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point44 div:hover {
-  border: 2px solid #f7a545;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point45 {
   position: absolute;
@@ -988,15 +988,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point45 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point45 div:hover {
-  border: 2px solid #f7a545;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point46 {
   position: absolute;
@@ -1005,15 +1005,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point46 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point46 div:hover {
-  border: 2px solid #f7a545;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point47 {
   position: absolute;
@@ -1022,15 +1022,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point47 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point47 div:hover {
-  border: 2px solid #f7a545;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point48 {
   position: absolute;
@@ -1039,15 +1039,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point48 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point48 div:hover {
-  border: 2px solid #f7a545;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point49 {
   position: absolute;
@@ -1056,15 +1056,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point49 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point49 div:hover {
-  border: 2px solid #f7a545;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point50 {
   position: absolute;
@@ -1073,15 +1073,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point50 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point50 div:hover {
-  border: 2px solid #f7a545;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point51 {
   position: absolute;
@@ -1090,15 +1090,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point51 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point51 div:hover {
-  border: 2px solid #f7a545;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point52 {
   position: absolute;
@@ -1107,15 +1107,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point52 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point52 div:hover {
-  border: 2px solid #f7a545;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point53 {
   position: absolute;
@@ -1124,15 +1124,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point53 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point53 div:hover {
-  border: 2px solid #f7a545;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point54 {
   position: absolute;
@@ -1141,15 +1141,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point54 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point54 div:hover {
-  border: 2px solid #f7a545;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point55 {
   position: absolute;
@@ -1158,15 +1158,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point55 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point55 div:hover {
-  border: 2px solid #f7a545;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point56 {
   position: absolute;
@@ -1175,15 +1175,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point56 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point56 div:hover {
-  border: 2px solid #f7a545;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point57 {
   position: absolute;
@@ -1192,15 +1192,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point57 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point57 div:hover {
-  border: 2px solid #f7a545;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point58 {
   position: absolute;
@@ -1209,15 +1209,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point58 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point58 div:hover {
-  border: 2px solid #ff9600;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point59 {
   position: absolute;
@@ -1226,15 +1226,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point59 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point59 div:hover {
-  border: 2px solid #ff9600;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point60 {
   position: absolute;
@@ -1243,15 +1243,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point60 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point60 div:hover {
-  border: 2px solid #ff9600;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point61 {
   position: absolute;
@@ -1260,15 +1260,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point61 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point61 div:hover {
-  border: 2px solid #ff9600;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point62 {
   position: absolute;
@@ -1277,15 +1277,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point62 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point62 div:hover {
-  border: 2px solid #ff9600;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point63 {
   position: absolute;
@@ -1294,15 +1294,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point63 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point63 div:hover {
-  border: 2px solid #ff9600;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point64 {
   position: absolute;
@@ -1311,15 +1311,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point64 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point64 div:hover {
-  border: 2px solid #ff9600;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point65 {
   position: absolute;
@@ -1328,15 +1328,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point65 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point65 div:hover {
-  border: 2px solid #ff9600;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point66 {
   position: absolute;
@@ -1345,15 +1345,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point66 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point66 div:hover {
-  border: 2px solid #ff9600;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point67 {
   position: absolute;
@@ -1362,15 +1362,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point67 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point67 div:hover {
-  border: 2px solid #ff9600;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point68 {
   position: absolute;
@@ -1379,15 +1379,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point68 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point68 div:hover {
-  border: 2px solid #ff9600;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point69 {
   position: absolute;
@@ -1396,15 +1396,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point69 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point69 div:hover {
-  border: 2px solid #ff9600;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point70 {
   position: absolute;
@@ -1413,15 +1413,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point70 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point70 div:hover {
-  border: 2px solid #ff9600;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point71 {
   position: absolute;
@@ -1430,15 +1430,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point71 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point71 div:hover {
-  border: 2px solid #ff9600;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point72 {
   position: absolute;
@@ -1447,15 +1447,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point72 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point72 div:hover {
-  border: 2px solid #ff9600;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point73 {
   position: absolute;
@@ -1464,15 +1464,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point73 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point73 div:hover {
-  border: 2px solid #ff9600;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point74 {
   position: absolute;
@@ -1481,15 +1481,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point74 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point74 div:hover {
-  border: 2px solid #ff9600;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point75 {
   position: absolute;
@@ -1498,15 +1498,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point75 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point75 div:hover {
-  border: 2px solid #ff9600;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point76 {
   position: absolute;
@@ -1515,15 +1515,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point76 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point76 div:hover {
-  border: 2px solid #ff9600;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point77 {
   position: absolute;
@@ -1532,15 +1532,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point77 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point77 div:hover {
-  border: 2px solid #f7a545;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point78 {
   position: absolute;
@@ -1549,15 +1549,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point78 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point78 div:hover {
-  border: 2px solid #f7a545;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point79 {
   position: absolute;
@@ -1566,15 +1566,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point79 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point79 div:hover {
-  border: 2px solid #f7a545;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point80 {
   position: absolute;
@@ -1583,15 +1583,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point80 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point80 div:hover {
-  border: 2px solid #f7a545;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point81 {
   position: absolute;
@@ -1600,15 +1600,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point81 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point81 div:hover {
-  border: 2px solid #f7a545;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point82 {
   position: absolute;
@@ -1617,15 +1617,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point82 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point82 div:hover {
-  border: 2px solid #f7a545;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point83 {
   position: absolute;
@@ -1634,15 +1634,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point83 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point83 div:hover {
-  border: 2px solid #f7a545;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point84 {
   position: absolute;
@@ -1651,15 +1651,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point84 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point84 div:hover {
-  border: 2px solid #f7a545;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point85 {
   position: absolute;
@@ -1668,15 +1668,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point85 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point85 div:hover {
-  border: 2px solid #f7a545;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point86 {
   position: absolute;
@@ -1685,15 +1685,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point86 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point86 div:hover {
-  border: 2px solid #f7a545;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point87 {
   position: absolute;
@@ -1702,15 +1702,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point87 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point87 div:hover {
-  border: 2px solid #f7a545;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point88 {
   position: absolute;
@@ -1719,15 +1719,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point88 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point88 div:hover {
-  border: 2px solid #f7a545;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point89 {
   position: absolute;
@@ -1736,15 +1736,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point89 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point89 div:hover {
-  border: 2px solid #f7a545;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point90 {
   position: absolute;
@@ -1753,15 +1753,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point90 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point90 div:hover {
-  border: 2px solid #f7a545;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point91 {
   position: absolute;
@@ -1770,15 +1770,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point91 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point91 div:hover {
-  border: 2px solid #f7a545;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point92 {
   position: absolute;
@@ -1787,15 +1787,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point92 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point92 div:hover {
-  border: 2px solid #f7a545;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point93 {
   position: absolute;
@@ -1804,15 +1804,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point93 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point93 div:hover {
-  border: 2px solid #f7a545;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point94 {
   position: absolute;
@@ -1821,15 +1821,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point94 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point94 div:hover {
-  border: 2px solid #f7a545;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point95 {
   position: absolute;
@@ -1838,15 +1838,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point95 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point95 div:hover {
-  border: 2px solid #f7a545;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point96 {
   position: absolute;
@@ -1855,15 +1855,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point96 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point96 div:hover {
-  border: 2px solid #ff9600;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point97 {
   position: absolute;
@@ -1872,15 +1872,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point97 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point97 div:hover {
-  border: 2px solid #ff9600;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point98 {
   position: absolute;
@@ -1889,15 +1889,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point98 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point98 div:hover {
-  border: 2px solid #ff9600;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point99 {
   position: absolute;
@@ -1906,15 +1906,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point99 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point99 div:hover {
-  border: 2px solid #ff9600;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point100 {
   position: absolute;
@@ -1923,15 +1923,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point100 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point100 div:hover {
-  border: 2px solid #ff9600;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point101 {
   position: absolute;
@@ -1940,15 +1940,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point101 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point101 div:hover {
-  border: 2px solid #ff9600;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point102 {
   position: absolute;
@@ -1957,15 +1957,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point102 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point102 div:hover {
-  border: 2px solid #ff9600;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point103 {
   position: absolute;
@@ -1974,15 +1974,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point103 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point103 div:hover {
-  border: 2px solid #ff9600;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point104 {
   position: absolute;
@@ -1991,15 +1991,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point104 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point104 div:hover {
-  border: 2px solid #ff9600;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point105 {
   position: absolute;
@@ -2008,15 +2008,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point105 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point105 div:hover {
-  border: 2px solid #ff9600;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point106 {
   position: absolute;
@@ -2025,15 +2025,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point106 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point106 div:hover {
-  border: 2px solid #ff9600;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point107 {
   position: absolute;
@@ -2042,15 +2042,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point107 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point107 div:hover {
-  border: 2px solid #ff9600;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point108 {
   position: absolute;
@@ -2059,15 +2059,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point108 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point108 div:hover {
-  border: 2px solid #ff9600;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point109 {
   position: absolute;
@@ -2076,15 +2076,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point109 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point109 div:hover {
-  border: 2px solid #ff9600;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point110 {
   position: absolute;
@@ -2093,15 +2093,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point110 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point110 div:hover {
-  border: 2px solid #ff9600;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point111 {
   position: absolute;
@@ -2110,15 +2110,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point111 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point111 div:hover {
-  border: 2px solid #ff9600;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point112 {
   position: absolute;
@@ -2127,15 +2127,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point112 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point112 div:hover {
-  border: 2px solid #ff9600;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point113 {
   position: absolute;
@@ -2144,15 +2144,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point113 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point113 div:hover {
-  border: 2px solid #ff9600;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point114 {
   position: absolute;
@@ -2161,15 +2161,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point114 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point114 div:hover {
-  border: 2px solid #ff9600;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point115 {
   position: absolute;
@@ -2178,15 +2178,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point115 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point115 div:hover {
-  border: 2px solid #f7a545;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point116 {
   position: absolute;
@@ -2195,15 +2195,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point116 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point116 div:hover {
-  border: 2px solid #f7a545;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point117 {
   position: absolute;
@@ -2212,15 +2212,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point117 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point117 div:hover {
-  border: 2px solid #f7a545;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point118 {
   position: absolute;
@@ -2229,15 +2229,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point118 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point118 div:hover {
-  border: 2px solid #f7a545;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point119 {
   position: absolute;
@@ -2246,15 +2246,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point119 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point119 div:hover {
-  border: 2px solid #f7a545;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point120 {
   position: absolute;
@@ -2263,15 +2263,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point120 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point120 div:hover {
-  border: 2px solid #f7a545;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point121 {
   position: absolute;
@@ -2280,15 +2280,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point121 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point121 div:hover {
-  border: 2px solid #f7a545;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point122 {
   position: absolute;
@@ -2297,15 +2297,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point122 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point122 div:hover {
-  border: 2px solid #f7a545;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point123 {
   position: absolute;
@@ -2314,15 +2314,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point123 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point123 div:hover {
-  border: 2px solid #f7a545;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point124 {
   position: absolute;
@@ -2331,15 +2331,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point124 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point124 div:hover {
-  border: 2px solid #f7a545;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point125 {
   position: absolute;
@@ -2348,15 +2348,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point125 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point125 div:hover {
-  border: 2px solid #f7a545;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point126 {
   position: absolute;
@@ -2365,15 +2365,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point126 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point126 div:hover {
-  border: 2px solid #f7a545;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point127 {
   position: absolute;
@@ -2382,15 +2382,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point127 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point127 div:hover {
-  border: 2px solid #f7a545;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point128 {
   position: absolute;
@@ -2399,15 +2399,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point128 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point128 div:hover {
-  border: 2px solid #f7a545;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point129 {
   position: absolute;
@@ -2416,15 +2416,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point129 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point129 div:hover {
-  border: 2px solid #f7a545;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point130 {
   position: absolute;
@@ -2433,15 +2433,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point130 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point130 div:hover {
-  border: 2px solid #f7a545;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point131 {
   position: absolute;
@@ -2450,15 +2450,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point131 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point131 div:hover {
-  border: 2px solid #f7a545;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point132 {
   position: absolute;
@@ -2467,15 +2467,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point132 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point132 div:hover {
-  border: 2px solid #f7a545;
+  border: 2px solid #a57fa1;
 }
 .box .middle .content .side .pointBox .accurate .point133 {
   position: absolute;
@@ -2484,15 +2484,15 @@
 }
 .box .middle .content .side .pointBox .accurate .point133 div {
   margin: auto;
-  background: #939ab9;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #939ab9;
+  background: #9c9c9c;
+  height: 13px;
+  width: 13px;
+  border: 2px solid #9c9c9c;
   border-radius: 50%;
   cursor: pointer;
 }
 .box .middle .content .side .pointBox .accurate .point133 div:hover {
-  border: 2px solid #f7a545;
+  border: 2px solid #a57fa1;
 }
 .box .middle .doBox {
   overflow: hidden;
@@ -2523,17 +2523,24 @@
 .menuBox {
   overflow: hidden;
   margin-top: 1rem;
-  width: 800px;
+  width: 450px;
 }
 .menuBox .one {
   float: left;
   width: 20%;
   text-align: center;
-  font-size: 1.0rem;
+  font-size: 0.9rem;
   cursor: pointer;
   color: #9a5454;
-  line-height: 3rem;
+  height: 3rem;
   background: #ececec;
+  display: table;
+}
+.menuBox .one .middle {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  width: 100%;
 }
 .menuBox .menuSelected {
   background: #bdb2bb;

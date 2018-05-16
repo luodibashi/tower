@@ -185,7 +185,8 @@
 	// 配置点位html
 	var ConfigPointHtml = function(id,pointId){
 		// 如果需要隐藏点位注释此处的poin
-		var pointDiv = '<div class="point'+id+'"><div id="pointSelect'+id+'">'+pointId+'</div></div>'
+		// var pointDiv = '<div class="point'+id+'"><div id="pointSelect'+id+'">'+pointId+'</div></div>';
+		var pointDiv = '<div class="point'+id+'"><div id="'+pointId+'"></div></div>';
 		// $('#accurate').empty();
 		$('#accurate').append(pointDiv);
 	}
@@ -259,6 +260,8 @@
 		// 配置渲染点
 		if([1,2,3,4].indexOf(wType)!=-1){
 			BuildPointBase(wType);
+		} else {
+			$('#accurate').empty();
 		}
 	}
 	BuildBaseImg(1,4);
@@ -303,18 +306,19 @@
 	// 配置加载等待窗口
 	var timer;
 	var WaitPage = function(){
-		$('.waitBox').show();
-		$('#timeLast').text('');
-		var timeLast = 4;
-		timer = setInterval(function(){
-			timeLast--;
-			$('#timeLast').text(timeLast+'s');
-			if(timeLast<1){
 				$('.waitBox').hide();
-				clearInterval(timer);
-				// console.log('gameOver');
-			}
-		},1000)
+		// $('.waitBox').show();
+		// $('#timeLast').text('');
+		// var timeLast = 4;
+		// timer = setInterval(function(){
+		// 	timeLast--;
+		// 	$('#timeLast').text(timeLast+'s');
+		// 	if(timeLast<1){
+		// 		$('.waitBox').hide();
+		// 		clearInterval(timer);
+		// 		// console.log('gameOver');
+		// 	}
+		// },1000)
 	}
 	WaitPage();
 
@@ -382,9 +386,18 @@ $(document).ready(function(){
  		BaseImgSelect(targetId);
 	})
 
-	// 点击点位
-	// $('.point42').click(function(){
-	// 	console.log('42');
+	// 点击点位$('父元素').on('click','动态的子元素',function(){});
+	// $('#accurate').on('click','.point1',function(){
+	// 	// 获取子元素的id
+	// 	var childId = $('.point1').children().attr('id');
+	// 	console.log(childId);
+	// 	// alert('1');
+	// })
+
+	// $('#accurate').on('click','.point2',function(){
+	// 	// 获取子元素的id
+	// 	var childId = $('.point2').children().attr('id');
+	// 	console.log(childId);
 	// 	// alert('1');
 	// })
 });
