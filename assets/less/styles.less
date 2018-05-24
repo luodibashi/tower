@@ -5,12 +5,17 @@
 @borderRed: 2px solid #a57fa1;
 @borderYellowBorn: 2px solid #9c9c9c;
 @borderRedBorn: 2px solid #9c9c9c;
-@selectedBorder: 2px solid #a9da88;
-@selectedBackground: #a9da88;
+@selectedBorder: 2px solid #00e809;
+@selectedBackground: #00e809;
 @pointSize: 13px;
+@hoverBackground: #00e809;
+@hoverBorderColor: 2px solid #00e809;
 .selected{
-	border: @selectedBorder !important;
-	background: @selectedBackground !important;
+	div{
+		border: @selectedBorder !important;
+		background: @selectedBackground !important;
+		opacity: 1 !important;
+	}
 }
 .box{
 	// width: 1224px;
@@ -36,7 +41,7 @@
     // min-width: 400px;
     // max-width: 450px;
     width: 450px;
-    height: 663px;
+    height: 632px;
     overflow: hidden;
     .waitBox{
 			position: absolute;
@@ -61,8 +66,8 @@
 		}
     .direction{
 			position: absolute;
-			right: 1rem;
-			top: 1rem;
+			right: 0.3rem;
+			top: 0.3rem;
 			z-index: 10;
 			.wide{
 				width: 4rem;
@@ -216,7 +221,7 @@
 		}
     .content{
 	    position: absolute;
-	    left: -282px;
+	    left: -294px;
 	    top: -30px;
 	    width: 1024px;
 	    height: 663px;
@@ -238,13 +243,13 @@
 					.accurate{
 						width: 42%;
 						height: 88%;
-				    margin-left: 29%;
+				    margin-left: 30.5%;
 				    // background: #ddd;
 				    // opacity: 0.7;
-				    margin-top: 6%;
+				    margin-top: 5.5%;
 				    overflow: hidden;
 				    position: relative;
-				    opacity: 0.6;
+				    // opacity: 0.6;
 				   //  .unit{
 							// width: 100%;
 							// height: 100%;
@@ -254,6 +259,8 @@
 								position: absolute;
 						    top: 4%;
 						    left: 11%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
 									background: @yellowColor;
@@ -262,15 +269,24 @@
 							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderYellow;
-							    }
+							    // display: none;
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							.point2{
 								position: absolute;
 						    top: 9%;
 						    left: 5%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
 									background: @yellowColor;
@@ -279,15 +295,23 @@
 							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderYellow;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							.point3{
 								position: absolute;
 						    top: 14%;
 						    left: 11%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
 									background: @yellowColor;
@@ -296,15 +320,23 @@
 							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderYellow;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							.point4{
 								position: absolute;
 						    top: 18%;
 						    left: 11%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
 									background: @yellowColor;
@@ -313,15 +345,23 @@
 							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderYellow;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							.point5{
 								position: absolute;
 						    top: 22%;
 						    left: 11%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
 									background: @yellowColor;
@@ -330,15 +370,48 @@
 							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderYellow;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
+							}
+							.point1901{
+								position: absolute;
+						    top: 23%;
+						    left: 10%;
+						    width: 17px;
+    						height: 17px;
+								div{
+									margin: auto;
+									background: @yellowColor;
+									height: @pointSize;
+							    width: @pointSize;
+							    border: @borderYellowBorn;
+							    border-radius: 50%;
+							    cursor: pointer;
+				    			opacity: 0.4;
+								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							.point6{
 								position: absolute;
 						    top: 26%;
 						    left: 6%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
 									background: @yellowColor;
@@ -347,15 +420,23 @@
 							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderYellow;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							.point7{
 								position: absolute;
 						    top: 31%;
 						    left: 12%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
 									background: @yellowColor;
@@ -364,15 +445,23 @@
 							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderYellow;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							.point8{
 								position: absolute;
 								top: 35%;
 						    left: 12%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
 									background: @yellowColor;
@@ -381,15 +470,23 @@
 							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderYellow;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							.point9{
 								position: absolute;
 						    top: 39%;
 						    left: 12%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
 									background: @yellowColor;
@@ -398,15 +495,23 @@
 							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderYellow;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							.point10{
 								position: absolute;
 								top: 43%;
 						    left: 9%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
 									background: @yellowColor;
@@ -415,15 +520,23 @@
 							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderYellow;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							.point11{
 								position: absolute;
 								top: 48%;
 						    left: 13%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
 									background: @yellowColor;
@@ -432,15 +545,23 @@
 							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderYellow;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							.point12{
 								position: absolute;
 								top: 51%;
 						    left: 13%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
 									background: @yellowColor;
@@ -449,15 +570,23 @@
 							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderYellow;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							.point13{
 								position: absolute;
 						    top: 55%;
 						    left: 13%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
 									background: @yellowColor;
@@ -466,15 +595,48 @@
 							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderYellow;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
+							}
+							.point1902{
+								position: absolute;
+						    top: 56.5%;
+						    left: 11%;
+						    width: 17px;
+    						height: 17px;
+								div{
+									margin: auto;
+									background: @yellowColor;
+									height: @pointSize;
+							    width: @pointSize;
+							    border: @borderYellowBorn;
+							    border-radius: 50%;
+							    cursor: pointer;
+				    			opacity: 0.4;
+								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							.point14{
 								position: absolute;
 						    top: 59%;
 						    left: 10%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
 									background: @yellowColor;
@@ -483,15 +645,23 @@
 							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderYellow;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							.point15{
 								position: absolute;
 								top: 62%;
 						    left: 11%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
 									background: @yellowColor;
@@ -500,15 +670,23 @@
 							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderYellow;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							.point16{
 								position: absolute;
 						    top: 65%;
 						    left: 9%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
 									background: @yellowColor;
@@ -517,15 +695,23 @@
 							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderYellow;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							.point17{
 								position: absolute;
 						    top: 69%;
 						    left: 7%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
 									background: @yellowColor;
@@ -534,15 +720,23 @@
 							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderYellow;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							.point18{
 								position: absolute;
 								top: 73%;
 					    	left: 5%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
 									background: @yellowColor;
@@ -551,15 +745,23 @@
 							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderYellow;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							.point19{
 								position: absolute;
 								top: 76%;
 						    left: 4%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
 									background: @yellowColor;
@@ -568,340 +770,550 @@
 							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderYellow;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							//
 							.point20{
 								position: absolute;
 						    top: 5%;
 						    left: 15%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
-									background: @redColor;
+									background: @yellowColor;
 									height: @pointSize;
 							    width: @pointSize;
-							    border: @borderRedBorn;
+							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderRed;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							.point21{
 								position: absolute;
 						    top: 10.5%;
 						    left: 9%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
-									background: @redColor;
+									background: @yellowColor;
 									height: @pointSize;
 							    width: @pointSize;
-							    border: @borderRedBorn;
+							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderRed;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							.point22{
 								position: absolute;
 						    top: 15%;
 						    left: 15%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
-									background: @redColor;
+									background: @yellowColor;
 									height: @pointSize;
 							    width: @pointSize;
-							    border: @borderRedBorn;
+							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderRed;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							.point23{
 								position: absolute;
 						    top: 19.5%;
 						    left: 15%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
-									background: @redColor;
+									background: @yellowColor;
 									height: @pointSize;
 							    width: @pointSize;
-							    border: @borderRedBorn;
+							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderRed;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							.point24{
 								position: absolute;
 						    top: 24.5%;
 						    left: 15.5%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
-									background: @redColor;
+									background: @yellowColor;
 									height: @pointSize;
 							    width: @pointSize;
-							    border: @borderRedBorn;
+							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderRed;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
+							}
+							.point1903{
+								position: absolute;
+						    top: 25.5%;
+						    left: 12.5%;
+						    width: 17px;
+    						height: 17px;
+								div{
+									margin: auto;
+									background: @yellowColor;
+									height: @pointSize;
+							    width: @pointSize;
+							    border: @borderYellowBorn;
+							    border-radius: 50%;
+							    cursor: pointer;
+				    			opacity: 0.4;
+								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							.point25{
 								position: absolute;
 						    top: 29%;
 						    left: 10%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
-									background: @redColor;
+									background: @yellowColor;
 									height: @pointSize;
 							    width: @pointSize;
-							    border: @borderRedBorn;
+							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderRed;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							.point26{
 								position: absolute;
 						    top: 33%;
 						    left: 15%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
-									background: @redColor;
+									background: @yellowColor;
 									height: @pointSize;
 							    width: @pointSize;
-							    border: @borderRedBorn;
+							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderRed;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							.point27{
 								position: absolute;
 						    top: 37.5%;
 						    left: 15.5%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
-									background: @redColor;
+									background: @yellowColor;
 									height: @pointSize;
 							    width: @pointSize;
-							    border: @borderRedBorn;
+							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderRed;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							.point28{
 								position: absolute;
 						    top: 42%;
 						    left: 17%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
-									background: @redColor;
+									background: @yellowColor;
 									height: @pointSize;
 							    width: @pointSize;
-							    border: @borderRedBorn;
+							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderRed;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							.point29{
 								position: absolute;
 						    top: 46%;
 						    left: 12%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
-									background: @redColor;
+									background: @yellowColor;
 									height: @pointSize;
 							    width: @pointSize;
-							    border: @borderRedBorn;
+							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderRed;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							.point30{
 								position: absolute;
 						    top: 50%;
 						    left: 18%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
-									background: @redColor;
+									background: @yellowColor;
 									height: @pointSize;
 							    width: @pointSize;
-							    border: @borderRedBorn;
+							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderRed;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							.point31{
 								position: absolute;
 						    top: 54%;
 						    left: 18%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
-									background: @redColor;
+									background: @yellowColor;
 									height: @pointSize;
 							    width: @pointSize;
-							    border: @borderRedBorn;
+							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderRed;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							.point32{
 								position: absolute;
 						    top: 58.5%;
 						    left: 18%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
-									background: @redColor;
+									background: @yellowColor;
 									height: @pointSize;
 							    width: @pointSize;
-							    border: @borderRedBorn;
+							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderRed;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
+							}
+							.point1904{
+								position: absolute;
+						    top: 62%;
+						    left: 16%;
+						    width: 17px;
+    						height: 17px;
+								div{
+									margin: auto;
+									background: @yellowColor;
+									height: @pointSize;
+							    width: @pointSize;
+							    border: @borderYellowBorn;
+							    border-radius: 50%;
+							    cursor: pointer;
+				    			opacity: 0.4;
+								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							.point33{
 								position: absolute;
 						    top: 63%;
-						    left: 16%;
+						    left: 14%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
-									background: @redColor;
+									background: @yellowColor;
 									height: @pointSize;
 							    width: @pointSize;
-							    border: @borderRedBorn;
+							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderRed;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							.point34{
 								position: absolute;
 						    top: 66.5%;
 						    left: 15.5%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
-									background: @redColor;
+									background: @yellowColor;
 									height: @pointSize;
 							    width: @pointSize;
-							    border: @borderRedBorn;
+							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderRed;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							.point35{
 								position: absolute;
 						    top: 71%;
 						    left: 13%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
-									background: @redColor;
+									background: @yellowColor;
 									height: @pointSize;
 							    width: @pointSize;
-							    border: @borderRedBorn;
+							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderRed;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							.point36{
 								position: absolute;
 						    top: 75.5%;
 						    left: 11%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
-									background: @redColor;
+									background: @yellowColor;
 									height: @pointSize;
 							    width: @pointSize;
-							    border: @borderRedBorn;
+							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderRed;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							.point37{
 								position: absolute;
 						    top: 80%;
 						    left: 9%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
-									background: @redColor;
+									background: @yellowColor;
 									height: @pointSize;
 							    width: @pointSize;
-							    border: @borderRedBorn;
+							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderRed;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							.point38{
 								position: absolute;
 						    top: 84%;
 						    left: 7%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
-									background: @redColor;
+									background: @yellowColor;
 									height: @pointSize;
 							    width: @pointSize;
-							    border: @borderRedBorn;
+							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderRed;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							// 
 							.point39{
 								position: absolute;
 						    top: 6.5%;
 						    left: 26.5%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
 									background: @yellowColor;
@@ -910,15 +1322,23 @@
 							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderYellow;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							.point40{
 								position: absolute;
 						    top: 12%;
 						    left: 23%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
 									background: @yellowColor;
@@ -927,15 +1347,23 @@
 							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderYellow;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							.point41{
 								position: absolute;
 						    top: 16.5%;
 						    left: 27%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
 									background: @yellowColor;
@@ -944,15 +1372,23 @@
 							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderYellow;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							.point42{
 								position: absolute;
 						    top: 21.5%;
 						    left: 28%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
 									background: @yellowColor;
@@ -961,15 +1397,23 @@
 							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderYellow;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							.point43{
 								position: absolute;
 						    top: 26%;
 						    left: 28%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
 									background: @yellowColor;
@@ -978,15 +1422,48 @@
 							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderYellow;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
+							}
+							.point1905{
+								position: absolute;
+						    top: 29%;
+						    left: 26%;
+						    width: 17px;
+    						height: 17px;
+								div{
+									margin: auto;
+									background: @yellowColor;
+									height: @pointSize;
+							    width: @pointSize;
+							    border: @borderYellowBorn;
+							    border-radius: 50%;
+							    cursor: pointer;
+				    			opacity: 0.4;
+								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							.point44{
 								position: absolute;
 								top: 32%;
 						    left: 24%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
 									background: @yellowColor;
@@ -995,15 +1472,23 @@
 							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderYellow;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							.point45{
 								position: absolute;
 						    top: 36%;
 						    left: 28.5%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
 									background: @yellowColor;
@@ -1012,15 +1497,23 @@
 							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderYellow;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							.point46{
 								position: absolute;
 						    top: 40%;
 						    left: 28.5%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
 									background: @yellowColor;
@@ -1029,15 +1522,23 @@
 							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderYellow;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							.point47{
 								position: absolute;
 						    top: 44.5%;
 						    left: 28.5%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
 									background: @yellowColor;
@@ -1046,15 +1547,23 @@
 							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderYellow;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							.point48{
 								position: absolute;
 						    top: 50%;
 						    left: 26%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
 									background: @yellowColor;
@@ -1063,15 +1572,23 @@
 							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderYellow;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							.point49{
 								position: absolute;
 						    top: 53.5%;
 						    left: 29%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
 									background: @yellowColor;
@@ -1080,15 +1597,23 @@
 							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderYellow;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							.point50{
 								position: absolute;
 						    top: 57.5%;
 						    left: 29%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
 									background: @yellowColor;
@@ -1097,15 +1622,23 @@
 							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderYellow;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							.point51{
 								position: absolute;
 						    top: 62%;
 						    left: 29%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
 									background: @yellowColor;
@@ -1114,15 +1647,48 @@
 							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderYellow;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
+							}
+							.point1906{
+								position: absolute;
+								top: 65.5%;
+						    left: 28.5%;
+						    width: 17px;
+    						height: 17px;
+								div{
+									margin: auto;
+									background: @yellowColor;
+									height: @pointSize;
+							    width: @pointSize;
+							    border: @borderYellowBorn;
+							    border-radius: 50%;
+							    cursor: pointer;
+				    			opacity: 0.4;
+								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							.point52{
 								position: absolute;
-								top: 67%;
-						    left: 27.5%;
+								top: 68%;
+						    left: 26.5%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
 									background: @yellowColor;
@@ -1131,15 +1697,23 @@
 							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderYellow;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							.point53{
 								position: absolute;
 								top: 71%;
 						    left: 27.5%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
 									background: @yellowColor;
@@ -1148,15 +1722,23 @@
 							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderYellow;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							.point54{
 								position: absolute;
 								top: 76.5%;
 						    left: 26%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
 									background: @yellowColor;
@@ -1165,15 +1747,23 @@
 							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderYellow;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							.point55{
 								position: absolute;
 						    top: 81%;
 						    left: 25%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
 									background: @yellowColor;
@@ -1182,15 +1772,23 @@
 							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderYellow;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							.point56{
 								position: absolute;
 						    top: 86%;
 						    left: 23.5%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
 									background: @yellowColor;
@@ -1199,15 +1797,23 @@
 							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderYellow;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							.point57{
 								position: absolute;
 						    top: 91%;
 						    left: 22%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
 									background: @yellowColor;
@@ -1216,340 +1822,550 @@
 							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderYellow;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							// 
 							.point58{
 								position: absolute;
 								top: 38px;
 						    left: 47%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
-									background: @redColor;
+									background: @yellowColor;
 									height: @pointSize;
 							    width: @pointSize;
-							    border: @borderRedBorn;
+							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderRed;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							.point59{
 								position: absolute;
 						    top: 13.5%;
 						    left: 47%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
-									background: @redColor;
+									background: @yellowColor;
 									height: @pointSize;
 							    width: @pointSize;
-							    border: @borderRedBorn;
+							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderRed;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							.point60{
 								position: absolute;
 						    top: 17.5%;
 						    left: 47%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
-									background: @redColor;
+									background: @yellowColor;
 									height: @pointSize;
 							    width: @pointSize;
-							    border: @borderRedBorn;
+							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderRed;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							.point61{
 								position: absolute;
 						    top: 22.5%;
 						    left: 47%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
-									background: @redColor;
+									background: @yellowColor;
 									height: @pointSize;
 							    width: @pointSize;
-							    border: @borderRedBorn;
+							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderRed;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
+							}
+							.point1907{
+								position: absolute;
+						    top: 29.5%;
+						    left: 47%;
+						    width: 17px;
+    						height: 17px;
+								div{
+									margin: auto;
+									background: @yellowColor;
+									height: @pointSize;
+							    width: @pointSize;
+							    border: @borderYellowBorn;
+							    border-radius: 50%;
+							    cursor: pointer;
+				    			opacity: 0.4;
+								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							.point62{
 								position: absolute;
 						    top: 27.5%;
 						    left: 47%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
-									background: @redColor;
+									background: @yellowColor;
 									height: @pointSize;
 							    width: @pointSize;
-							    border: @borderRedBorn;
+							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderRed;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							.point63{
 								position: absolute;
 								top: 33%;
 						    left: 47%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
-									background: @redColor;
+									background: @yellowColor;
 									height: @pointSize;
 							    width: @pointSize;
-							    border: @borderRedBorn;
+							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderRed;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							.point64{
 								position: absolute;
 						    top: 37%;
 						    left: 47%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
-									background: @redColor;
+									background: @yellowColor;
 									height: @pointSize;
 							    width: @pointSize;
-							    border: @borderRedBorn;
+							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderRed;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							.point65{
 								position: absolute;
 						    top: 42%;
 						    left: 47%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
-									background: @redColor;
+									background: @yellowColor;
 									height: @pointSize;
 							    width: @pointSize;
-							    border: @borderRedBorn;
+							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderRed;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							.point66{
 								position: absolute;
 						    top: 46%;
 						    left: 47%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
-									background: @redColor;
+									background: @yellowColor;
 									height: @pointSize;
 							    width: @pointSize;
-							    border: @borderRedBorn;
+							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderRed;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							.point67{
 								position: absolute;
 						    top: 52%;
 						    left: 47%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
-									background: @redColor;
+									background: @yellowColor;
 									height: @pointSize;
 							    width: @pointSize;
-							    border: @borderRedBorn;
+							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderRed;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							.point68{
 								position: absolute;
 						    top: 55%;
 						    left: 47%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
-									background: @redColor;
+									background: @yellowColor;
 									height: @pointSize;
 							    width: @pointSize;
-							    border: @borderRedBorn;
+							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderRed;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							.point69{
 								position: absolute;
 						    top: 59%;
 						    left: 47%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
-									background: @redColor;
+									background: @yellowColor;
 									height: @pointSize;
 							    width: @pointSize;
-							    border: @borderRedBorn;
+							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderRed;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							.point70{
 								position: absolute;
 								top: 64%;
 						    left: 47%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
-									background: @redColor;
+									background: @yellowColor;
 									height: @pointSize;
 							    width: @pointSize;
-							    border: @borderRedBorn;
+							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderRed;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
+							}
+							.point1908{
+								position: absolute;
+						    top: 68%;
+						    left: 47%;
+						    width: 17px;
+    						height: 17px;
+								div{
+									margin: auto;
+									background: @yellowColor;
+									height: @pointSize;
+							    width: @pointSize;
+							    border: @borderYellowBorn;
+							    border-radius: 50%;
+							    cursor: pointer;
+				    			opacity: 0.4;
+								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							.point71{
 								position: absolute;
-						    top: 69%;
+						    top: 69.5%;
 						    left: 47%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
-									background: @redColor;
+									background: @yellowColor;
 									height: @pointSize;
 							    width: @pointSize;
-							    border: @borderRedBorn;
+							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderRed;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							.point72{
 								position: absolute;
 						    top: 73%;
 						    left: 47%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
-									background: @redColor;
+									background: @yellowColor;
 									height: @pointSize;
 							    width: @pointSize;
-							    border: @borderRedBorn;
+							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderRed;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							.point73{
 								position: absolute;
 						    top: 79%;
 						    left: 47%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
-									background: @redColor;
+									background: @yellowColor;
 									height: @pointSize;
 							    width: @pointSize;
-							    border: @borderRedBorn;
+							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderRed;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							.point74{
 								position: absolute;
 						    top: 84%;
 						    left: 47%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
-									background: @redColor;
+									background: @yellowColor;
 									height: @pointSize;
 							    width: @pointSize;
-							    border: @borderRedBorn;
+							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderRed;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							.point75{
 								position: absolute;
 						    top: 89%;
 						    left: 47%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
-									background: @redColor;
+									background: @yellowColor;
 									height: @pointSize;
 							    width: @pointSize;
-							    border: @borderRedBorn;
+							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderRed;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							.point76{
 								position: absolute;
 						    top: 94%;
 						    left: 47%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
-									background: @redColor;
+									background: @yellowColor;
 									height: @pointSize;
 							    width: @pointSize;
-							    border: @borderRedBorn;
+							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderRed;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							// 
 							.point77{
 								position: absolute;
 						    top: 6%;
 						    right: 31%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
 									background: @yellowColor;
@@ -1558,15 +2374,23 @@
 							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderYellow;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							.point78{
 								position: absolute;
 						    top: 12.5%;
 						    right: 27%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
 									background: @yellowColor;
@@ -1575,15 +2399,23 @@
 							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderYellow;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							.point79{
 								position: absolute;
 						    top: 17%;
 						    right: 31.5%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
 									background: @yellowColor;
@@ -1592,15 +2424,23 @@
 							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderYellow;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							.point80{
 								position: absolute;
 						    top: 22%;
 						    right: 31.5%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
 									background: @yellowColor;
@@ -1609,15 +2449,23 @@
 							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderYellow;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							.point81{
 								position: absolute;
 						    top: 26.5%;
 						    right: 31.5%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
 									background: @yellowColor;
@@ -1626,15 +2474,48 @@
 							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderYellow;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
+							}
+							.point1909{
+								position: absolute;
+						    top: 28%;
+						    right: 29%;
+						    width: 17px;
+    						height: 17px;
+								div{
+									margin: auto;
+									background: @yellowColor;
+									height: @pointSize;
+							    width: @pointSize;
+							    border: @borderYellowBorn;
+							    border-radius: 50%;
+							    cursor: pointer;
+				    			opacity: 0.4;
+								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							.point82{
 								position: absolute;
 						    top: 32%;
 						    right: 28%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
 									background: @yellowColor;
@@ -1643,15 +2524,23 @@
 							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderYellow;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							.point83{
 								position: absolute;
 						    top: 36%;
 						    right: 32%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
 									background: @yellowColor;
@@ -1660,15 +2549,23 @@
 							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderYellow;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							.point84{
 								position: absolute;
 								top: 40.5%;
 						    right: 32%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
 									background: @yellowColor;
@@ -1677,15 +2574,23 @@
 							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderYellow;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							.point85{
 								position: absolute;
 								top: 45%;
 						    right: 32%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
 									background: @yellowColor;
@@ -1694,15 +2599,23 @@
 							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderYellow;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							.point86{
 								position: absolute;
 								top: 50%;
 						    right: 31%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
 									background: @yellowColor;
@@ -1711,15 +2624,23 @@
 							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderYellow;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							.point87{
 								position: absolute;
 						    top: 53.5%;
 						    right: 33%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
 									background: @yellowColor;
@@ -1728,15 +2649,23 @@
 							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderYellow;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							.point88{
 								position: absolute;
 						    top: 57.5%;
 						    right: 33%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
 									background: @yellowColor;
@@ -1745,15 +2674,23 @@
 							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderYellow;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							.point89{
 								position: absolute;
 								top: 61.5%;
 						    right: 33%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
 									background: @yellowColor;
@@ -1762,15 +2699,48 @@
 							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderYellow;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
+							}
+							.point1910{
+								position: absolute;
+								top: 66%;
+						    right: 31%;
+						    width: 17px;
+    						height: 17px;
+								div{
+									margin: auto;
+									background: @yellowColor;
+									height: @pointSize;
+							    width: @pointSize;
+							    border: @borderYellowBorn;
+							    border-radius: 50%;
+							    cursor: pointer;
+				    			opacity: 0.4;
+								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							.point90{
 								position: absolute;
-								top: 67%;
-						    right: 31%;
+								top: 68%;
+						    right: 30%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
 									background: @yellowColor;
@@ -1779,15 +2749,23 @@
 							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderYellow;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							.point91{
 								position: absolute;
 						    top: 71%;
 						    right: 31.5%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
 									background: @yellowColor;
@@ -1796,15 +2774,23 @@
 							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderYellow;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							.point92{
 								position: absolute;
 								top: 76%;
 						    right: 30%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
 									background: @yellowColor;
@@ -1813,15 +2799,23 @@
 							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderYellow;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							.point93{
 								position: absolute;
 						    top: 81%;
 						    right: 28.5%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
 									background: @yellowColor;
@@ -1830,15 +2824,23 @@
 							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderYellow;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							.point94{
 								position: absolute;
 								top: 86%;
 						    right: 27.5%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
 									background: @yellowColor;
@@ -1847,15 +2849,23 @@
 							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderYellow;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							.point95{
 								position: absolute;
 						    top: 91%;
 						    right: 26%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
 									background: @yellowColor;
@@ -1864,340 +2874,550 @@
 							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderYellow;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							// 
 							.point96{
 								position: absolute;
 								top: 5%;
     						right: 18.5%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
-									background: @redColor;
+									background: @yellowColor;
 									height: @pointSize;
 							    width: @pointSize;
-							    border: @borderRedBorn;
+							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderRed;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							.point97{
 								position: absolute;
 						    top: 10.5%;
     						right: 12.5%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
-									background: @redColor;
+									background: @yellowColor;
 									height: @pointSize;
 							    width: @pointSize;
-							    border: @borderRedBorn;
+							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderRed;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							.point98{
 								position: absolute;
 						    top: 15.5%;
     						right: 20.5%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
-									background: @redColor;
+									background: @yellowColor;
 									height: @pointSize;
 							    width: @pointSize;
-							    border: @borderRedBorn;
+							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderRed;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							.point99{
 								position: absolute;
 						    top: 20%;
     						right: 19.5%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
-									background: @redColor;
+									background: @yellowColor;
 									height: @pointSize;
 							    width: @pointSize;
-							    border: @borderRedBorn;
+							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderRed;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							.point100{
 								position: absolute;
 						    top: 24.5%;
     						right: 19.5%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
-									background: @redColor;
+									background: @yellowColor;
 									height: @pointSize;
 							    width: @pointSize;
-							    border: @borderRedBorn;
+							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderRed;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
+							}
+							.point1911{
+								position: absolute;
+								top: 26%;
+    						right: 15.5%;
+						    width: 17px;
+    						height: 17px;
+								div{
+									margin: auto;
+									background: @yellowColor;
+									height: @pointSize;
+							    width: @pointSize;
+							    border: @borderYellowBorn;
+							    border-radius: 50%;
+							    cursor: pointer;
+				    			opacity: 0.4;
+								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							.point101{
 								position: absolute;
 								top: 29%;
     						right: 13.5%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
-									background: @redColor;
+									background: @yellowColor;
 									height: @pointSize;
 							    width: @pointSize;
-							    border: @borderRedBorn;
+							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderRed;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							.point102{
 								position: absolute;
 						    top: 33.5%;
     						right: 20.5%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
-									background: @redColor;
+									background: @yellowColor;
 									height: @pointSize;
 							    width: @pointSize;
-							    border: @borderRedBorn;
+							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderRed;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							.point103{
 								position: absolute;
 						    top: 38%;
     						right: 20.5%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
-									background: @redColor;
+									background: @yellowColor;
 									height: @pointSize;
 							    width: @pointSize;
-							    border: @borderRedBorn;
+							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderRed;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							.point104{
 								position: absolute;
 						    top: 42%;
     						right: 20%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
-									background: @redColor;
+									background: @yellowColor;
 									height: @pointSize;
 							    width: @pointSize;
-							    border: @borderRedBorn;
+							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderRed;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							.point105{
 								position: absolute;
 						    top: 46%;
     						right: 16.5%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
-									background: @redColor;
+									background: @yellowColor;
 									height: @pointSize;
 							    width: @pointSize;
-							    border: @borderRedBorn;
+							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderRed;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							.point106{
 								position: absolute;
 						    top: 50.5%;
     						right: 21.5%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
-									background: @redColor;
+									background: @yellowColor;
 									height: @pointSize;
 							    width: @pointSize;
-							    border: @borderRedBorn;
+							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderRed;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							.point107{
 								position: absolute;
 						    top: 54%;
     						right: 21.5%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
-									background: @redColor;
+									background: @yellowColor;
 									height: @pointSize;
 							    width: @pointSize;
-							    border: @borderRedBorn;
+							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderRed;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							.point108{
 								position: absolute;
 								top: 58%;
     						right: 21.5%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
-									background: @redColor;
+									background: @yellowColor;
 									height: @pointSize;
 							    width: @pointSize;
-							    border: @borderRedBorn;
+							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderRed;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
+							}
+							.point1912{
+								position: absolute;
+						    top: 61.5%;
+    						right: 20.5%;
+						    width: 17px;
+    						height: 17px;
+								div{
+									margin: auto;
+									background: @yellowColor;
+									height: @pointSize;
+							    width: @pointSize;
+							    border: @borderYellowBorn;
+							    border-radius: 50%;
+							    cursor: pointer;
+				    			opacity: 0.4;
+								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							.point109{
 								position: absolute;
 						    top: 62.5%;
-    						right: 18.5%;
+    						right: 17.5%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
-									background: @redColor;
+									background: @yellowColor;
 									height: @pointSize;
 							    width: @pointSize;
-							    border: @borderRedBorn;
+							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderRed;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							.point110{
 								position: absolute;
 						    top: 67%;
     						right: 19.5%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
-									background: @redColor;
+									background: @yellowColor;
 									height: @pointSize;
 							    width: @pointSize;
-							    border: @borderRedBorn;
+							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderRed;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							.point111{
 								position: absolute;
 						    top: 71%;
     						right: 17.5%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
-									background: @redColor;
+									background: @yellowColor;
 									height: @pointSize;
 							    width: @pointSize;
-							    border: @borderRedBorn;
+							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderRed;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							.point112{
 								position: absolute;
 						    top: 75%;
     						right: 15%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
-									background: @redColor;
+									background: @yellowColor;
 									height: @pointSize;
 							    width: @pointSize;
-							    border: @borderRedBorn;
+							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderRed;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							.point113{
 								position: absolute;
 						    top: 79.5%;
     						right: 12.5%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
-									background: @redColor;
+									background: @yellowColor;
 									height: @pointSize;
 							    width: @pointSize;
-							    border: @borderRedBorn;
+							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderRed;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							.point114{
 								position: absolute;
 						    top: 84%;
     						right: 10.5%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
-									background: @redColor;
+									background: @yellowColor;
 									height: @pointSize;
 							    width: @pointSize;
-							    border: @borderRedBorn;
+							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderRed;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							// 
 							.point115{
 								position: absolute;
 						    top: 4%;
 						    right: 15%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
 									background: @yellowColor;
@@ -2206,15 +3426,23 @@
 							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderYellow;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							.point116{
 								position: absolute;
 						    top: 9%;
 						    right: 9%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
 									background: @yellowColor;
@@ -2223,15 +3451,23 @@
 							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderYellow;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							.point117{
 								position: absolute;
 						    top: 14%;
 						    right: 15%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
 									background: @yellowColor;
@@ -2240,15 +3476,23 @@
 							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderYellow;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							.point118{
 								position: absolute;
 						    top: 18%;
 						    right: 15%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
 									background: @yellowColor;
@@ -2257,15 +3501,23 @@
 							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderYellow;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							.point119{
 								position: absolute;
 						    top: 22%;
 						    right: 15%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
 									background: @yellowColor;
@@ -2274,15 +3526,48 @@
 							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderYellow;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
+							}
+							.point1913{
+								position: absolute;
+						    top: 23%;
+						    right: 13%;
+						    width: 17px;
+    						height: 17px;
+								div{
+									margin: auto;
+									background: @yellowColor;
+									height: @pointSize;
+							    width: @pointSize;
+							    border: @borderYellowBorn;
+							    border-radius: 50%;
+							    cursor: pointer;
+				    			opacity: 0.4;
+								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							.point120{
 								position: absolute;
 						    top: 26%;
 						    right: 10%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
 									background: @yellowColor;
@@ -2291,15 +3576,23 @@
 							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderYellow;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							.point121{
 								position: absolute;
 						    top: 31%;
 						    right: 16%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
 									background: @yellowColor;
@@ -2308,15 +3601,23 @@
 							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderYellow;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							.point122{
 								position: absolute;
 								top: 35%;
 						    right: 16%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
 									background: @yellowColor;
@@ -2325,15 +3626,23 @@
 							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderYellow;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							.point123{
 								position: absolute;
 								top: 39%;
 						    right: 16%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
 									background: @yellowColor;
@@ -2342,15 +3651,23 @@
 							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderYellow;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							.point124{
 								position: absolute;
 								top: 43%;
 						    right: 13%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
 									background: @yellowColor;
@@ -2359,15 +3676,23 @@
 							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderYellow;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							.point125{
 								position: absolute;
 						    top: 48%;
 						    right: 17%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
 									background: @yellowColor;
@@ -2376,15 +3701,23 @@
 							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderYellow;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							.point126{
 								position: absolute;
 						    top: 51%;
 						    right: 17%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
 									background: @yellowColor;
@@ -2393,15 +3726,23 @@
 							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderYellow;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							.point127{
 								position: absolute;
 								top: 55%;
 						    right: 17%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
 									background: @yellowColor;
@@ -2410,15 +3751,48 @@
 							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderYellow;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
+							}
+							.point1914{
+								position: absolute;
+								top: 57%;
+						    right: 16%;
+						    width: 17px;
+    						height: 17px;
+								div{
+									margin: auto;
+									background: @yellowColor;
+									height: @pointSize;
+							    width: @pointSize;
+							    border: @borderYellowBorn;
+							    border-radius: 50%;
+							    cursor: pointer;
+				    			opacity: 0.4;
+								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							.point128{
 								position: absolute;
 								top: 59%;
 						    right: 14%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
 									background: @yellowColor;
@@ -2427,15 +3801,23 @@
 							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderYellow;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							.point129{
 								position: absolute;
 						    top: 62%;
 						    right: 15%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
 									background: @yellowColor;
@@ -2444,15 +3826,23 @@
 							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderYellow;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							.point130{
 								position: absolute;
 								top: 65%;
 						    right: 13%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
 									background: @yellowColor;
@@ -2461,15 +3851,23 @@
 							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderYellow;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							.point131{
 								position: absolute;
 						    top: 69%;
 						    right: 11%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
 									background: @yellowColor;
@@ -2478,15 +3876,23 @@
 							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderYellow;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							.point132{
 								position: absolute;
 								top: 73%;
 						    right: 9%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
 									background: @yellowColor;
@@ -2495,15 +3901,23 @@
 							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderYellow;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 							.point133{
 								position: absolute;
 						    top: 76%;
 						    right: 7%;
+						    width: 17px;
+    						height: 17px;
 								div{
 									margin: auto;
 									background: @yellowColor;
@@ -2512,10 +3926,16 @@
 							    border: @borderYellowBorn;
 							    border-radius: 50%;
 							    cursor: pointer;
-							    &:hover{
-							    	border:@borderYellow;
-							    }
+				    			opacity: 0.4;
 								}
+						    &:hover{
+						    	div{
+							    	border:@hoverBorderColor;
+										background: @hoverBackground;
+										display: block;
+				    				opacity: 1;
+						    	}
+						    }
 							}
 				    // }
 					}
@@ -2523,36 +3943,52 @@
 	    }
     }
 		.doBox{
-			overflow: hidden;
-	    position: absolute;
-    	width: 100%;
-    	bottom: 0;
+			// overflow: hidden;
+	  //   position: absolute;
+   //  	width: 100%;
+   //  	bottom: 50%;
 			.left{
-				width: 50%;
-				background: #a4e800;
+				width: 3rem;
+				// background: #a4e800;
 				line-height: 3rem;
 				text-align: center;
-				float: left;
+				// float: left;
 				cursor: pointer;
-				font-size: 1.0rem;
-				color: #fff;
+				font-size: 2.0rem;
+				color: #ff9105;
+    		display: none;
+		    position: absolute;
+	    	bottom: 50%;
+	    	left: 0;
 			}
 			.right{
-				width: 50%;
-				background: #96d400;
+				width: 3rem;
+				// background: #96d400;
 				line-height: 3rem;
 				text-align: center;
 				float: right;
 				cursor: pointer;
-				font-size: 1.0rem;
-				color: #fff;
+				font-size: 2.0rem;
+				color: #ff9105;
+    		display: none;
+		    position: absolute;
+	    	bottom: 50%;
+	    	right: 0;
+			}
+		}
+		&:hover{
+			.doBox{
+				.left,
+				.right{
+					display: block;
+				}
 			}
 		}
 	}
 }
 .menuBox{
 	overflow:hidden;
-	margin-top: 1rem;
+	// margin-top: 1rem;
 	// width: 800px;
 	// min-width: 400px;
 	// max-width: 450px;

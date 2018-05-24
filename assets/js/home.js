@@ -4,192 +4,13 @@
 	var base=[];
 	var targetBase;
 	var targetId = 1;
-	var pointBase = [];
-	var targetPointId;
-	var order;
 	var baseImgUrl;
-	var usedPoint1 = [42,44,46,52,54,57,99,101,103,109,111,114,156,158,160,166,168,171,213,215,217,223,225,228]
-	var usedPoint2 = [1,2,4,6,8,20,21,23,25,27,39,40,42,44,46,58,59,61,63,65,77,78,80,82,84,96,97,99,101,103,115,116,118,120,122,134,135,137,139,141,153,154,156,158,160,172,173,175,177,179,191,192,194,196,198,210,211,213,215,217]
-	var usedPoint3 = [39,40,44,96,97,101,153,154,158,210,211,215]
-	var usedPoint4 = [153,171]
-	var usedPoint = []
 	// 选择视图
 	var MenuSelect = function(id){
 		$(id).siblings().removeClass('menuSelected');
 		$(id).addClass('menuSelected');
 	}
 	// var baseImgTag = '<img class="base" id="baseImg" src="'+baseImgUrl+'" />'
-	// 定义点渲染变量
-	var BuildPointBase = function(wacthType){
-		// console.log(wacthType);
-		// console.log(targetId);
-		// 清空点位
-		$('#accurate').empty();
-		if([1,2,3,4].indexOf(wacthType)!=-1&&targetId===1){
-			var a=0;
-			for(var i=0; i<133;i++){
-				var pointList = {};
-				a++;
-				pointList['id'] = a;
-				pointList['isUse'] = 0;
-				pointList['pointId'] = a;
-				pointBase[i] = pointList;
-				ConfigPointUsed(i,a);
-			}
-		} else if([1,2,3,4].indexOf(wacthType)!=-1&&targetId!=1){
-			// console.log('渲染点')
-			if(targetId===2){
-				var a=19;
-		  	for(var i=0;i<133; i++){
-					// var pointList = {};
-					a++;
-					pointBase[i]['pointId'] = a;
-					ConfigPointUsed(i,a);
-		  	}
-			} else if (targetId===3){
-				var a=38;
-		  	for(var i=0;i<133; i++){
-					// var pointList = {};
-					a++;
-					pointBase[i]['pointId'] = a;
-					ConfigPointUsed(i,a);
-		  	}
-			} else if (targetId===4){
-				var a=57;
-		  	for(var i=0;i<133; i++){
-					// var pointList = {};
-					a++;
-					pointBase[i]['pointId'] = a;
-					ConfigPointUsed(i,a);
-		  	}
-			} else if (targetId===5){
-				var a=76;
-		  	for(var i=0;i<133; i++){
-					// var pointList = {};
-					a++;
-					pointBase[i]['pointId'] = a;
-					ConfigPointUsed(i,a);
-		  	}
-			} else if (targetId===6){
-				var a=95;
-		  	for(var i=0;i<133; i++){
-					// var pointList = {};
-					a++;
-					pointBase[i]['pointId'] = a;
-					ConfigPointUsed(i,a);
-		  	}
-			} else if (targetId===7){
-				var a=114;
-		  	for(var i=0;i<114; i++){
-					// var pointList = {};
-					a++;
-					pointBase[i]['pointId'] = a;
-					ConfigPointUsed(i,a);
-		  	}
-		  	var b=0;
-		  	for(var i=114;i<133; i++){
-					b++;
-					pointBase[i]['pointId'] = a;
-					ConfigPointUsed(i,b);
-		  	}
-			} else if (targetId===8){
-				var a=133;
-		  	for(var i=0;i<95; i++){
-					// var pointList = {};
-					a++;
-					pointBase[i]['pointId'] = a;
-					ConfigPointUsed(i,a);
-		  	}
-		  	var b=0;
-		  	for(var i=95;i<133; i++){
-					b++;
-					pointBase[i]['pointId'] = a;
-					ConfigPointUsed(i,b);
-		  	}
-			} else if (targetId===9){
-				var a=152;
-		  	for(var i=0;i<76; i++){
-					// var pointList = {};
-					a++;
-					pointBase[i]['pointId'] = a;
-					ConfigPointUsed(i,a);
-		  	}
-			} else if (targetId===10){
-				var a=171;
-		  	for(var i=0;i<57; i++){
-					// var pointList = {};
-					a++;
-					pointBase[i]['pointId'] = a;
-					ConfigPointUsed(i,a);
-		  	}
-		  	var b=0;
-		  	for(var i=57;i<133; i++){
-					b++;
-					pointBase[i]['pointId'] = a;
-					ConfigPointUsed(i,b);
-		  	}
-			} else if (targetId===11){
-				var a=190;
-		  	for(var i=0;i<38; i++){
-					// var pointList = {};
-					a++;
-					pointBase[i]['pointId'] = a;
-					ConfigPointUsed(i,a);
-		  	}
-		  	var b=0;
-		  	for(var i=38;i<133; i++){
-					b++;
-					pointBase[i]['pointId'] = a;
-					ConfigPointUsed(i,b);
-		  	}
-			} else if (targetId===12){
-				var a=209;
-		  	for(var i=0;i<19; i++){
-					// var pointList = {};
-					a++;
-					pointBase[i]['pointId'] = a;
-					ConfigPointUsed(i,a);
-		  	}
-		  	var b=0;
-		  	for(var i=19;i<133; i++){
-					b++;
-					pointBase[i]['pointId'] = a;
-					ConfigPointUsed(i,b);
-		  	}
-		  	// console.log(pointBase);
-			}
-		}
-	}
-
-	// 配置是否启用点
-	var ConfigPointUsed = function(i,pointId){
-		if(wacthType===1){
-			usedPoint = usedPoint1;
-		} else if(wacthType === 2){
-			usedPoint = usedPoint2;
-		} else if(wacthType === 3){
-			usedPoint = usedPoint3;
-		} else if(wacthType === 4){
-			usedPoint = usedPoint4;
-		}
-		if(usedPoint.indexOf(pointId)!=-1){
-			pointBase[i]['isUse'] = 1;
-			var id = pointBase[i]['id'];
-			ConfigPointHtml(id,pointId);
-		} else {
-			pointBase[i]['isUse'] = 0;
-		}
-		// console.log(pointBase);
-	}
-
-	// 配置点位html
-	var ConfigPointHtml = function(id,pointId){
-		// 如果需要隐藏点位注释此处的poin
-		// var pointDiv = '<div class="point'+id+'"><div id="pointSelect'+id+'">'+pointId+'</div></div>';
-		var pointDiv = '<div class="point'+id+'"><div id="'+pointId+'"></div></div>';
-		// $('#accurate').empty();
-		$('#accurate').append(pointDiv);
-	}
 
 	// 预设基础图片
 	var BuildBaseImg = function(id,sType,wType){
@@ -258,11 +79,11 @@
 			}
 		}
 		// 配置渲染点
-		if([1,2,3,4].indexOf(wType)!=-1){
-			BuildPointBase(wType);
-		} else {
-			$('#accurate').empty();
-		}
+		// if([1,2,3,4].indexOf(wType)!=-1){
+		// 	BuildPointBase(wType);
+		// } else {
+		// 	$('#accurate').empty();
+		// }
 	}
 	BuildBaseImg(1,4);
 
@@ -306,19 +127,19 @@
 	// 配置加载等待窗口
 	var timer;
 	var WaitPage = function(){
+				// $('.waitBox').hide();
+		$('.waitBox').show();
+		$('#timeLast').text('4s');
+		var timeLast = 4;
+		timer = setInterval(function(){
+			timeLast--;
+			$('#timeLast').text(timeLast+'s');
+			if(timeLast<1){
 				$('.waitBox').hide();
-		// $('.waitBox').show();
-		// $('#timeLast').text('');
-		// var timeLast = 4;
-		// timer = setInterval(function(){
-		// 	timeLast--;
-		// 	$('#timeLast').text(timeLast+'s');
-		// 	if(timeLast<1){
-		// 		$('.waitBox').hide();
-		// 		clearInterval(timer);
-		// 		// console.log('gameOver');
-		// 	}
-		// },1000)
+				clearInterval(timer);
+				// console.log('gameOver');
+			}
+		},1000)
 	}
 	WaitPage();
 
@@ -386,18 +207,4 @@ $(document).ready(function(){
  		BaseImgSelect(targetId);
 	})
 
-	// 点击点位$('父元素').on('click','动态的子元素',function(){});
-	// $('#accurate').on('click','.point1',function(){
-	// 	// 获取子元素的id
-	// 	var childId = $('.point1').children().attr('id');
-	// 	console.log(childId);
-	// 	// alert('1');
-	// })
-
-	// $('#accurate').on('click','.point2',function(){
-	// 	// 获取子元素的id
-	// 	var childId = $('.point2').children().attr('id');
-	// 	console.log(childId);
-	// 	// alert('1');
-	// })
 });
