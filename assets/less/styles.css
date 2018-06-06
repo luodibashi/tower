@@ -1,16 +1,24 @@
+body {
+  /*    color: #00152f;
+    background-color: #eee;*/
+  font-family: "Open Sans", "Arial", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", "WenQuanYi Micro Hei";
+  font-size: 62.5%;
+  margin: 0;
+  padding: 0;
+}
 .selected div {
   border: 2px solid #00e809 !important;
   background: #00e809 !important;
   opacity: 1 !important;
 }
-.box {
+.towerBox {
   overflow: hidden;
 }
-.box .leftBox {
+.towerBox .leftBox {
   float: left;
   width: 200px;
 }
-.box .leftBox .menu {
+.towerBox .leftBox .menu {
   line-height: 3rem;
   text-align: center;
   background: #a9da88;
@@ -18,14 +26,14 @@
   color: #3f5236;
   border-bottom: 1px solid #92c57a;
 }
-.box .middle {
+.towerBox .towerMiddle {
   float: left;
   position: relative;
   width: 450px;
   height: 632px;
   overflow: hidden;
 }
-.box .middle .waitBox {
+.towerBox .towerMiddle .waitBox {
   position: absolute;
   top: 0;
   left: 0;
@@ -34,58 +42,58 @@
   background: #f1f1f1;
   z-index: 1;
 }
-.box .middle .waitBox .waitMiddle {
+.towerBox .towerMiddle .waitBox .waitMiddle {
   height: 100%;
   text-align: center;
 }
-.box .middle .waitBox .waitMiddle .waitText {
+.towerBox .towerMiddle .waitBox .waitMiddle .waitText {
   padding-top: 300px;
   font-size: 1.2rem;
   padding-bottom: 1rem;
 }
-.box .middle .waitBox .waitMiddle i {
+.towerBox .towerMiddle .waitBox .waitMiddle i {
   font-size: 2rem;
 }
-.box .middle .direction {
+.towerBox .towerMiddle .direction {
   position: absolute;
   right: 0.3rem;
   top: 0.3rem;
   z-index: 10;
 }
-.box .middle .direction .wide {
+.towerBox .towerMiddle .direction .wide {
   width: 4rem;
   height: 4rem;
   position: relative;
 }
-.box .middle .direction .wide .east {
+.towerBox .towerMiddle .direction .wide .east {
   position: absolute;
   top: 0;
   left: 1.6rem;
   color: #0f5213;
   font-weight: 700;
 }
-.box .middle .direction .wide .south {
+.towerBox .towerMiddle .direction .wide .south {
   position: absolute;
   right: 0;
   top: 1.4rem;
   color: #0f5213;
   font-weight: 700;
 }
-.box .middle .direction .wide .west {
+.towerBox .towerMiddle .direction .wide .west {
   position: absolute;
   bottom: 0;
   left: 1.6rem;
   color: #0f5213;
   font-weight: 700;
 }
-.box .middle .direction .wide .north {
+.towerBox .towerMiddle .direction .wide .north {
   position: absolute;
   left: 0;
   top: 1.4rem;
   color: #0f5213;
   font-weight: 700;
 }
-.box .middle .direction .wide i {
+.towerBox .towerMiddle .direction .wide i {
   line-height: 4rem;
   width: 4rem;
   text-align: center;
@@ -93,139 +101,139 @@
   color: #b1c763;
   transform: rotate(55deg);
 }
-.box .middle .direction .deg0 {
+.towerBox .towerMiddle .direction .deg0 {
   transform: rotate(0deg);
 }
-.box .middle .direction .deg0 .east,
-.box .middle .direction .deg0 .south,
-.box .middle .direction .deg0 .west,
-.box .middle .direction .deg0 .north {
+.towerBox .towerMiddle .direction .deg0 .east,
+.towerBox .towerMiddle .direction .deg0 .south,
+.towerBox .towerMiddle .direction .deg0 .west,
+.towerBox .towerMiddle .direction .deg0 .north {
   transform: rotate(-360deg);
 }
-.box .middle .direction .deg30 {
+.towerBox .towerMiddle .direction .deg30 {
   transform: rotate(30deg);
 }
-.box .middle .direction .deg30 .east,
-.box .middle .direction .deg30 .south,
-.box .middle .direction .deg30 .west,
-.box .middle .direction .deg30 .north {
+.towerBox .towerMiddle .direction .deg30 .east,
+.towerBox .towerMiddle .direction .deg30 .south,
+.towerBox .towerMiddle .direction .deg30 .west,
+.towerBox .towerMiddle .direction .deg30 .north {
   transform: rotate(-30deg);
 }
-.box .middle .direction .deg60 {
+.towerBox .towerMiddle .direction .deg60 {
   transform: rotate(60deg);
 }
-.box .middle .direction .deg60 .east,
-.box .middle .direction .deg60 .south,
-.box .middle .direction .deg60 .west,
-.box .middle .direction .deg60 .north {
+.towerBox .towerMiddle .direction .deg60 .east,
+.towerBox .towerMiddle .direction .deg60 .south,
+.towerBox .towerMiddle .direction .deg60 .west,
+.towerBox .towerMiddle .direction .deg60 .north {
   transform: rotate(-60deg);
 }
-.box .middle .direction .deg90 {
+.towerBox .towerMiddle .direction .deg90 {
   transform: rotate(90deg);
 }
-.box .middle .direction .deg90 .east,
-.box .middle .direction .deg90 .south,
-.box .middle .direction .deg90 .west,
-.box .middle .direction .deg90 .north {
+.towerBox .towerMiddle .direction .deg90 .east,
+.towerBox .towerMiddle .direction .deg90 .south,
+.towerBox .towerMiddle .direction .deg90 .west,
+.towerBox .towerMiddle .direction .deg90 .north {
   transform: rotate(-90deg);
 }
-.box .middle .direction .deg120 {
+.towerBox .towerMiddle .direction .deg120 {
   transform: rotate(120deg);
 }
-.box .middle .direction .deg120 .east,
-.box .middle .direction .deg120 .south,
-.box .middle .direction .deg120 .west,
-.box .middle .direction .deg120 .north {
+.towerBox .towerMiddle .direction .deg120 .east,
+.towerBox .towerMiddle .direction .deg120 .south,
+.towerBox .towerMiddle .direction .deg120 .west,
+.towerBox .towerMiddle .direction .deg120 .north {
   transform: rotate(-120deg);
 }
-.box .middle .direction .deg150 {
+.towerBox .towerMiddle .direction .deg150 {
   transform: rotate(150deg);
 }
-.box .middle .direction .deg150 .east,
-.box .middle .direction .deg150 .south,
-.box .middle .direction .deg150 .west,
-.box .middle .direction .deg150 .north {
+.towerBox .towerMiddle .direction .deg150 .east,
+.towerBox .towerMiddle .direction .deg150 .south,
+.towerBox .towerMiddle .direction .deg150 .west,
+.towerBox .towerMiddle .direction .deg150 .north {
   transform: rotate(-150deg);
 }
-.box .middle .direction .deg180 {
+.towerBox .towerMiddle .direction .deg180 {
   transform: rotate(180deg);
 }
-.box .middle .direction .deg180 .east,
-.box .middle .direction .deg180 .south,
-.box .middle .direction .deg180 .west,
-.box .middle .direction .deg180 .north {
+.towerBox .towerMiddle .direction .deg180 .east,
+.towerBox .towerMiddle .direction .deg180 .south,
+.towerBox .towerMiddle .direction .deg180 .west,
+.towerBox .towerMiddle .direction .deg180 .north {
   transform: rotate(-180deg);
 }
-.box .middle .direction .deg210 {
+.towerBox .towerMiddle .direction .deg210 {
   transform: rotate(210deg);
 }
-.box .middle .direction .deg210 .east,
-.box .middle .direction .deg210 .south,
-.box .middle .direction .deg210 .west,
-.box .middle .direction .deg210 .north {
+.towerBox .towerMiddle .direction .deg210 .east,
+.towerBox .towerMiddle .direction .deg210 .south,
+.towerBox .towerMiddle .direction .deg210 .west,
+.towerBox .towerMiddle .direction .deg210 .north {
   transform: rotate(-210deg);
 }
-.box .middle .direction .deg240 {
+.towerBox .towerMiddle .direction .deg240 {
   transform: rotate(240deg);
 }
-.box .middle .direction .deg240 .east,
-.box .middle .direction .deg240 .south,
-.box .middle .direction .deg240 .west,
-.box .middle .direction .deg240 .north {
+.towerBox .towerMiddle .direction .deg240 .east,
+.towerBox .towerMiddle .direction .deg240 .south,
+.towerBox .towerMiddle .direction .deg240 .west,
+.towerBox .towerMiddle .direction .deg240 .north {
   transform: rotate(-240deg);
 }
-.box .middle .direction .deg270 {
+.towerBox .towerMiddle .direction .deg270 {
   transform: rotate(270deg);
 }
-.box .middle .direction .deg270 .east,
-.box .middle .direction .deg270 .south,
-.box .middle .direction .deg270 .west,
-.box .middle .direction .deg270 .north {
+.towerBox .towerMiddle .direction .deg270 .east,
+.towerBox .towerMiddle .direction .deg270 .south,
+.towerBox .towerMiddle .direction .deg270 .west,
+.towerBox .towerMiddle .direction .deg270 .north {
   transform: rotate(-270deg);
 }
-.box .middle .direction .deg300 {
+.towerBox .towerMiddle .direction .deg300 {
   transform: rotate(300deg);
 }
-.box .middle .direction .deg300 .east,
-.box .middle .direction .deg300 .south,
-.box .middle .direction .deg300 .west,
-.box .middle .direction .deg300 .north {
+.towerBox .towerMiddle .direction .deg300 .east,
+.towerBox .towerMiddle .direction .deg300 .south,
+.towerBox .towerMiddle .direction .deg300 .west,
+.towerBox .towerMiddle .direction .deg300 .north {
   transform: rotate(-300deg);
 }
-.box .middle .direction .deg330 {
+.towerBox .towerMiddle .direction .deg330 {
   transform: rotate(330deg);
 }
-.box .middle .direction .deg330 .east,
-.box .middle .direction .deg330 .south,
-.box .middle .direction .deg330 .west,
-.box .middle .direction .deg330 .north {
+.towerBox .towerMiddle .direction .deg330 .east,
+.towerBox .towerMiddle .direction .deg330 .south,
+.towerBox .towerMiddle .direction .deg330 .west,
+.towerBox .towerMiddle .direction .deg330 .north {
   transform: rotate(-330deg);
 }
-.box .middle .content {
+.towerBox .towerMiddle .towerContent {
   position: absolute;
   left: -294px;
   top: -30px;
   width: 1024px;
   height: 663px;
 }
-.box .middle .content .side {
+.towerBox .towerMiddle .towerContent .side {
   position: relative;
 }
-.box .middle .content .side .base {
+.towerBox .towerMiddle .towerContent .side .base {
   display: none;
   width: 100%;
 }
-.box .middle .content .side .activation {
+.towerBox .towerMiddle .towerContent .side .activation {
   display: block;
 }
-.box .middle .content .side .pointBox {
+.towerBox .towerMiddle .towerContent .side .pointBox {
   position: absolute;
   left: 0;
   right: 0;
   top: 0;
   bottom: 0;
 }
-.box .middle .content .side .pointBox .accurate {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate {
   width: 42%;
   height: 88%;
   margin-left: 30.5%;
@@ -233,14 +241,14 @@
   overflow: hidden;
   position: relative;
 }
-.box .middle .content .side .pointBox .accurate .point1 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point1 {
   position: absolute;
   top: 4%;
   left: 11%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point1 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point1 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -250,20 +258,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point1:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point1:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point2 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point2 {
   position: absolute;
   top: 9%;
   left: 5%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point2 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point2 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -273,20 +281,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point2:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point2:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point3 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point3 {
   position: absolute;
   top: 14%;
   left: 11%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point3 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point3 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -296,20 +304,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point3:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point3:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point4 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point4 {
   position: absolute;
   top: 18%;
   left: 11%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point4 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point4 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -319,20 +327,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point4:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point4:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point5 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point5 {
   position: absolute;
   top: 22%;
   left: 11%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point5 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point5 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -342,20 +350,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point5:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point5:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point1901 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point1901 {
   position: absolute;
   top: 23%;
   left: 10%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point1901 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point1901 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -365,20 +373,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point1901:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point1901:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point6 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point6 {
   position: absolute;
   top: 26%;
   left: 6%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point6 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point6 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -388,20 +396,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point6:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point6:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point7 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point7 {
   position: absolute;
   top: 31%;
   left: 12%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point7 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point7 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -411,20 +419,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point7:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point7:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point8 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point8 {
   position: absolute;
   top: 35%;
   left: 12%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point8 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point8 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -434,20 +442,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point8:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point8:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point9 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point9 {
   position: absolute;
   top: 39%;
   left: 12%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point9 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point9 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -457,20 +465,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point9:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point9:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point10 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point10 {
   position: absolute;
   top: 43%;
   left: 9%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point10 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point10 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -480,20 +488,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point10:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point10:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point11 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point11 {
   position: absolute;
   top: 48%;
   left: 13%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point11 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point11 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -503,20 +511,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point11:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point11:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point12 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point12 {
   position: absolute;
   top: 51%;
   left: 13%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point12 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point12 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -526,20 +534,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point12:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point12:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point13 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point13 {
   position: absolute;
   top: 55%;
   left: 13%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point13 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point13 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -549,20 +557,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point13:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point13:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point1902 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point1902 {
   position: absolute;
   top: 56.5%;
   left: 11%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point1902 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point1902 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -572,20 +580,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point1902:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point1902:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point14 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point14 {
   position: absolute;
   top: 59%;
   left: 10%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point14 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point14 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -595,20 +603,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point14:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point14:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point15 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point15 {
   position: absolute;
   top: 62%;
   left: 11%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point15 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point15 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -618,20 +626,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point15:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point15:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point16 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point16 {
   position: absolute;
   top: 65%;
   left: 9%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point16 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point16 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -641,20 +649,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point16:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point16:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point17 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point17 {
   position: absolute;
   top: 69%;
   left: 7%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point17 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point17 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -664,20 +672,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point17:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point17:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point18 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point18 {
   position: absolute;
   top: 73%;
   left: 5%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point18 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point18 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -687,20 +695,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point18:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point18:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point19 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point19 {
   position: absolute;
   top: 76%;
   left: 4%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point19 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point19 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -710,20 +718,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point19:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point19:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point20 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point20 {
   position: absolute;
   top: 5%;
   left: 15%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point20 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point20 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -733,20 +741,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point20:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point20:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point21 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point21 {
   position: absolute;
   top: 10.5%;
   left: 9%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point21 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point21 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -756,20 +764,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point21:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point21:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point22 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point22 {
   position: absolute;
   top: 15%;
   left: 15%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point22 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point22 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -779,20 +787,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point22:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point22:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point23 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point23 {
   position: absolute;
   top: 19.5%;
   left: 15%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point23 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point23 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -802,20 +810,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point23:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point23:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point24 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point24 {
   position: absolute;
   top: 24.5%;
   left: 15.5%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point24 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point24 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -825,20 +833,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point24:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point24:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point1903 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point1903 {
   position: absolute;
   top: 25.5%;
   left: 12.5%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point1903 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point1903 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -848,20 +856,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point1903:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point1903:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point25 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point25 {
   position: absolute;
   top: 29%;
   left: 10%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point25 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point25 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -871,20 +879,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point25:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point25:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point26 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point26 {
   position: absolute;
   top: 33%;
   left: 15%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point26 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point26 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -894,20 +902,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point26:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point26:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point27 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point27 {
   position: absolute;
   top: 37.5%;
   left: 15.5%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point27 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point27 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -917,20 +925,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point27:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point27:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point28 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point28 {
   position: absolute;
   top: 42%;
   left: 17%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point28 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point28 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -940,20 +948,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point28:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point28:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point29 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point29 {
   position: absolute;
   top: 46%;
   left: 12%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point29 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point29 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -963,20 +971,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point29:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point29:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point30 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point30 {
   position: absolute;
   top: 50%;
   left: 18%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point30 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point30 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -986,20 +994,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point30:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point30:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point31 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point31 {
   position: absolute;
   top: 54%;
   left: 18%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point31 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point31 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -1009,20 +1017,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point31:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point31:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point32 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point32 {
   position: absolute;
   top: 58.5%;
   left: 18%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point32 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point32 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -1032,20 +1040,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point32:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point32:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point1904 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point1904 {
   position: absolute;
   top: 62%;
   left: 16%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point1904 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point1904 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -1055,20 +1063,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point1904:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point1904:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point33 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point33 {
   position: absolute;
   top: 63%;
   left: 14%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point33 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point33 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -1078,20 +1086,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point33:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point33:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point34 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point34 {
   position: absolute;
   top: 66.5%;
   left: 15.5%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point34 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point34 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -1101,20 +1109,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point34:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point34:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point35 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point35 {
   position: absolute;
   top: 71%;
   left: 13%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point35 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point35 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -1124,20 +1132,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point35:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point35:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point36 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point36 {
   position: absolute;
   top: 75.5%;
   left: 11%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point36 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point36 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -1147,20 +1155,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point36:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point36:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point37 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point37 {
   position: absolute;
   top: 80%;
   left: 9%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point37 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point37 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -1170,20 +1178,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point37:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point37:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point38 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point38 {
   position: absolute;
   top: 84%;
   left: 7%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point38 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point38 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -1193,20 +1201,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point38:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point38:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point39 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point39 {
   position: absolute;
   top: 6.5%;
   left: 26.5%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point39 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point39 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -1216,20 +1224,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point39:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point39:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point40 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point40 {
   position: absolute;
   top: 12%;
   left: 23%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point40 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point40 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -1239,20 +1247,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point40:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point40:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point41 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point41 {
   position: absolute;
   top: 16.5%;
   left: 27%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point41 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point41 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -1262,20 +1270,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point41:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point41:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point42 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point42 {
   position: absolute;
   top: 21.5%;
   left: 28%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point42 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point42 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -1285,20 +1293,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point42:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point42:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point43 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point43 {
   position: absolute;
   top: 26%;
   left: 28%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point43 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point43 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -1308,20 +1316,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point43:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point43:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point1905 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point1905 {
   position: absolute;
   top: 29%;
   left: 26%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point1905 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point1905 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -1331,20 +1339,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point1905:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point1905:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point44 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point44 {
   position: absolute;
   top: 32%;
   left: 24%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point44 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point44 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -1354,20 +1362,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point44:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point44:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point45 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point45 {
   position: absolute;
   top: 36%;
   left: 28.5%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point45 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point45 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -1377,20 +1385,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point45:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point45:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point46 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point46 {
   position: absolute;
   top: 40%;
   left: 28.5%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point46 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point46 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -1400,20 +1408,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point46:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point46:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point47 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point47 {
   position: absolute;
   top: 44.5%;
   left: 28.5%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point47 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point47 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -1423,20 +1431,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point47:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point47:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point48 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point48 {
   position: absolute;
   top: 50%;
   left: 26%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point48 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point48 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -1446,20 +1454,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point48:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point48:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point49 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point49 {
   position: absolute;
   top: 53.5%;
   left: 29%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point49 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point49 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -1469,20 +1477,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point49:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point49:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point50 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point50 {
   position: absolute;
   top: 57.5%;
   left: 29%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point50 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point50 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -1492,20 +1500,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point50:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point50:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point51 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point51 {
   position: absolute;
   top: 62%;
   left: 29%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point51 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point51 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -1515,20 +1523,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point51:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point51:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point1906 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point1906 {
   position: absolute;
   top: 65.5%;
   left: 28.5%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point1906 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point1906 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -1538,20 +1546,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point1906:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point1906:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point52 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point52 {
   position: absolute;
   top: 68%;
   left: 26.5%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point52 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point52 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -1561,20 +1569,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point52:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point52:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point53 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point53 {
   position: absolute;
   top: 71%;
   left: 27.5%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point53 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point53 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -1584,20 +1592,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point53:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point53:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point54 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point54 {
   position: absolute;
   top: 76.5%;
   left: 26%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point54 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point54 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -1607,20 +1615,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point54:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point54:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point55 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point55 {
   position: absolute;
   top: 81%;
   left: 25%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point55 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point55 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -1630,20 +1638,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point55:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point55:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point56 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point56 {
   position: absolute;
   top: 86%;
   left: 23.5%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point56 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point56 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -1653,20 +1661,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point56:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point56:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point57 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point57 {
   position: absolute;
   top: 91%;
   left: 22%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point57 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point57 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -1676,20 +1684,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point57:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point57:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point58 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point58 {
   position: absolute;
   top: 38px;
   left: 47%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point58 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point58 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -1699,20 +1707,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point58:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point58:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point59 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point59 {
   position: absolute;
   top: 13.5%;
   left: 47%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point59 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point59 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -1722,20 +1730,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point59:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point59:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point60 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point60 {
   position: absolute;
   top: 17.5%;
   left: 47%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point60 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point60 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -1745,20 +1753,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point60:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point60:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point61 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point61 {
   position: absolute;
   top: 22.5%;
   left: 47%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point61 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point61 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -1768,20 +1776,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point61:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point61:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point1907 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point1907 {
   position: absolute;
   top: 29.5%;
   left: 47%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point1907 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point1907 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -1791,20 +1799,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point1907:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point1907:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point62 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point62 {
   position: absolute;
   top: 27.5%;
   left: 47%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point62 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point62 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -1814,20 +1822,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point62:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point62:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point63 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point63 {
   position: absolute;
   top: 33%;
   left: 47%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point63 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point63 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -1837,20 +1845,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point63:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point63:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point64 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point64 {
   position: absolute;
   top: 37%;
   left: 47%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point64 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point64 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -1860,20 +1868,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point64:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point64:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point65 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point65 {
   position: absolute;
   top: 42%;
   left: 47%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point65 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point65 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -1883,20 +1891,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point65:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point65:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point66 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point66 {
   position: absolute;
   top: 46%;
   left: 47%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point66 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point66 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -1906,20 +1914,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point66:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point66:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point67 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point67 {
   position: absolute;
   top: 52%;
   left: 47%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point67 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point67 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -1929,20 +1937,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point67:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point67:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point68 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point68 {
   position: absolute;
   top: 55%;
   left: 47%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point68 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point68 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -1952,20 +1960,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point68:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point68:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point69 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point69 {
   position: absolute;
   top: 59%;
   left: 47%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point69 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point69 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -1975,20 +1983,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point69:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point69:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point70 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point70 {
   position: absolute;
   top: 64%;
   left: 47%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point70 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point70 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -1998,20 +2006,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point70:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point70:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point1908 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point1908 {
   position: absolute;
   top: 68%;
   left: 47%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point1908 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point1908 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -2021,20 +2029,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point1908:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point1908:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point71 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point71 {
   position: absolute;
   top: 69.5%;
   left: 47%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point71 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point71 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -2044,20 +2052,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point71:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point71:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point72 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point72 {
   position: absolute;
   top: 73%;
   left: 47%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point72 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point72 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -2067,20 +2075,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point72:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point72:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point73 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point73 {
   position: absolute;
   top: 79%;
   left: 47%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point73 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point73 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -2090,20 +2098,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point73:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point73:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point74 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point74 {
   position: absolute;
   top: 84%;
   left: 47%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point74 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point74 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -2113,20 +2121,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point74:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point74:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point75 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point75 {
   position: absolute;
   top: 89%;
   left: 47%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point75 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point75 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -2136,20 +2144,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point75:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point75:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point76 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point76 {
   position: absolute;
   top: 94%;
   left: 47%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point76 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point76 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -2159,20 +2167,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point76:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point76:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point77 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point77 {
   position: absolute;
   top: 6%;
   right: 31%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point77 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point77 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -2182,20 +2190,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point77:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point77:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point78 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point78 {
   position: absolute;
   top: 12.5%;
   right: 27%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point78 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point78 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -2205,20 +2213,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point78:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point78:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point79 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point79 {
   position: absolute;
   top: 17%;
   right: 31.5%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point79 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point79 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -2228,20 +2236,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point79:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point79:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point80 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point80 {
   position: absolute;
   top: 22%;
   right: 31.5%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point80 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point80 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -2251,20 +2259,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point80:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point80:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point81 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point81 {
   position: absolute;
   top: 26.5%;
   right: 31.5%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point81 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point81 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -2274,20 +2282,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point81:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point81:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point1909 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point1909 {
   position: absolute;
   top: 28%;
   right: 29%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point1909 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point1909 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -2297,20 +2305,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point1909:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point1909:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point82 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point82 {
   position: absolute;
   top: 32%;
   right: 28%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point82 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point82 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -2320,20 +2328,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point82:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point82:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point83 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point83 {
   position: absolute;
   top: 36%;
   right: 32%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point83 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point83 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -2343,20 +2351,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point83:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point83:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point84 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point84 {
   position: absolute;
   top: 40.5%;
   right: 32%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point84 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point84 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -2366,20 +2374,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point84:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point84:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point85 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point85 {
   position: absolute;
   top: 45%;
   right: 32%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point85 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point85 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -2389,20 +2397,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point85:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point85:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point86 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point86 {
   position: absolute;
   top: 50%;
   right: 31%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point86 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point86 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -2412,20 +2420,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point86:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point86:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point87 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point87 {
   position: absolute;
   top: 53.5%;
   right: 33%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point87 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point87 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -2435,20 +2443,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point87:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point87:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point88 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point88 {
   position: absolute;
   top: 57.5%;
   right: 33%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point88 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point88 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -2458,20 +2466,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point88:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point88:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point89 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point89 {
   position: absolute;
   top: 61.5%;
   right: 33%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point89 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point89 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -2481,20 +2489,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point89:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point89:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point1910 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point1910 {
   position: absolute;
   top: 66%;
   right: 31%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point1910 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point1910 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -2504,20 +2512,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point1910:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point1910:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point90 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point90 {
   position: absolute;
   top: 68%;
   right: 30%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point90 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point90 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -2527,20 +2535,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point90:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point90:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point91 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point91 {
   position: absolute;
   top: 71%;
   right: 31.5%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point91 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point91 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -2550,20 +2558,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point91:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point91:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point92 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point92 {
   position: absolute;
   top: 76%;
   right: 30%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point92 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point92 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -2573,20 +2581,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point92:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point92:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point93 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point93 {
   position: absolute;
   top: 81%;
   right: 28.5%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point93 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point93 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -2596,20 +2604,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point93:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point93:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point94 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point94 {
   position: absolute;
   top: 86%;
   right: 27.5%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point94 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point94 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -2619,20 +2627,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point94:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point94:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point95 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point95 {
   position: absolute;
   top: 91%;
   right: 26%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point95 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point95 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -2642,20 +2650,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point95:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point95:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point96 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point96 {
   position: absolute;
   top: 5%;
   right: 18.5%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point96 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point96 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -2665,20 +2673,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point96:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point96:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point97 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point97 {
   position: absolute;
   top: 10.5%;
   right: 12.5%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point97 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point97 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -2688,20 +2696,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point97:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point97:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point98 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point98 {
   position: absolute;
   top: 15.5%;
   right: 20.5%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point98 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point98 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -2711,20 +2719,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point98:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point98:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point99 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point99 {
   position: absolute;
   top: 20%;
   right: 19.5%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point99 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point99 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -2734,20 +2742,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point99:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point99:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point100 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point100 {
   position: absolute;
   top: 24.5%;
   right: 19.5%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point100 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point100 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -2757,20 +2765,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point100:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point100:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point1911 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point1911 {
   position: absolute;
   top: 26%;
   right: 15.5%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point1911 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point1911 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -2780,20 +2788,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point1911:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point1911:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point101 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point101 {
   position: absolute;
   top: 29%;
   right: 13.5%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point101 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point101 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -2803,20 +2811,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point101:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point101:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point102 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point102 {
   position: absolute;
   top: 33.5%;
   right: 20.5%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point102 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point102 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -2826,20 +2834,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point102:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point102:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point103 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point103 {
   position: absolute;
   top: 38%;
   right: 20.5%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point103 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point103 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -2849,20 +2857,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point103:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point103:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point104 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point104 {
   position: absolute;
   top: 42%;
   right: 20%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point104 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point104 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -2872,20 +2880,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point104:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point104:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point105 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point105 {
   position: absolute;
   top: 46%;
   right: 16.5%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point105 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point105 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -2895,20 +2903,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point105:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point105:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point106 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point106 {
   position: absolute;
   top: 50.5%;
   right: 21.5%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point106 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point106 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -2918,20 +2926,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point106:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point106:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point107 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point107 {
   position: absolute;
   top: 54%;
   right: 21.5%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point107 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point107 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -2941,20 +2949,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point107:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point107:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point108 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point108 {
   position: absolute;
   top: 58%;
   right: 21.5%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point108 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point108 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -2964,20 +2972,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point108:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point108:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point1912 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point1912 {
   position: absolute;
   top: 61.5%;
   right: 20.5%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point1912 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point1912 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -2987,20 +2995,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point1912:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point1912:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point109 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point109 {
   position: absolute;
   top: 62.5%;
   right: 17.5%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point109 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point109 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -3010,20 +3018,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point109:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point109:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point110 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point110 {
   position: absolute;
   top: 67%;
   right: 19.5%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point110 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point110 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -3033,20 +3041,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point110:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point110:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point111 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point111 {
   position: absolute;
   top: 71%;
   right: 17.5%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point111 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point111 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -3056,20 +3064,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point111:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point111:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point112 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point112 {
   position: absolute;
   top: 75%;
   right: 15%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point112 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point112 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -3079,20 +3087,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point112:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point112:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point113 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point113 {
   position: absolute;
   top: 79.5%;
   right: 12.5%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point113 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point113 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -3102,20 +3110,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point113:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point113:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point114 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point114 {
   position: absolute;
   top: 84%;
   right: 10.5%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point114 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point114 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -3125,20 +3133,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point114:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point114:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point115 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point115 {
   position: absolute;
   top: 4%;
   right: 15%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point115 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point115 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -3148,20 +3156,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point115:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point115:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point116 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point116 {
   position: absolute;
   top: 9%;
   right: 9%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point116 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point116 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -3171,20 +3179,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point116:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point116:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point117 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point117 {
   position: absolute;
   top: 14%;
   right: 15%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point117 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point117 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -3194,20 +3202,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point117:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point117:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point118 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point118 {
   position: absolute;
   top: 18%;
   right: 15%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point118 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point118 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -3217,20 +3225,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point118:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point118:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point119 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point119 {
   position: absolute;
   top: 22%;
   right: 15%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point119 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point119 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -3240,20 +3248,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point119:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point119:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point1913 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point1913 {
   position: absolute;
   top: 23%;
   right: 13%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point1913 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point1913 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -3263,20 +3271,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point1913:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point1913:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point120 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point120 {
   position: absolute;
   top: 26%;
   right: 10%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point120 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point120 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -3286,20 +3294,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point120:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point120:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point121 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point121 {
   position: absolute;
   top: 31%;
   right: 16%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point121 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point121 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -3309,20 +3317,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point121:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point121:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point122 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point122 {
   position: absolute;
   top: 35%;
   right: 16%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point122 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point122 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -3332,20 +3340,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point122:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point122:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point123 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point123 {
   position: absolute;
   top: 39%;
   right: 16%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point123 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point123 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -3355,20 +3363,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point123:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point123:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point124 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point124 {
   position: absolute;
   top: 43%;
   right: 13%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point124 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point124 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -3378,20 +3386,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point124:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point124:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point125 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point125 {
   position: absolute;
   top: 48%;
   right: 17%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point125 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point125 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -3401,20 +3409,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point125:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point125:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point126 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point126 {
   position: absolute;
   top: 51%;
   right: 17%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point126 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point126 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -3424,20 +3432,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point126:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point126:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point127 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point127 {
   position: absolute;
   top: 55%;
   right: 17%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point127 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point127 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -3447,20 +3455,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point127:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point127:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point1914 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point1914 {
   position: absolute;
   top: 57%;
   right: 16%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point1914 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point1914 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -3470,20 +3478,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point1914:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point1914:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point128 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point128 {
   position: absolute;
   top: 59%;
   right: 14%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point128 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point128 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -3493,20 +3501,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point128:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point128:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point129 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point129 {
   position: absolute;
   top: 62%;
   right: 15%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point129 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point129 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -3516,20 +3524,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point129:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point129:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point130 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point130 {
   position: absolute;
   top: 65%;
   right: 13%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point130 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point130 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -3539,20 +3547,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point130:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point130:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point131 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point131 {
   position: absolute;
   top: 69%;
   right: 11%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point131 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point131 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -3562,20 +3570,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point131:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point131:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point132 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point132 {
   position: absolute;
   top: 73%;
   right: 9%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point132 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point132 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -3585,20 +3593,20 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point132:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point132:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .content .side .pointBox .accurate .point133 {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point133 {
   position: absolute;
   top: 76%;
   right: 7%;
   width: 17px;
   height: 17px;
 }
-.box .middle .content .side .pointBox .accurate .point133 div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point133 div {
   margin: auto;
   background: #9c9c9c;
   height: 13px;
@@ -3608,13 +3616,13 @@
   cursor: pointer;
   opacity: 0.4;
 }
-.box .middle .content .side .pointBox .accurate .point133:hover div {
+.towerBox .towerMiddle .towerContent .side .pointBox .accurate .point133:hover div {
   border: 2px solid #00e809;
   background: #00e809;
   display: block;
   opacity: 1;
 }
-.box .middle .doBox .left {
+.towerBox .towerMiddle .towerDoBox .left {
   width: 3rem;
   line-height: 3rem;
   text-align: center;
@@ -3626,7 +3634,7 @@
   bottom: 50%;
   left: 0;
 }
-.box .middle .doBox .right {
+.towerBox .towerMiddle .towerDoBox .right {
   width: 3rem;
   line-height: 3rem;
   text-align: center;
@@ -3639,8 +3647,8 @@
   bottom: 50%;
   right: 0;
 }
-.box .middle:hover .doBox .left,
-.box .middle:hover .doBox .right {
+.towerBox .towerMiddle:hover .towerDoBox .left,
+.towerBox .towerMiddle:hover .towerDoBox .right {
   display: block;
 }
 .menuBox {
