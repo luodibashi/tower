@@ -14,6 +14,8 @@
 	var usedPoint3 = [39,40,44,96,97,101,153,154,158,210,211,215]
 	// var usedPoint4 = [153,171]
 	var usedPoint = []
+	var usedCode3 = ['GNSS-A-01X','GNSS-B-01X','GNSS-E-01X','GNSS-A-04X','GNSS-B-04X','GNSS-E-04X','GNSS-A-03X','GNSS-B-03X','GNSS-E-03X','GNSS-A-02X','GNSS-B-02X','GNSS-E-02X']
+
 	// 选择视图
 	var MenuSelect = function(id){
 		$(id).siblings().removeClass('menuSelected');
@@ -335,8 +337,9 @@
 	var TargetPointValue = function(one,value){
 		$('#accurate').children().removeClass('selected');
 		$(one).addClass('selected');
-		checkedMonitor = value;
-		// console.log(checkedMonitor,one);
+		// checkedMonitor = value;
+		checkedMonitor = usedCode3[usedPoint3.indexOf(Number(value))];
+		// console.log(checkedMonitor);
 	}
 $(document).ready(function(){
 

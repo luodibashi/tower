@@ -14,6 +14,7 @@
 	// var usedPoint3 = [39,40,44,96,97,101,153,154,158,210,211,215]
 	var usedPoint4 = [153,171]
 	var usedPoint = []
+	var usedCode4 = ['QXZ-A-FS','QXZ-L-WD']
 	// 选择视图
 	var MenuSelect = function(id){
 		$(id).siblings().removeClass('menuSelected');
@@ -334,8 +335,9 @@
 	var TargetPointValue = function(one,value){
 		$('#accurate').children().removeClass('selected');
 		$(one).addClass('selected');
-		checkedMonitor = value;
-		// console.log(checkedMonitor,one);
+		// checkedMonitor = value;
+		checkedMonitor = usedCode4[usedPoint4.indexOf(Number(value))];
+		// console.log(checkedMonitor);
 	}
 
 $(document).ready(function(){
