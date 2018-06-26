@@ -3994,22 +3994,23 @@
 		}
 	}
 }
+@widthOne:450px;
 .menuBox{
 	overflow:hidden;
 	// margin-top: 1rem;
 	// width: 800px;
 	// min-width: 400px;
 	// max-width: 450px;
-	width: 450px;
+	width: @widthOne;
 	.one{
 		float: left;
-		width: 20%;
+		width: @widthOne/7;
     text-align: center;
-    font-size: 0.9rem;
+    font-size: 0.5rem;
     cursor: pointer;
     color: #9a5454;
     // line-height: 3rem;
-    height: 3rem;
+    height: 4rem;
 		background: #ececec;
 		display: table;
 		.middle{
@@ -4017,6 +4018,7 @@
 	    vertical-align: middle;
 	    text-align: center;
 	    width: 100%;
+      padding: 0 0.1rem;
 			.typeName{
 
 			}

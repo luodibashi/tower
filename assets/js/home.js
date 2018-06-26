@@ -1,5 +1,5 @@
 // alert('ddd')
-	var wacthType = 0; //0-home;1-strain;2-pressure;3-structure;4-weather;
+	var wacthType = 0; //0-home;1-strain;2-pressure;3-structure;4-weather;5-weatherUp;6-environment;
 	var showType = 4;
 	var base=[];
 	var targetBase;
@@ -181,6 +181,23 @@ $(document).ready(function(){
 		WaitPage();
 		MenuSelect('#weather');
 		wacthType = 4;
+		showType = 4;
+		targetId = 1;
+		BuildBaseImg(targetId,showType,wacthType);
+	})
+	$('#weatherUp').click(function(){
+		WaitPage();
+		MenuSelect('#weatherUp');
+		wacthType = 5;
+		showType = 5;
+		targetId = 1;
+		BuildBaseImg(targetId,showType,wacthType);
+	})
+	$('#environment').click(function(){
+		WaitPage();
+		MenuSelect('#environment');
+		wacthType = 6;
+		// 因为他的点位和4的类型一样，所以他们引用同一个源文件
 		showType = 4;
 		targetId = 1;
 		BuildBaseImg(targetId,showType,wacthType);

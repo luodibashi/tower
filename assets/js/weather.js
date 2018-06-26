@@ -1,6 +1,6 @@
 // alert('ddd')
 	var checkedMonitor;
-	var wacthType = 4; //0-home;1-strain;2-pressure;3-structure;4-weather;
+	var wacthType = 4; //0-home;1-strain;2-pressure;3-structure;4-weather;5-weatherUp;6-environment;
 	var showType = 4;
 	var base=[];
 	var targetBase;
@@ -12,9 +12,11 @@
 	// var usedPoint1 = [42,44,46,52,54,57,99,101,103,109,111,114,156,158,160,166,168,171,213,215,217,223,225,228]
 	// var usedPoint2 = [1,2,4,6,8,20,21,23,25,27,39,40,42,44,46,58,59,61,63,65,77,78,80,82,84,96,97,99,101,103,115,116,118,120,122,134,135,137,139,141,153,154,156,158,160,172,173,175,177,179,191,192,194,196,198,210,211,213,215,217]
 	// var usedPoint3 = [39,40,44,96,97,101,153,154,158,210,211,215]
-	var usedPoint4 = [153,171]
+	// var usedPoint4 = [153,171]
+	var usedPoint4 = [171]
 	var usedPoint = []
-	var usedCode4 = ['QXZ-A-FS','QXZ-L-WD']
+	var usedCode4 = ['QXZ-L-FS']
+	var wacthTypeArr = [1,2,3,4,5,6]
 	// 选择视图
 	var MenuSelect = function(id){
 		$(id).siblings().removeClass('menuSelected');
@@ -28,7 +30,7 @@
 		// console.log(targetId);
 		// 清空点位
 		$('#accurate').empty();
-		if([1,2,3,4].indexOf(wacthType)!=-1&&targetId===1){
+		if(wacthTypeArr.indexOf(wacthType)!=-1&&targetId===1){
 			var a=0;
 			for(var i=0; i<133;i++){
 				var pointList = {};
@@ -39,7 +41,7 @@
 				pointBase[i] = pointList;
 				ConfigPointUsed(i,a);
 			}
-		} else if([1,2,3,4].indexOf(wacthType)!=-1&&targetId!=1){
+		} else if(wacthTypeArr.indexOf(wacthType)!=-1&&targetId!=1){
 			// console.log('渲染点')
 			if(targetId===2){
 				var a=19;
@@ -267,7 +269,7 @@
 			}
 		}
 		// 配置渲染点
-		if([1,2,3,4].indexOf(wType)!=-1){
+		if(wacthTypeArr.indexOf(wType)!=-1){
 			BuildPointBase(wType);
 		} else {
 			$('#accurate').empty();

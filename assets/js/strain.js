@@ -20,6 +20,7 @@
 	var uesdCode1 = ['FOS-C-01','FOS-D-03','FOS-F-01','FOS-H-03','FOS-K-01','FOS-L-01','FOS-C-13','FOS-D-15','FOS-F-13','FOS-H-15','FOS-K-13','FOS-L-13','FOS-C-09','FOS-D-11','FOS-F-09','FOS-H-11','FOS-K-09','FOS-L-09','FOS-C-05','FOS-D-07','FOS-F-05','FOS-H-07','FOS-K-05','FOS-L-05'];
 	var childCode = ['FOS-D-01','FOS-H-01','FOS-D-13','FOS-H-13','FOS-D-09','FOS-H-09','FOS-D-05','FOS-H-05'];
 
+	var wacthTypeArr = [1,2,3,4,5,6]
 	// 选择视图
 	var MenuSelect = function(id){
 		$(id).siblings().removeClass('menuSelected');
@@ -33,7 +34,7 @@
 		// console.log(targetId);
 		// 清空点位
 		$('#accurate').empty();
-		if([1,2,3,4].indexOf(wacthType)!=-1&&targetId===1){
+		if(wacthTypeArr.indexOf(wacthType)!=-1&&targetId===1){
 			var a=0;
 			for(var i=0; i<133;i++){
 				var pointList = {};
@@ -56,7 +57,7 @@
 				childPointBase[i] = childPointList;
 				ConfigChildPointUsed(i,d);
 			}
-		} else if([1,2,3,4].indexOf(wacthType)!=-1&&targetId!=1){
+		} else if(wacthTypeArr.indexOf(wacthType)!=-1&&targetId!=1){
 			// console.log('渲染点')
 			if(targetId===2){
 				var a=19;
@@ -407,7 +408,7 @@
 			}
 		}
 		// 配置渲染点
-		if([1,2,3,4].indexOf(wType)!=-1){
+		if(wacthTypeArr.indexOf(wType)!=-1){
 			BuildPointBase(wType);
 		} else {
 			$('#accurate').empty();

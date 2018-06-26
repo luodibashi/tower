@@ -15,7 +15,7 @@
 	// var usedPoint4 = [153,171]
 	var usedPoint = []
 	var usedCode3 = ['GNSS-A-01X','GNSS-B-01X','GNSS-E-01X','GNSS-A-04X','GNSS-B-04X','GNSS-E-04X','GNSS-A-03X','GNSS-B-03X','GNSS-E-03X','GNSS-A-02X','GNSS-B-02X','GNSS-E-02X']
-
+	var wacthTypeArr = [1,2,3,4,5,6]
 	// 选择视图
 	var MenuSelect = function(id){
 		$(id).siblings().removeClass('menuSelected');
@@ -29,7 +29,7 @@
 		// console.log(targetId);
 		// 清空点位
 		$('#accurate').empty();
-		if([1,2,3,4].indexOf(wacthType)!=-1&&targetId===1){
+		if(wacthTypeArr.indexOf(wacthType)!=-1&&targetId===1){
 			var a=0;
 			for(var i=0; i<133;i++){
 				var pointList = {};
@@ -40,7 +40,7 @@
 				pointBase[i] = pointList;
 				ConfigPointUsed(i,a);
 			}
-		} else if([1,2,3,4].indexOf(wacthType)!=-1&&targetId!=1){
+		} else if(wacthTypeArr.indexOf(wacthType)!=-1&&targetId!=1){
 			// console.log('渲染点')
 			if(targetId===2){
 				var a=19;
@@ -268,7 +268,7 @@
 			}
 		}
 		// 配置渲染点
-		if([1,2,3,4].indexOf(wType)!=-1){
+		if(wacthTypeArr.indexOf(wType)!=-1){
 			BuildPointBase(wType);
 		} else {
 			$('#accurate').empty();

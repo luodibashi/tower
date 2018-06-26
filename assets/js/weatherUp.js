@@ -1,7 +1,7 @@
 // alert('ddd')
 	var checkedMonitor;
-	var wacthType = 2; //0-home;1-strain;2-pressure;3-structure;4-weather;
-	var showType = 2;
+	var wacthType = 5; //0-home;1-strain;2-pressure;3-structure;4-weather;5-weatherUp;6-environment;
+	var showType = 5;
 	var base=[];
 	var targetBase;
 	var targetId = 1;
@@ -10,21 +10,19 @@
 	var order;
 	var baseImgUrl;
 	// var usedPoint1 = [42,44,46,52,54,57,99,101,103,109,111,114,156,158,160,166,168,171,213,215,217,223,225,228]
-	var usedPoint2 = [1,2,4,6,8,20,21,23,25,27,39,40,42,44,46,58,59,61,63,65,77,78,80,82,84,96,97,99,101,103,115,116,118,120,122,134,135,137,139,141,153,154,156,158,160,172,173,175,177,179,191,192,194,196,198,210,211,213,215,217]
+	// var usedPoint2 = [1,2,4,6,8,20,21,23,25,27,39,40,42,44,46,58,59,61,63,65,77,78,80,82,84,96,97,99,101,103,115,116,118,120,122,134,135,137,139,141,153,154,156,158,160,172,173,175,177,179,191,192,194,196,198,210,211,213,215,217]
 	// var usedPoint3 = [39,40,44,96,97,101,153,154,158,210,211,215]
 	// var usedPoint4 = [153,171]
+	var usedPoint5 = [153]
 	var usedPoint = []
-	// console.log(usedPoint2.length);
-	var uesdCode2 = ['FY-A-03','FY-B-03','FY-C-03','FY-E-03','FY-F-03','FY-A-02','FY-B-02','FY-C-02','FY-E-02','FY-F-02','FY-A-01','FY-B-01','FY-C-01','FY-E-01','FY-F-01','FY-A-12','FY-B-12','FY-C-12','FY-E-12','FY-F-12','FY-A-11','FY-B-11','FY-C-11','FY-E-11','FY-F-11','FY-A-10','FY-B-10','FY-C-10','FY-E-10','FY-F-10','FY-A-09','FY-B-09','FY-C-09','FY-E-09','FY-F-09','FY-A-08','FY-B-08','FY-C-08','FY-E-08','FY-F-08','FY-A-07','FY-B-07','FY-C-07','FY-E-07','FY-F-07','FY-A-06','FY-B-06','FY-C-06','FY-E-06','FY-F-06','FY-A-05','FY-B-05','FY-C-05','FY-E-05','FY-F-05','FY-A-04','FY-B-04','FY-C-04','FY-E-04','FY-F-04']; 
-
+	var usedCode5 = ['QXZ-A-FS']
 	var wacthTypeArr = [1,2,3,4,5,6]
-	// console.log(uesdCode2.length);
 	// 选择视图
 	var MenuSelect = function(id){
 		$(id).siblings().removeClass('menuSelected');
 		$(id).addClass('menuSelected');
 	}
-	MenuSelect('#pressure');
+	MenuSelect('#weatherUp')
 	// var baseImgTag = '<img class="base" id="baseImg" src="'+baseImgUrl+'" />'
 	// 定义点渲染变量
 	var BuildPointBase = function(wacthType){
@@ -184,6 +182,10 @@
 			usedPoint = usedPoint3;
 		} else if(wacthType === 4){
 			usedPoint = usedPoint4;
+		} else if(wacthType === 5){
+			usedPoint = usedPoint5;
+		} else if(wacthType === 6){
+			usedPoint = usedPoint5;
 		}
 		if(usedPoint.indexOf(pointId)!=-1){
 			pointBase[i]['isUse'] = 1;
@@ -277,8 +279,7 @@
 			$('#accurate').empty();
 		}
 	}
-	// BuildBaseImg(1,4);
-	BuildBaseImg(targetId,showType,wacthType);
+	BuildBaseImg(1,5);
 
 	// 导航
 	var BaseImgSelect = function(id){
@@ -315,7 +316,7 @@
 		$('#direction').addClass('wide');
 		BuildBaseImg(id,showType,wacthType);
 	}
-	BaseImgSelect(1);
+	BuildBaseImg(targetId,showType,wacthType);
 
 	// 配置加载等待窗口
 	var timer;
@@ -340,15 +341,12 @@
 	var TargetPointValue = function(one,value){
 		$('#accurate').children().removeClass('selected');
 		$(one).addClass('selected');
-		// console.log(typeof(value));
-		checkedMonitor = uesdCode2[usedPoint2.indexOf(Number(value))];
-		// console.log(checkedMonitor);
 		// checkedMonitor = value;
-		// console.log(checkedMonitor,one);
+		checkedMonitor = usedCode5[usedPoint5.indexOf(Number(value))];
+		// console.log(checkedMonitor);
 	}
-$(document).ready(function(){
-	// 切换视图
 
+$(document).ready(function(){
 
 	// 向左
 	$('#left').click(function(){
@@ -359,8 +357,6 @@ $(document).ready(function(){
 		 	targetId--;
 		}
  		BaseImgSelect(targetId);
- 		// var childId = $('.point58').children().attr('id');
- 		// console.log(targetId+'-度-'+childId);
 	})
 
 	// 向右
