@@ -20,7 +20,7 @@
 	var uesdCode1 = ['FOS-C-01','FOS-D-03','FOS-F-01','FOS-H-03','FOS-K-01','FOS-L-01','FOS-C-13','FOS-D-15','FOS-F-13','FOS-H-15','FOS-K-13','FOS-L-13','FOS-C-09','FOS-D-11','FOS-F-09','FOS-H-11','FOS-K-09','FOS-L-09','FOS-C-05','FOS-D-07','FOS-F-05','FOS-H-07','FOS-K-05','FOS-L-05'];
 	var childCode = ['FOS-D-01','FOS-H-01','FOS-D-13','FOS-H-13','FOS-D-09','FOS-H-09','FOS-D-05','FOS-H-05'];
 
-	var wacthTypeArr = [1,2,3,4,5,6]
+	var wacthTypeArr = [1,2,3,4,5,6,7]
 	// 选择视图
 	var MenuSelect = function(id){
 		$(id).siblings().removeClass('menuSelected');
@@ -310,6 +310,12 @@
 			usedPoint = usedPoint3;
 		} else if(wacthType === 4){
 			usedPoint = usedPoint4;
+		} else if(wacthType === 5){
+			usedPoint = usedPoint5;
+		} else if(wacthType === 6){
+			usedPoint = usedPoint6;
+		} else if(wacthType === 7){
+			usedPoint = usedPoint7;
 		}
 		if(usedPoint.indexOf(pointId)!=-1){
 			pointBase[i]['isUse'] = 1;

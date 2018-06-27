@@ -1,7 +1,7 @@
 // alert('ddd')
 	var checkedMonitor;
-	var wacthType = 5; //0-home;1-strain;2-pressure;3-structure;4-weather;5-weatherUp;6-environment;
-	var showType = 5;
+	var wacthType = 7; //0-home;1-strain;2-pressure;3-structure;4-weather;7-temperature;
+	var showType = 1;
 	var base=[];
 	var targetBase;
 	var targetId = 1;
@@ -9,20 +9,25 @@
 	var targetPointId;
 	var order;
 	var baseImgUrl;
-	// var usedPoint1 = [42,44,46,52,54,57,99,101,103,109,111,114,156,158,160,166,168,171,213,215,217,223,225,228]
+	var usedPoint7 = [42,44,46,52,54,57,99,101,103,109,111,114,156,158,160,166,168,171,213,215,217,223,225,228]
+	// var usedPoint7 = [42,n,46,n,54,57,99,n,103,n,111,114,156,n,160,n,168,171,213,n,217,n,225,228]
 	// var usedPoint2 = [1,2,4,6,8,20,21,23,25,27,39,40,42,44,46,58,59,61,63,65,77,78,80,82,84,96,97,99,101,103,115,116,118,120,122,134,135,137,139,141,153,154,156,158,160,172,173,175,177,179,191,192,194,196,198,210,211,213,215,217]
 	// var usedPoint3 = [39,40,44,96,97,101,153,154,158,210,211,215]
 	// var usedPoint4 = [153,171]
-	var usedPoint5 = [153]
+	var childPointBase = [];
+	var childPoint = [1905,1906,1911,1912,1917,1918,1923,1924]
 	var usedPoint = []
-	var usedCode5 = ['QXZ-A-FS']
+
+	var uesdCode7 = ['FOT-C-01\'','FOT-D-01\'','FOT-F-01\'','FOT-H-01\'','FOT-K-01\'','FOT-L-01\'','FOT-C-04\'','FOT-D-04\'','FOT-F-04\'','FOT-H-04\'','FOT-K-04\'','FOT-L-04\'','FOT-C-03\'','FOT-D-03\'','FOT-F-03\'','FOT-H-03\'','FOT-K-03\'','FOT-L-03\'','FOT-C-02\'','FOT-D-02\'','FOT-F-02\'','FOT-H-02\'','FOT-K-02\'','FOT-L-02\''];
+	var childCode = ['FOT-D-01\'','FOT-H-01\'','FOT-D-04\'','FOT-H-04\'','FOT-D-03\'','FOT-H-03\'','FOT-D-02\'','FOT-H-02\''];
+
 	var wacthTypeArr = [1,2,3,4,5,6,7]
 	// 选择视图
 	var MenuSelect = function(id){
 		$(id).siblings().removeClass('menuSelected');
 		$(id).addClass('menuSelected');
 	}
-	MenuSelect('#weatherUp')
+	MenuSelect('#strain');
 	// var baseImgTag = '<img class="base" id="baseImg" src="'+baseImgUrl+'" />'
 	// 定义点渲染变量
 	var BuildPointBase = function(wacthType){
@@ -41,6 +46,18 @@
 				pointBase[i] = pointList;
 				ConfigPointUsed(i,a);
 			}
+			// 计算中间层
+			var d=1900;
+			for(var i=0; i<14; i++){
+				var childPointList = {};
+				d++;
+				// console.log(d);
+				childPointList['id'] = d;
+				childPointList['isUse'] = 0;
+				childPointList['pointId'] = d;
+				childPointBase[i] = childPointList;
+				ConfigChildPointUsed(i,d);
+			}
 		} else if(wacthTypeArr.indexOf(wacthType)!=-1&&targetId!=1){
 			// console.log('渲染点')
 			if(targetId===2){
@@ -51,6 +68,14 @@
 					pointBase[i]['pointId'] = a;
 					ConfigPointUsed(i,a);
 		  	}
+				// 计算中间层
+				// console.log(childPointBase)
+				var d=1902;
+				for(var i=0; i<14; i++){
+					d++;
+					childPointBase['pointId'] = d;
+					ConfigChildPointUsed(i,d);
+				}
 			} else if (targetId===3){
 				var a=38;
 		  	for(var i=0;i<133; i++){
@@ -59,6 +84,14 @@
 					pointBase[i]['pointId'] = a;
 					ConfigPointUsed(i,a);
 		  	}
+				// 计算中间层
+				// console.log(childPointBase)
+				var d=1904;
+				for(var i=0; i<14; i++){
+					d++;
+					childPointBase['pointId'] = d;
+					ConfigChildPointUsed(i,d);
+				}
 			} else if (targetId===4){
 				var a=57;
 		  	for(var i=0;i<133; i++){
@@ -67,6 +100,12 @@
 					pointBase[i]['pointId'] = a;
 					ConfigPointUsed(i,a);
 		  	}
+				var d=1906;
+				for(var i=0; i<14; i++){
+					d++;
+					childPointBase['pointId'] = d;
+					ConfigChildPointUsed(i,d);
+				}
 			} else if (targetId===5){
 				var a=76;
 		  	for(var i=0;i<133; i++){
@@ -75,6 +114,12 @@
 					pointBase[i]['pointId'] = a;
 					ConfigPointUsed(i,a);
 		  	}
+				var d=1908;
+				for(var i=0; i<14; i++){
+					d++;
+					childPointBase['pointId'] = d;
+					ConfigChildPointUsed(i,d);
+				}
 			} else if (targetId===6){
 				var a=95;
 		  	for(var i=0;i<133; i++){
@@ -83,6 +128,12 @@
 					pointBase[i]['pointId'] = a;
 					ConfigPointUsed(i,a);
 		  	}
+				var d=1910;
+				for(var i=0; i<14; i++){
+					d++;
+					childPointBase['pointId'] = d;
+					ConfigChildPointUsed(i,d);
+				}
 			} else if (targetId===7){
 				var a=114;
 		  	for(var i=0;i<114; i++){
@@ -97,6 +148,19 @@
 					pointBase[i]['pointId'] = a;
 					ConfigPointUsed(i,b);
 		  	}
+		  	// 计算中间层
+				var d=1912;
+				for(var i=0; i<12; i++){
+					d++;
+					childPointBase['pointId'] = d;
+					ConfigChildPointUsed(i,d);
+				}
+				var e=1900;
+				for(var i=12; i<14; i++){
+					e++;
+					childPointBase['pointId'] = e;
+					ConfigChildPointUsed(i,e);
+				}
 			} else if (targetId===8){
 				var a=133;
 		  	for(var i=0;i<95; i++){
@@ -111,6 +175,19 @@
 					pointBase[i]['pointId'] = a;
 					ConfigPointUsed(i,b);
 		  	}
+		  	// 计算中间层
+				var d=1914;
+				for(var i=0; i<10; i++){
+					d++;
+					childPointBase['pointId'] = d;
+					ConfigChildPointUsed(i,d);
+				}
+				var e=1900;
+				for(var i=10; i<14; i++){
+					e++;
+					childPointBase['pointId'] = e;
+					ConfigChildPointUsed(i,e);
+				}
 			} else if (targetId===9){
 				var a=152;
 		  	for(var i=0;i<76; i++){
@@ -125,6 +202,19 @@
 					pointBase[i]['pointId'] = a;
 					ConfigPointUsed(i,b);
 		  	}
+		  	// 计算中间层
+				var d=1916;
+				for(var i=0; i<8; i++){
+					d++;
+					childPointBase['pointId'] = d;
+					ConfigChildPointUsed(i,d);
+				}
+				var e=1900;
+				for(var i=8; i<14; i++){
+					e++;
+					childPointBase['pointId'] = e;
+					ConfigChildPointUsed(i,e);
+				}
 			} else if (targetId===10){
 				var a=171;
 		  	for(var i=0;i<57; i++){
@@ -139,6 +229,19 @@
 					pointBase[i]['pointId'] = a;
 					ConfigPointUsed(i,b);
 		  	}
+		  	// 计算中间层
+				var d=1918;
+				for(var i=0; i<6; i++){
+					d++;
+					childPointBase['pointId'] = d;
+					ConfigChildPointUsed(i,d);
+				}
+				var e=1900;
+				for(var i=6; i<14; i++){
+					e++;
+					childPointBase['pointId'] = e;
+					ConfigChildPointUsed(i,e);
+				}
 			} else if (targetId===11){
 				var a=190;
 		  	for(var i=0;i<38; i++){
@@ -153,6 +256,19 @@
 					pointBase[i]['pointId'] = a;
 					ConfigPointUsed(i,b);
 		  	}
+		  	// 计算中间层
+				var d=1920;
+				for(var i=0; i<4; i++){
+					d++;
+					childPointBase['pointId'] = d;
+					ConfigChildPointUsed(i,d);
+				}
+				var e=1900;
+				for(var i=4; i<14; i++){
+					e++;
+					childPointBase['pointId'] = e;
+					ConfigChildPointUsed(i,e);
+				}
 			} else if (targetId===12){
 				var a=209;
 		  	for(var i=0;i<19; i++){
@@ -168,6 +284,19 @@
 					ConfigPointUsed(i,b);
 		  	}
 		  	// console.log(pointBase);
+		  	// 计算中间层
+				var d=1922;
+				for(var i=0; i<2; i++){
+					d++;
+					childPointBase['pointId'] = d;
+					ConfigChildPointUsed(i,d);
+				}
+				var e=1900;
+				for(var i=2; i<14; i++){
+					e++;
+					childPointBase['pointId'] = e;
+					ConfigChildPointUsed(i,e);
+				}
 			}
 		}
 	}
@@ -198,7 +327,18 @@
 		}
 		// console.log(pointBase);
 	}
-
+// ConfigChildPointUsed配置子集
+	var ConfigChildPointUsed = function(i,pointId){
+		usedPoint = childPoint;
+		if(usedPoint.indexOf(pointId)!=-1){
+			childPointBase[i]['isUse'] = 1;
+			var id = childPointBase[i]['id'];
+			ConfigPointHtml(id,pointId);
+		} else {
+			childPointBase[i]['isUse'] = 0;
+		}
+		// console.log(childPointBase);
+	}
 	// 配置点位html
 	var ConfigPointHtml = function(id,pointId){
 		// 如果需要隐藏点位注释此处的poin
@@ -281,7 +421,7 @@
 			$('#accurate').empty();
 		}
 	}
-	BuildBaseImg(1,5);
+	BuildBaseImg(targetId,showType,wacthType);
 
 	// 导航
 	var BaseImgSelect = function(id){
@@ -318,7 +458,7 @@
 		$('#direction').addClass('wide');
 		BuildBaseImg(id,showType,wacthType);
 	}
-	BuildBaseImg(targetId,showType,wacthType);
+	BaseImgSelect(1);
 
 	// 配置加载等待窗口
 	var timer;
@@ -343,13 +483,16 @@
 	var TargetPointValue = function(one,value){
 		$('#accurate').children().removeClass('selected');
 		$(one).addClass('selected');
+		if(usedPoint7.indexOf(Number(value))!=-1){
+			checkedMonitor = uesdCode7[usedPoint7.indexOf(Number(value))];
+		} else {
+			checkedMonitor = childCode[childPoint.indexOf(Number(value))];
+		}
 		// checkedMonitor = value;
-		checkedMonitor = usedCode5[usedPoint5.indexOf(Number(value))];
-		// console.log(checkedMonitor);
+		console.log(checkedMonitor);
 	}
 
 $(document).ready(function(){
-
 	// 向左
 	$('#left').click(function(){
 		// console.log(targetId);
@@ -370,7 +513,6 @@ $(document).ready(function(){
 	 }
  		BaseImgSelect(targetId);
 	})
-
 
 	// 点击点位$('父元素').on('click','动态的子元素',function(){});
 	$('#accurate').on('click','.point1',function(){
@@ -1038,4 +1180,76 @@ $(document).ready(function(){
 		var childId = $('.point133').children().attr('id');
 		TargetPointValue('.point133',childId);
 	})
+	// 中间件
+	$('#accurate').on('click','.point1901',function(){
+		// 获取子元素的id
+		var childId = $('.point1901').children().attr('id');
+		TargetPointValue('.point1901',childId);
+	})
+	$('#accurate').on('click','.point1902',function(){
+		// 获取子元素的id
+		var childId = $('.point1902').children().attr('id');
+		TargetPointValue('.point1902',childId);
+	})
+	$('#accurate').on('click','.point1903',function(){
+		// 获取子元素的id
+		var childId = $('.point1903').children().attr('id');
+		TargetPointValue('.point1903',childId);
+	})
+	$('#accurate').on('click','.point1904',function(){
+		// 获取子元素的id
+		var childId = $('.point1904').children().attr('id');
+		TargetPointValue('.point1904',childId);
+	})
+	$('#accurate').on('click','.point1905',function(){
+		// 获取子元素的id
+		var childId = $('.point1905').children().attr('id');
+		TargetPointValue('.point1905',childId);
+	})
+	$('#accurate').on('click','.point1906',function(){
+		// 获取子元素的id
+		var childId = $('.point1906').children().attr('id');
+		TargetPointValue('.point1906',childId);
+	})
+	$('#accurate').on('click','.point1907',function(){
+		// 获取子元素的id
+		var childId = $('.point1907').children().attr('id');
+		TargetPointValue('.point1907',childId);
+	})
+	$('#accurate').on('click','.point1908',function(){
+		// 获取子元素的id
+		var childId = $('.point1908').children().attr('id');
+		TargetPointValue('.point1908',childId);
+	})
+	$('#accurate').on('click','.point1909',function(){
+		// 获取子元素的id
+		var childId = $('.point1909').children().attr('id');
+		TargetPointValue('.point1909',childId);
+	})
+	$('#accurate').on('click','.point1910',function(){
+		// 获取子元素的id
+		var childId = $('.point1910').children().attr('id');
+		TargetPointValue('.point1910',childId);
+	})
+	$('#accurate').on('click','.point1911',function(){
+		// 获取子元素的id
+		var childId = $('.point1911').children().attr('id');
+		TargetPointValue('.point1911',childId);
+	})
+	$('#accurate').on('click','.point1912',function(){
+		// 获取子元素的id
+		var childId = $('.point1912').children().attr('id');
+		TargetPointValue('.point1912',childId);
+	})
+	$('#accurate').on('click','.point1913',function(){
+		// 获取子元素的id
+		var childId = $('.point1913').children().attr('id');
+		TargetPointValue('.point1913',childId);
+	})
+	$('#accurate').on('click','.point1914',function(){
+		// 获取子元素的id
+		var childId = $('.point1914').children().attr('id');
+		TargetPointValue('.point1914',childId);
+	})
+
 });

@@ -1,0 +1,332 @@
+﻿body {
+/*    color: #00152f;
+    background-color: #eee;*/
+    font-family: "Open Sans", "Arial", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", "WenQuanYi Micro Hei";
+    font-size: 62.5%;
+    margin: 0;
+    padding: 0;
+}
+@unitWidth: 320px;
+@redColor: #9c9c9c;
+@yellowColor: #9c9c9c;
+@borderYellow: 2px solid #a57fa1;
+@borderRed: 2px solid #a57fa1;
+@borderYellowBorn: 2px solid #9c9c9c;
+@borderRedBorn: 2px solid #9c9c9c;
+@selectedBorder: 2px solid #00e809;
+@selectedBackground: #00e809;
+@pointSize: 13px;
+@hoverBackground: #00e809;
+@hoverBorderColor: 2px solid #00e809;
+.selected{
+	div{
+		border: @selectedBorder !important;
+		background: @selectedBackground !important;
+		opacity: 1 !important;
+	}
+}
+.towerBox{
+	// width: 1224px;
+	overflow: hidden;
+  // background: #ebfbb4;
+  // padding-top: 100px;
+	.leftBox{
+		float: left;
+		width: 200px;
+		.menu{
+	    line-height: 3rem;
+	    text-align: center;
+	    background: #a9da88;
+	    font-size: 1rem;
+	    color: #3f5236;
+	    border-bottom: 1px solid #92c57a;
+		}
+	}
+	.towerMiddle{
+    float: left;
+    position: relative;
+    // width: 800px;
+    // min-width: 400px;
+    // max-width: 450px;
+    width: 800px;
+    height: 662px;
+    overflow: hidden;
+    .waitBox{
+			position: absolute;
+		  top: 0;
+		  left: 0;
+		  right: 0;
+		  bottom: 0;
+		  background: #f1f1f1;
+		  z-index: 1;
+		  .waitMiddle{
+		  	height: 100%;
+		  	text-align: center;
+		  	.waitText{
+			    padding-top: 300px;
+			    font-size: 1.2rem;
+			    padding-bottom: 1rem;
+		  	}
+		  	i{
+		  		font-size: 2rem;
+		  	}
+		  }
+		}
+    .direction{
+			position: absolute;
+			right: 0.3rem;
+			top: 0.3rem;
+			z-index: 10;
+			.wide{
+				width: 4rem;
+				height: 4rem;
+				position: relative;
+		  	.east{
+					position: absolute;
+					top: 0;
+					left: 1.6rem;
+					color: #0f5213;
+					font-weight: 700;
+		  	}
+		  	.south{
+					position: absolute;
+					right: 0;
+					top: 1.4rem;
+					color: #0f5213;
+					font-weight: 700;
+		  	}
+		  	.west{
+					position: absolute;
+					bottom: 0;
+					left: 1.6rem;
+					color: #0f5213;
+					font-weight: 700;
+		  	}
+		  	.north{
+					position: absolute;
+					left: 0;
+					top: 1.4rem;
+					color: #0f5213;
+					font-weight: 700;
+		  	}
+		  	i{
+		  		line-height: 4rem;
+		  		width: 4rem;
+		  		text-align: center;
+		  		font-size: 2rem;
+		  		color: #b1c763;
+		      transform: rotate(55deg)
+		  	}
+			}
+			.deg0{
+				transform:rotate(0deg);
+				.east,
+				.south,
+				.west,
+				.north{
+					transform:rotate(-360deg);
+		  	}
+			}
+			.deg30{
+				transform:rotate(30deg);
+				.east,
+				.south,
+				.west,
+				.north{
+					transform:rotate(-30deg);
+		  	}
+			}
+			.deg60{
+				transform:rotate(60deg);
+				.east,
+				.south,
+				.west,
+				.north{
+					transform:rotate(-60deg);
+		  	}
+			}
+			.deg90{
+				transform:rotate(90deg);
+				.east,
+				.south,
+				.west,
+				.north{
+					transform:rotate(-90deg);
+		  	}
+			}
+			.deg120{
+				transform:rotate(120deg);
+				.east,
+				.south,
+				.west,
+				.north{
+					transform:rotate(-120deg);
+		  	}
+			}
+			.deg150{
+				transform:rotate(150deg);
+				.east,
+				.south,
+				.west,
+				.north{
+					transform:rotate(-150deg);
+		  	}
+			}
+			.deg180{
+				transform:rotate(180deg);
+				.east,
+				.south,
+				.west,
+				.north{
+					transform:rotate(-180deg);
+		  	}
+			}
+			.deg210{
+				transform:rotate(210deg);
+				.east,
+				.south,
+				.west,
+				.north{
+					transform:rotate(-210deg);
+		  	}
+			}
+			.deg240{
+				transform:rotate(240deg);
+				.east,
+				.south,
+				.west,
+				.north{
+					transform:rotate(-240deg);
+		  	}
+			}
+			.deg270{
+				transform:rotate(270deg);
+				.east,
+				.south,
+				.west,
+				.north{
+					transform:rotate(-270deg);
+		  	}
+			}
+			.deg300{
+				transform:rotate(300deg);
+				.east,
+				.south,
+				.west,
+				.north{
+					transform:rotate(-300deg);
+		  	}
+			}
+			.deg330{
+				transform:rotate(330deg);
+				.east,
+				.south,
+				.west,
+				.north{
+					transform:rotate(-330deg);
+		  	}
+			}
+		}
+    .towerContent{
+	    position: absolute;
+	    left: -120px;
+	    top: 0px;
+	    width: 1024px;
+	    height: 663px;
+	    .side{
+	    	position: relative;
+	    	.base{
+					display: none;
+					width: 100%;
+	    	}
+	    	.activation{
+	    		display: block;
+	    	}
+	    	.pointBox{
+					position: absolute;
+					left: 0;
+					right: 0;
+					top: 0;
+					bottom: 0;
+	    	}
+	    }
+    }
+		.towerDoBox{
+			// overflow: hidden;
+	  //   position: absolute;
+   //  	width: 100%;
+   //  	bottom: 50%;
+			.left{
+				width: 3rem;
+				// background: #a4e800;
+				line-height: 3rem;
+				text-align: center;
+				// float: left;
+				cursor: pointer;
+				font-size: 2.0rem;
+				color: #ff9105;
+    		display: none;
+		    position: absolute;
+	    	bottom: 50%;
+	    	left: 0;
+			}
+			.right{
+				width: 3rem;
+				// background: #96d400;
+				line-height: 3rem;
+				text-align: center;
+				float: right;
+				cursor: pointer;
+				font-size: 2.0rem;
+				color: #ff9105;
+    		display: none;
+		    position: absolute;
+	    	bottom: 50%;
+	    	right: 0;
+			}
+		}
+		&:hover{
+			.towerDoBox{
+				.left,
+				.right{
+					display: block;
+				}
+			}
+		}
+	}
+}
+@widthOne:800px;
+.menuBox{
+	overflow:hidden;
+	// margin-top: 1rem;
+	// width: 800px;
+	// min-width: 400px;
+	// max-width: 450px;
+	width: @widthOne;
+	.one{
+		float: left;
+		width: @widthOne/8;
+    text-align: center;
+    font-size: 0.5rem;
+    cursor: pointer;
+    color: #9a5454;
+    // line-height: 3rem;
+    height: 4rem;
+		background: #ececec;
+		display: table;
+		.middle{
+	    display: table-cell;
+	    vertical-align: middle;
+	    text-align: center;
+	    width: 100%;
+      padding: 0 0.1rem;
+			.typeName{
+
+			}
+		}
+	}
+	.menuSelected{
+    background: #bdb2bb;
+    color: #fff;
+	}
+}

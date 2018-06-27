@@ -17,7 +17,7 @@
 	// console.log(usedPoint2.length);
 	var uesdCode2 = ['FY-A-03','FY-B-03','FY-C-03','FY-E-03','FY-F-03','FY-A-02','FY-B-02','FY-C-02','FY-E-02','FY-F-02','FY-A-01','FY-B-01','FY-C-01','FY-E-01','FY-F-01','FY-A-12','FY-B-12','FY-C-12','FY-E-12','FY-F-12','FY-A-11','FY-B-11','FY-C-11','FY-E-11','FY-F-11','FY-A-10','FY-B-10','FY-C-10','FY-E-10','FY-F-10','FY-A-09','FY-B-09','FY-C-09','FY-E-09','FY-F-09','FY-A-08','FY-B-08','FY-C-08','FY-E-08','FY-F-08','FY-A-07','FY-B-07','FY-C-07','FY-E-07','FY-F-07','FY-A-06','FY-B-06','FY-C-06','FY-E-06','FY-F-06','FY-A-05','FY-B-05','FY-C-05','FY-E-05','FY-F-05','FY-A-04','FY-B-04','FY-C-04','FY-E-04','FY-F-04']; 
 
-	var wacthTypeArr = [1,2,3,4,5,6]
+	var wacthTypeArr = [1,2,3,4,5,6,7]
 	// console.log(uesdCode2.length);
 	// 选择视图
 	var MenuSelect = function(id){
@@ -184,6 +184,12 @@
 			usedPoint = usedPoint3;
 		} else if(wacthType === 4){
 			usedPoint = usedPoint4;
+		} else if(wacthType === 5){
+			usedPoint = usedPoint5;
+		} else if(wacthType === 6){
+			usedPoint = usedPoint6;
+		} else if(wacthType === 7){
+			usedPoint = usedPoint7;
 		}
 		if(usedPoint.indexOf(pointId)!=-1){
 			pointBase[i]['isUse'] = 1;

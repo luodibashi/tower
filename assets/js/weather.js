@@ -16,7 +16,7 @@
 	var usedPoint4 = [171]
 	var usedPoint = []
 	var usedCode4 = ['QXZ-L-FS']
-	var wacthTypeArr = [1,2,3,4,5,6]
+	var wacthTypeArr = [1,2,3,4,5,6,7]
 	// 选择视图
 	var MenuSelect = function(id){
 		$(id).siblings().removeClass('menuSelected');
@@ -182,6 +182,12 @@
 			usedPoint = usedPoint3;
 		} else if(wacthType === 4){
 			usedPoint = usedPoint4;
+		} else if(wacthType === 5){
+			usedPoint = usedPoint5;
+		} else if(wacthType === 6){
+			usedPoint = usedPoint6;
+		} else if(wacthType === 7){
+			usedPoint = usedPoint7;
 		}
 		if(usedPoint.indexOf(pointId)!=-1){
 			pointBase[i]['isUse'] = 1;

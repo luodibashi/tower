@@ -1,5 +1,5 @@
 // alert('ddd')
-	var wacthType = 0; //0-home;1-strain;2-pressure;3-structure;4-weather;5-weatherUp;6-environment;
+	var wacthType = 0; //0-home;1-strain;2-pressure;3-structure;4-weather;5-weatherUp;6-environment;7-temperature;
 	var showType = 4;
 	var base=[];
 	var targetBase;
@@ -199,6 +199,15 @@ $(document).ready(function(){
 		wacthType = 6;
 		// 因为他的点位和4的类型一样，所以他们引用同一个源文件
 		showType = 4;
+		targetId = 1;
+		BuildBaseImg(targetId,showType,wacthType);
+	})
+	$('#temperature').click(function(){
+		WaitPage();
+		MenuSelect('#temperature');
+		wacthType = 7;
+		// 因为他的点位和4的类型一样，所以他们引用同一个源文件
+		showType = 1;
 		targetId = 1;
 		BuildBaseImg(targetId,showType,wacthType);
 	})

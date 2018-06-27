@@ -1,0 +1,290 @@
+body {
+  /*    color: #00152f;
+    background-color: #eee;*/
+  font-family: "Open Sans", "Arial", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", "WenQuanYi Micro Hei";
+  font-size: 62.5%;
+  margin: 0;
+  padding: 0;
+}
+.selected div {
+  border: 2px solid #00e809 !important;
+  background: #00e809 !important;
+  opacity: 1 !important;
+}
+.towerBox {
+  overflow: hidden;
+}
+.towerBox .leftBox {
+  float: left;
+  width: 200px;
+}
+.towerBox .leftBox .menu {
+  line-height: 3rem;
+  text-align: center;
+  background: #a9da88;
+  font-size: 1rem;
+  color: #3f5236;
+  border-bottom: 1px solid #92c57a;
+}
+.towerBox .towerMiddle {
+  float: left;
+  position: relative;
+  width: 800px;
+  height: 662px;
+  overflow: hidden;
+}
+.towerBox .towerMiddle .waitBox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #f1f1f1;
+  z-index: 1;
+}
+.towerBox .towerMiddle .waitBox .waitMiddle {
+  height: 100%;
+  text-align: center;
+}
+.towerBox .towerMiddle .waitBox .waitMiddle .waitText {
+  padding-top: 300px;
+  font-size: 1.2rem;
+  padding-bottom: 1rem;
+}
+.towerBox .towerMiddle .waitBox .waitMiddle i {
+  font-size: 2rem;
+}
+.towerBox .towerMiddle .direction {
+  position: absolute;
+  right: 0.3rem;
+  top: 0.3rem;
+  z-index: 10;
+}
+.towerBox .towerMiddle .direction .wide {
+  width: 4rem;
+  height: 4rem;
+  position: relative;
+}
+.towerBox .towerMiddle .direction .wide .east {
+  position: absolute;
+  top: 0;
+  left: 1.6rem;
+  color: #0f5213;
+  font-weight: 700;
+}
+.towerBox .towerMiddle .direction .wide .south {
+  position: absolute;
+  right: 0;
+  top: 1.4rem;
+  color: #0f5213;
+  font-weight: 700;
+}
+.towerBox .towerMiddle .direction .wide .west {
+  position: absolute;
+  bottom: 0;
+  left: 1.6rem;
+  color: #0f5213;
+  font-weight: 700;
+}
+.towerBox .towerMiddle .direction .wide .north {
+  position: absolute;
+  left: 0;
+  top: 1.4rem;
+  color: #0f5213;
+  font-weight: 700;
+}
+.towerBox .towerMiddle .direction .wide i {
+  line-height: 4rem;
+  width: 4rem;
+  text-align: center;
+  font-size: 2rem;
+  color: #b1c763;
+  transform: rotate(55deg);
+}
+.towerBox .towerMiddle .direction .deg0 {
+  transform: rotate(0deg);
+}
+.towerBox .towerMiddle .direction .deg0 .east,
+.towerBox .towerMiddle .direction .deg0 .south,
+.towerBox .towerMiddle .direction .deg0 .west,
+.towerBox .towerMiddle .direction .deg0 .north {
+  transform: rotate(-360deg);
+}
+.towerBox .towerMiddle .direction .deg30 {
+  transform: rotate(30deg);
+}
+.towerBox .towerMiddle .direction .deg30 .east,
+.towerBox .towerMiddle .direction .deg30 .south,
+.towerBox .towerMiddle .direction .deg30 .west,
+.towerBox .towerMiddle .direction .deg30 .north {
+  transform: rotate(-30deg);
+}
+.towerBox .towerMiddle .direction .deg60 {
+  transform: rotate(60deg);
+}
+.towerBox .towerMiddle .direction .deg60 .east,
+.towerBox .towerMiddle .direction .deg60 .south,
+.towerBox .towerMiddle .direction .deg60 .west,
+.towerBox .towerMiddle .direction .deg60 .north {
+  transform: rotate(-60deg);
+}
+.towerBox .towerMiddle .direction .deg90 {
+  transform: rotate(90deg);
+}
+.towerBox .towerMiddle .direction .deg90 .east,
+.towerBox .towerMiddle .direction .deg90 .south,
+.towerBox .towerMiddle .direction .deg90 .west,
+.towerBox .towerMiddle .direction .deg90 .north {
+  transform: rotate(-90deg);
+}
+.towerBox .towerMiddle .direction .deg120 {
+  transform: rotate(120deg);
+}
+.towerBox .towerMiddle .direction .deg120 .east,
+.towerBox .towerMiddle .direction .deg120 .south,
+.towerBox .towerMiddle .direction .deg120 .west,
+.towerBox .towerMiddle .direction .deg120 .north {
+  transform: rotate(-120deg);
+}
+.towerBox .towerMiddle .direction .deg150 {
+  transform: rotate(150deg);
+}
+.towerBox .towerMiddle .direction .deg150 .east,
+.towerBox .towerMiddle .direction .deg150 .south,
+.towerBox .towerMiddle .direction .deg150 .west,
+.towerBox .towerMiddle .direction .deg150 .north {
+  transform: rotate(-150deg);
+}
+.towerBox .towerMiddle .direction .deg180 {
+  transform: rotate(180deg);
+}
+.towerBox .towerMiddle .direction .deg180 .east,
+.towerBox .towerMiddle .direction .deg180 .south,
+.towerBox .towerMiddle .direction .deg180 .west,
+.towerBox .towerMiddle .direction .deg180 .north {
+  transform: rotate(-180deg);
+}
+.towerBox .towerMiddle .direction .deg210 {
+  transform: rotate(210deg);
+}
+.towerBox .towerMiddle .direction .deg210 .east,
+.towerBox .towerMiddle .direction .deg210 .south,
+.towerBox .towerMiddle .direction .deg210 .west,
+.towerBox .towerMiddle .direction .deg210 .north {
+  transform: rotate(-210deg);
+}
+.towerBox .towerMiddle .direction .deg240 {
+  transform: rotate(240deg);
+}
+.towerBox .towerMiddle .direction .deg240 .east,
+.towerBox .towerMiddle .direction .deg240 .south,
+.towerBox .towerMiddle .direction .deg240 .west,
+.towerBox .towerMiddle .direction .deg240 .north {
+  transform: rotate(-240deg);
+}
+.towerBox .towerMiddle .direction .deg270 {
+  transform: rotate(270deg);
+}
+.towerBox .towerMiddle .direction .deg270 .east,
+.towerBox .towerMiddle .direction .deg270 .south,
+.towerBox .towerMiddle .direction .deg270 .west,
+.towerBox .towerMiddle .direction .deg270 .north {
+  transform: rotate(-270deg);
+}
+.towerBox .towerMiddle .direction .deg300 {
+  transform: rotate(300deg);
+}
+.towerBox .towerMiddle .direction .deg300 .east,
+.towerBox .towerMiddle .direction .deg300 .south,
+.towerBox .towerMiddle .direction .deg300 .west,
+.towerBox .towerMiddle .direction .deg300 .north {
+  transform: rotate(-300deg);
+}
+.towerBox .towerMiddle .direction .deg330 {
+  transform: rotate(330deg);
+}
+.towerBox .towerMiddle .direction .deg330 .east,
+.towerBox .towerMiddle .direction .deg330 .south,
+.towerBox .towerMiddle .direction .deg330 .west,
+.towerBox .towerMiddle .direction .deg330 .north {
+  transform: rotate(-330deg);
+}
+.towerBox .towerMiddle .towerContent {
+  position: absolute;
+  left: -120px;
+  top: 0px;
+  width: 1024px;
+  height: 663px;
+}
+.towerBox .towerMiddle .towerContent .side {
+  position: relative;
+}
+.towerBox .towerMiddle .towerContent .side .base {
+  display: none;
+  width: 100%;
+}
+.towerBox .towerMiddle .towerContent .side .activation {
+  display: block;
+}
+.towerBox .towerMiddle .towerContent .side .pointBox {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+.towerBox .towerMiddle .towerDoBox .left {
+  width: 3rem;
+  line-height: 3rem;
+  text-align: center;
+  cursor: pointer;
+  font-size: 2.0rem;
+  color: #ff9105;
+  display: none;
+  position: absolute;
+  bottom: 50%;
+  left: 0;
+}
+.towerBox .towerMiddle .towerDoBox .right {
+  width: 3rem;
+  line-height: 3rem;
+  text-align: center;
+  float: right;
+  cursor: pointer;
+  font-size: 2.0rem;
+  color: #ff9105;
+  display: none;
+  position: absolute;
+  bottom: 50%;
+  right: 0;
+}
+.towerBox .towerMiddle:hover .towerDoBox .left,
+.towerBox .towerMiddle:hover .towerDoBox .right {
+  display: block;
+}
+.menuBox {
+  overflow: hidden;
+  width: 800px;
+}
+.menuBox .one {
+  float: left;
+  width: 100px;
+  text-align: center;
+  font-size: 0.5rem;
+  cursor: pointer;
+  color: #9a5454;
+  height: 4rem;
+  background: #ececec;
+  display: table;
+}
+.menuBox .one .middle {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  width: 100%;
+  padding: 0 0.1rem;
+}
+.menuBox .menuSelected {
+  background: #bdb2bb;
+  color: #fff;
+}
