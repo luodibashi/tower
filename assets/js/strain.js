@@ -4,7 +4,7 @@
 	var showType = 1;
 	var base=[];
 	var targetBase;
-	var targetId = 1;
+	var targetId = 1; //初始化加载视图
 	var pointBase = [];
 	var targetPointId;
 	var order;
@@ -34,6 +34,7 @@
 		// console.log(targetId);
 		// 清空点位
 		$('#accurate').empty();
+		// console.log(wacthTypeArr.indexOf(wacthType))
 		if(wacthTypeArr.indexOf(wacthType)!=-1&&targetId===1){
 			var a=0;
 			for(var i=0; i<133;i++){
@@ -92,6 +93,7 @@
 					ConfigChildPointUsed(i,d);
 				}
 			} else if (targetId===4){
+				// console.log(wacthType)
 				var a=57;
 		  	for(var i=0;i<133; i++){
 					// var pointList = {};
@@ -455,14 +457,17 @@
 		$('#direction').removeClass();
 		$('#direction').addClass(degCss);
 		$('#direction').addClass('wide');
+		// console.log(id,degCss)
 		BuildBaseImg(id,showType,wacthType);
 	}
-	BaseImgSelect(1);
+	// 初始化为视图4正南朝向2019年4月13日更新
+	BaseImgSelect(4);
 
 	// 配置加载等待窗口
 	var timer;
 	var WaitPage = function(){
-				// $('.waitBox').hide();
+		// $('.waitBox').hide(); //取消倒计时
+		//倒计时遮罩
 		$('.waitBox').show();
 		$('#timeLast').text('4s');
 		var timeLast = 4;
@@ -491,7 +496,11 @@
 		// console.log(checkedMonitor);
 	}
 
+	// 设置首先显示的视图为正南
+	targetId = 4;
+
 $(document).ready(function(){
+	// console.log("step1");
 	// 向左
 	$('#left').click(function(){
 		// console.log(targetId);

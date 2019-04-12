@@ -321,7 +321,7 @@
 		$('#direction').addClass('wide');
 		BuildBaseImg(id,showType,wacthType);
 	}
-	BaseImgSelect(1);
+	BaseImgSelect(4);//set south
 
 	// 配置加载等待窗口
 	var timer;
@@ -352,6 +352,11 @@
 		// checkedMonitor = value;
 		// console.log(checkedMonitor,one);
 	}
+
+
+	// 设置首先显示的视图为正南
+	targetId = 4;
+
 $(document).ready(function(){
 	// 切换视图
 

@@ -281,7 +281,7 @@
 			$('#accurate').empty();
 		}
 	}
-	BuildBaseImg(1,5);
+	// BuildBaseImg(1,5);
 
 	// 导航
 	var BaseImgSelect = function(id){
@@ -318,7 +318,9 @@
 		$('#direction').addClass('wide');
 		BuildBaseImg(id,showType,wacthType);
 	}
-	BuildBaseImg(targetId,showType,wacthType);
+	// BuildBaseImg(targetId,showType,wacthType);
+	BaseImgSelect(4); //set south
+
 
 	// 配置加载等待窗口
 	var timer;
@@ -347,6 +349,9 @@
 		checkedMonitor = usedCode5[usedPoint5.indexOf(Number(value))];
 		// console.log(checkedMonitor);
 	}
+	
+	// 设置首先显示的视图为正南
+	targetId = 4;
 
 $(document).ready(function(){
 
