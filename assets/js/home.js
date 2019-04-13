@@ -85,7 +85,7 @@
 		// 	$('#accurate').empty();
 		// }
 	}
-	BuildBaseImg(1,4);
+	// BuildBaseImg(1,4);
 
 	// 导航
 	var BaseImgSelect = function(id){
@@ -122,7 +122,7 @@
 		$('#direction').addClass('wide');
 		BuildBaseImg(id,showType,wacthType);
 	}
-	BaseImgSelect(1);
+	BaseImgSelect(4);
 
 	// 配置加载等待窗口
 	var timer;
@@ -143,6 +143,8 @@
 	}
 	WaitPage();
 
+	targetId = 4;
+
 $(document).ready(function(){
 	// 切换视图
 	$('#home').click(function(){
@@ -150,7 +152,7 @@ $(document).ready(function(){
 		MenuSelect('#home');
 		wacthType = 0;
 		showType = 4;
-		targetId = 1;
+		targetId = 4;
 		BuildBaseImg(targetId,showType,wacthType);
 	})
 	$('#strain').click(function(){
@@ -158,7 +160,7 @@ $(document).ready(function(){
 		MenuSelect('#strain');
 		wacthType = 1;
 		showType = 1;
-		targetId = 1;
+		targetId = 4;
 		BuildBaseImg(targetId,showType,wacthType);
 	})
 	$('#pressure').click(function(){
@@ -166,7 +168,7 @@ $(document).ready(function(){
 		MenuSelect('#pressure');
 		wacthType = 2;
 		showType = 2;
-		targetId = 1;
+		targetId = 4;
 		BuildBaseImg(targetId,showType,wacthType);
 	})
 	$('#structure').click(function(){
@@ -174,7 +176,7 @@ $(document).ready(function(){
 		MenuSelect('#structure');
 		wacthType = 3;
 		showType = 3;
-		targetId = 1;
+		targetId = 4;
 		BuildBaseImg(targetId,showType,wacthType);
 	})
 	$('#weather').click(function(){
@@ -182,7 +184,7 @@ $(document).ready(function(){
 		MenuSelect('#weather');
 		wacthType = 4;
 		showType = 4;
-		targetId = 1;
+		targetId = 4;
 		BuildBaseImg(targetId,showType,wacthType);
 	})
 	$('#weatherUp').click(function(){
@@ -190,7 +192,7 @@ $(document).ready(function(){
 		MenuSelect('#weatherUp');
 		wacthType = 5;
 		showType = 5;
-		targetId = 1;
+		targetId = 4;
 		BuildBaseImg(targetId,showType,wacthType);
 	})
 	$('#environment').click(function(){
@@ -199,7 +201,7 @@ $(document).ready(function(){
 		wacthType = 6;
 		// 因为他的点位和4的类型一样，所以他们引用同一个源文件
 		showType = 4;
-		targetId = 1;
+		targetId = 4;
 		BuildBaseImg(targetId,showType,wacthType);
 	})
 	$('#temperature').click(function(){
@@ -208,7 +210,7 @@ $(document).ready(function(){
 		wacthType = 7;
 		// 因为他的点位和4的类型一样，所以他们引用同一个源文件
 		showType = 1;
-		targetId = 1;
+		targetId = 4;
 		BuildBaseImg(targetId,showType,wacthType);
 	})
 
