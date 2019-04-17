@@ -3,7 +3,7 @@
 	var showType = 4;
 	var base=[];
 	var targetBase;
-	var targetId = 1;
+	var targetId = 4;
 	var baseImgUrl;
 	// 选择视图
 	var MenuSelect = function(id){
@@ -122,7 +122,7 @@
 		$('#direction').addClass('wide');
 		BuildBaseImg(id,showType,wacthType);
 	}
-	BaseImgSelect(4);
+	BaseImgSelect(targetId);
 
 	// 配置加载等待窗口
 	var timer;
@@ -153,7 +153,7 @@ $(document).ready(function(){
 		wacthType = 0;
 		showType = 4;
 		targetId = 4;
-		BuildBaseImg(targetId,showType,wacthType);
+		BaseImgSelect(targetId);
 	})
 	$('#strain').click(function(){
 		WaitPage();
@@ -161,7 +161,7 @@ $(document).ready(function(){
 		wacthType = 1;
 		showType = 1;
 		targetId = 4;
-		BuildBaseImg(targetId,showType,wacthType);
+		BaseImgSelect(targetId);
 	})
 	$('#pressure').click(function(){
 		WaitPage();
@@ -169,7 +169,7 @@ $(document).ready(function(){
 		wacthType = 2;
 		showType = 2;
 		targetId = 4;
-		BuildBaseImg(targetId,showType,wacthType);
+		BaseImgSelect(targetId);
 	})
 	$('#structure').click(function(){
 		WaitPage();
@@ -177,7 +177,7 @@ $(document).ready(function(){
 		wacthType = 3;
 		showType = 3;
 		targetId = 4;
-		BuildBaseImg(targetId,showType,wacthType);
+		BaseImgSelect(targetId);
 	})
 	$('#weather').click(function(){
 		WaitPage();
@@ -185,7 +185,7 @@ $(document).ready(function(){
 		wacthType = 4;
 		showType = 4;
 		targetId = 4;
-		BuildBaseImg(targetId,showType,wacthType);
+		BaseImgSelect(targetId);
 	})
 	$('#weatherUp').click(function(){
 		WaitPage();
@@ -193,7 +193,7 @@ $(document).ready(function(){
 		wacthType = 5;
 		showType = 5;
 		targetId = 4;
-		BuildBaseImg(targetId,showType,wacthType);
+		BaseImgSelect(targetId);
 	})
 	$('#environment').click(function(){
 		WaitPage();
@@ -202,7 +202,7 @@ $(document).ready(function(){
 		// 因为他的点位和4的类型一样，所以他们引用同一个源文件
 		showType = 4;
 		targetId = 4;
-		BuildBaseImg(targetId,showType,wacthType);
+		BaseImgSelect(targetId);
 	})
 	$('#temperature').click(function(){
 		WaitPage();
@@ -211,7 +211,7 @@ $(document).ready(function(){
 		// 因为他的点位和4的类型一样，所以他们引用同一个源文件
 		showType = 1;
 		targetId = 4;
-		BuildBaseImg(targetId,showType,wacthType);
+		BaseImgSelect(targetId);
 	})
 
 	// 向左

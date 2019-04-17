@@ -4,7 +4,7 @@
 	var showType = 4;
 	var base=[];
 	var targetBase;
-	var targetId = 1;
+	var targetId = 4;
 	var pointBase = [];
 	var targetPointId;
 	var order;
@@ -35,7 +35,7 @@
 			for(var i=0; i<133;i++){
 				var pointList = {};
 				a++;
-				pointList['id'] = a;
+				pointList['id'] = i;
 				pointList['isUse'] = 0;
 				pointList['pointId'] = a;
 				pointBase[i] = pointList;
@@ -46,125 +46,182 @@
 			if(targetId===2){
 				var a=19;
 		  	for(var i=0;i<133; i++){
-					// var pointList = {};
+					var pointList = {};
 					a++;
-					pointBase[i]['pointId'] = a;
+					pointList['id'] = i;
+					pointList['isUse'] = 0;
+					pointList['pointId'] = a;
+					pointBase[i] = pointList;
 					ConfigPointUsed(i,a);
 		  	}
 			} else if (targetId===3){
 				var a=38;
 		  	for(var i=0;i<133; i++){
-					// var pointList = {};
+					var pointList = {};
 					a++;
-					pointBase[i]['pointId'] = a;
+					pointList['id'] = i;
+					pointList['isUse'] = 0;
+					pointList['pointId'] = a;
+					pointBase[i] = pointList;
 					ConfigPointUsed(i,a);
 		  	}
 			} else if (targetId===4){
 				var a=57;
 		  	for(var i=0;i<133; i++){
-					// var pointList = {};
+					var pointList = {};
 					a++;
-					pointBase[i]['pointId'] = a;
+					pointList['id'] = i;
+					pointList['isUse'] = 0;
+					pointList['pointId'] = a;
+					pointBase[i] = pointList;
 					ConfigPointUsed(i,a);
 		  	}
 			} else if (targetId===5){
 				var a=76;
 		  	for(var i=0;i<133; i++){
-					// var pointList = {};
+					var pointList = {};
 					a++;
-					pointBase[i]['pointId'] = a;
+					pointList['id'] = i;
+					pointList['isUse'] = 0;
+					pointList['pointId'] = a;
+					pointBase[i] = pointList;
 					ConfigPointUsed(i,a);
 		  	}
 			} else if (targetId===6){
 				var a=95;
 		  	for(var i=0;i<133; i++){
-					// var pointList = {};
+					var pointList = {};
 					a++;
-					pointBase[i]['pointId'] = a;
+					pointList['id'] = i;
+					pointList['isUse'] = 0;
+					pointList['pointId'] = a;
+					pointBase[i] = pointList;
 					ConfigPointUsed(i,a);
 		  	}
 			} else if (targetId===7){
 				var a=114;
 		  	for(var i=0;i<114; i++){
-					// var pointList = {};
+					var pointList = {};
 					a++;
-					pointBase[i]['pointId'] = a;
+					pointList['id'] = i;
+					pointList['isUse'] = 0;
+					pointList['pointId'] = a;
+					pointBase[i] = pointList;
 					ConfigPointUsed(i,a);
 		  	}
 		  	var b=0;
 		  	for(var i=114;i<133; i++){
+					var pointList = {};
 					b++;
-					pointBase[i]['pointId'] = a;
+					pointList['id'] = i;
+					pointList['isUse'] = 0;
+					pointList['pointId'] = b;
+					pointBase[i] = pointList;
 					ConfigPointUsed(i,b);
 		  	}
 			} else if (targetId===8){
 				var a=133;
 		  	for(var i=0;i<95; i++){
-					// var pointList = {};
+					var pointList = {};
 					a++;
-					pointBase[i]['pointId'] = a;
+					pointList['id'] = i;
+					pointList['isUse'] = 0;
+					pointList['pointId'] = a;
+					pointBase[i] = pointList;
 					ConfigPointUsed(i,a);
 		  	}
 		  	var b=0;
 		  	for(var i=95;i<133; i++){
+					var pointList = {};
 					b++;
-					pointBase[i]['pointId'] = a;
+					pointList['id'] = i;
+					pointList['isUse'] = 0;
+					pointList['pointId'] = b;
+					pointBase[i] = pointList;
 					ConfigPointUsed(i,b);
 		  	}
 			} else if (targetId===9){
 				var a=152;
 		  	for(var i=0;i<76; i++){
-					// var pointList = {};
+					var pointList = {};
 					a++;
-					pointBase[i]['pointId'] = a;
+					pointList['id'] = i;
+					pointList['isUse'] = 0;
+					pointList['pointId'] = a;
+					pointBase[i] = pointList;
 					ConfigPointUsed(i,a);
 		  	}
 		  	var b=0;
 		  	for(var i=76;i<133; i++){
+					var pointList = {};
 					b++;
-					pointBase[i]['pointId'] = a;
+					pointList['id'] = i;
+					pointList['isUse'] = 0;
+					pointList['pointId'] = b;
+					pointBase[i] = pointList;
 					ConfigPointUsed(i,b);
 		  	}
 			} else if (targetId===10){
 				var a=171;
 		  	for(var i=0;i<57; i++){
-					// var pointList = {};
+					var pointList = {};
 					a++;
-					pointBase[i]['pointId'] = a;
+					pointList['id'] = i;
+					pointList['isUse'] = 0;
+					pointList['pointId'] = a;
+					pointBase[i] = pointList;
 					ConfigPointUsed(i,a);
 		  	}
 		  	var b=0;
 		  	for(var i=57;i<133; i++){
+					var pointList = {};
 					b++;
-					pointBase[i]['pointId'] = a;
+					pointList['id'] = i;
+					pointList['isUse'] = 0;
+					pointList['pointId'] = b;
+					pointBase[i] = pointList;
 					ConfigPointUsed(i,b);
 		  	}
 			} else if (targetId===11){
 				var a=190;
 		  	for(var i=0;i<38; i++){
-					// var pointList = {};
+					var pointList = {};
 					a++;
-					pointBase[i]['pointId'] = a;
+					pointList['id'] = i;
+					pointList['isUse'] = 0;
+					pointList['pointId'] = a;
+					pointBase[i] = pointList;
 					ConfigPointUsed(i,a);
 		  	}
 		  	var b=0;
 		  	for(var i=38;i<133; i++){
+					var pointList = {};
 					b++;
-					pointBase[i]['pointId'] = a;
+					pointList['id'] = i;
+					pointList['isUse'] = 0;
+					pointList['pointId'] = b;
+					pointBase[i] = pointList;
 					ConfigPointUsed(i,b);
 		  	}
 			} else if (targetId===12){
 				var a=209;
 		  	for(var i=0;i<19; i++){
-					// var pointList = {};
+					var pointList = {};
 					a++;
-					pointBase[i]['pointId'] = a;
+					pointList['id'] = i;
+					pointList['isUse'] = 0;
+					pointList['pointId'] = a;
+					pointBase[i] = pointList;
 					ConfigPointUsed(i,a);
 		  	}
 		  	var b=0;
 		  	for(var i=19;i<133; i++){
+					var pointList = {};
 					b++;
-					pointBase[i]['pointId'] = a;
+					pointList['id'] = i;
+					pointList['isUse'] = 0;
+					pointList['pointId'] = b;
+					pointBase[i] = pointList;
 					ConfigPointUsed(i,b);
 		  	}
 		  	// console.log(pointBase);
@@ -191,7 +248,7 @@
 		}
 		if(usedPoint.indexOf(pointId)!=-1){
 			pointBase[i]['isUse'] = 1;
-			var id = pointBase[i]['id'];
+			var id = i+1;
 			ConfigPointHtml(id,pointId);
 		} else {
 			pointBase[i]['isUse'] = 0;
@@ -319,7 +376,7 @@
 		BuildBaseImg(id,showType,wacthType);
 	}
 	// BuildBaseImg(targetId,showType,wacthType);
-	BaseImgSelect(4);//set south
+	BaseImgSelect(targetId);//set south
 
 	// 配置加载等待窗口
 	var timer;
@@ -349,8 +406,6 @@
 		// console.log(checkedMonitor);
 	}
 	
-	// 设置首先显示的视图为正南
-	targetId = 4;
 
 $(document).ready(function(){
 
