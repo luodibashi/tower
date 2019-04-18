@@ -401,7 +401,7 @@
 		$(one).addClass('selected');
 		// checkedMonitor = value;
 		checkedMonitor = usedCode3[usedPoint3.indexOf(Number(value))];
-		console.log(checkedMonitor,value);
+		// console.log(checkedMonitor,value);
 	}
 
 

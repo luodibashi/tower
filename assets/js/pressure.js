@@ -416,16 +416,16 @@
 		$('#accurate').children().removeClass('selected');
 		$(one).addClass('selected');
 		// console.log(typeof(value));
-		console.log('点击的点',value)
-		var targetValue;
-		if(Number(value)<172){
-			//如果点的值小于77，则可以直接加57即可获得调转90度之后的点
-			targetValue = Number(value) + 57;
-		} else {
-			//如果值大于等于77，则调转90度后的点要从1开始。
-			targetValue = ( Number(value) + 57 ) -228
-		}
-		console.log('转向90度后的点',targetValue);
+		// console.log('点击的点',value)
+		// var targetValue;
+		// if(Number(value)<172){
+		// 	//如果点的值小于77，则可以直接加57即可获得调转90度之后的点
+		// 	targetValue = Number(value) + 57;
+		// } else {
+		// 	//如果值大于等于77，则调转90度后的点要从1开始。
+		// 	targetValue = ( Number(value) + 57 ) -228
+		// }
+		// // console.log('转向90度后的点',targetValue);
 		
 		checkedMonitor = uesdCode2[usedPoint2.indexOf(Number(value))];
 		console.log(checkedMonitor);

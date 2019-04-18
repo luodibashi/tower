@@ -635,7 +635,7 @@
 			checkedMonitor = childCode[childPoint.indexOf(Number(value))];
 		}
 		// checkedMonitor = value;
-		console.log(checkedMonitor);
+		// console.log(checkedMonitor);
 	}
 
 	// 设置首先显示的视图为正南
@@ -873,7 +873,7 @@ $(document).ready(function(){
 	$('#accurate').on('click','.point42',function(){
 		// 获取子元素的id
 		var childId = $('.point42').children().attr('id');
-		console.log('目标id42',childId);
+		// console.log('目标id42',childId);
 		TargetPointValue('.point42',childId);
 	})
 	$('#accurate').on('click','.point43',function(){
@@ -884,7 +884,7 @@ $(document).ready(function(){
 	$('#accurate').on('click','.point44',function(){
 		// 获取子元素的id
 		var childId = $('.point44').children().attr('id');
-		console.log('目标id43',childId);
+		// console.log('目标id43',childId);
 		TargetPointValue('.point44',childId);
 	})
 	$('#accurate').on('click','.point45',function(){

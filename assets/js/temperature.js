@@ -632,7 +632,7 @@
 			checkedMonitor = childCode[childPoint.indexOf(Number(value))];
 		}
 		// checkedMonitor = value;
-		console.log(checkedMonitor);
+		// console.log(checkedMonitor);
 	}
 	
 	// 设置首先显示的视图为正南

@@ -143,7 +143,7 @@
 	}
 	WaitPage();
 
-	targetId = 4;
+	// targetId = 4;
 
 $(document).ready(function(){
 	// 切换视图
