@@ -254,10 +254,16 @@
 		} else if(wacthType === 7){
 			usedPoint = usedPoint7;
 		}
-		if(usedPoint.indexOf(pointId)!=-1){
+		// 配置点要转向90度
+		var newPointId = pointId + 57;
+		// console.log(newPointId);
+		if(newPointId>228){
+			newPointId = newPointId - 228;
+		}
+		if(usedPoint.indexOf(newPointId)!=-1){
 			pointBase[i]['isUse'] = 1;
 			var id = i+1;
-			ConfigPointHtml(id,pointId);
+			ConfigPointHtml(id,newPointId);
 		} else {
 			pointBase[i]['isUse'] = 0;
 		}
@@ -416,7 +422,7 @@
 		$('#accurate').children().removeClass('selected');
 		$(one).addClass('selected');
 		// console.log(typeof(value));
-		// console.log('点击的点',value)
+		console.log('点击的点',value)
 		// var targetValue;
 		// if(Number(value)<172){
 		// 	//如果点的值小于77，则可以直接加57即可获得调转90度之后的点
@@ -428,7 +434,8 @@
 		// // console.log('转向90度后的点',targetValue);
 		
 		checkedMonitor = uesdCode2[usedPoint2.indexOf(Number(value))];
-		console.log(checkedMonitor);
+		// console.log(checkedMonitor);
+		console.log(checkedMonitor,'---',value);
 		// checkedMonitor = value;
 		// console.log(checkedMonitor,one);
 	}

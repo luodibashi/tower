@@ -246,10 +246,17 @@
 		} else if(wacthType === 7){
 			usedPoint = usedPoint7;
 		}
-		if(usedPoint.indexOf(pointId)!=-1){
+		// 配置点要转向90度
+		var newPointId = pointId + 57;
+		// console.log(newPointId);
+		if(newPointId>228){
+			newPointId = newPointId - 228;
+		}
+
+		if(usedPoint.indexOf(newPointId)!=-1){
 			pointBase[i]['isUse'] = 1;
 			var id = i+1;
-			ConfigPointHtml(id,pointId);
+			ConfigPointHtml(id,newPointId);
 		} else {
 			pointBase[i]['isUse'] = 0;
 		}
@@ -406,6 +413,8 @@
 		// checkedMonitor = value;
 		checkedMonitor = usedCode6[usedPoint6.indexOf(Number(value))];
 		// console.log(checkedMonitor);
+		console.log(checkedMonitor,'---',value);
+		
 	}
 
 

@@ -461,10 +461,17 @@
 		} else if(wacthType === 7){
 			usedPoint = usedPoint7;
 		}
-		if(usedPoint.indexOf(pointId)!=-1){
+		// 配置点要转向90度
+		var newPointId = pointId + 57;
+		// console.log(newPointId);
+		if(newPointId>228){
+			newPointId = newPointId - 228;
+		}
+
+		if(usedPoint.indexOf(newPointId)!=-1){
 			pointBase[i]['isUse'] = 1;
 			var id = i+1;
-			ConfigPointHtml(id,pointId);
+			ConfigPointHtml(id,newPointId);
 		} else {
 			pointBase[i]['isUse'] = 0;
 		}
@@ -473,10 +480,23 @@
 // ConfigChildPointUsed配置子集
 	var ConfigChildPointUsed = function(i,pointId){
 		usedPoint = childPoint;
-		if(usedPoint.indexOf(pointId)!=-1){
+		// 配置点要转向90度
+		var newPointId;
+		if(pointId == 1905){
+			newPointId = 1923;
+		} else if (pointId ==1906){
+			newPointId = 1924;
+		} else {
+			newPointId = pointId - 6;
+		}
+		// newPointId = pointId;
+		// console.log(newPointId);
+		// [1905,1906,1911,1912,1917,1918,1923,1924]
+		
+		if(usedPoint.indexOf(newPointId)!=-1){
 			childPointBase[i]['isUse'] = 1;
 			var id = childNumber[i];
-			ConfigPointHtml(id,pointId);
+			ConfigPointHtml(id,newPointId);
 		} else {
 			childPointBase[i]['isUse'] = 0;
 		}
@@ -635,7 +655,7 @@
 			checkedMonitor = childCode[childPoint.indexOf(Number(value))];
 		}
 		// checkedMonitor = value;
-		// console.log(checkedMonitor);
+		console.log(checkedMonitor,'---',value);
 	}
 
 	// 设置首先显示的视图为正南
