@@ -17,6 +17,7 @@
 	var usedPoint = []
 	var usedCode4 = ['QXZ-L-FS']
 	var wacthTypeArr = [1,2,3,4,5,6,7]
+	var newPointId;
 	// 选择视图
 	var MenuSelect = function(id){
 		$(id).siblings().removeClass('menuSelected');

@@ -16,6 +16,7 @@
 	var usedPoint = []
 	var usedCode3 = ['GNSS-A-01X','GNSS-B-01X','GNSS-E-01X','GNSS-A-04X','GNSS-B-04X','GNSS-E-04X','GNSS-A-03X','GNSS-B-03X','GNSS-E-03X','GNSS-A-02X','GNSS-B-02X','GNSS-E-02X']
 	var wacthTypeArr = [1,2,3,4,5,6,7]
+	var newPointId;
 	// 选择视图
 	var MenuSelect = function(id){
 		$(id).siblings().removeClass('menuSelected');

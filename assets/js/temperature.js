@@ -19,10 +19,11 @@
 	var childNumber = [1901,1902,1903,1904,1905,1906,1907,1908,1909,1910,1911,1912,1913,1914]
 	var usedPoint = []
 
-	var uesdCode7 = ['FOT-C-01\'','FOT-D-01\'','FOT-F-01\'','FOT-H-01\'','FOT-K-01\'','FOT-L-01\'','FOT-C-04\'','FOT-D-04\'','FOT-F-04\'','FOT-H-04\'','FOT-K-04\'','FOT-L-04\'','FOT-C-03\'','FOT-E-03\'','FOT-F-03\'','FOT-H-03\'','FOT-K-03\'','FOT-L-03\'','FOT-C-02\'','FOT-E-02\'','FOT-F-02\'','FOT-H-02\'','FOT-K-02\'','FOT-L-02\''];
+	var uesdCode7 = ['FOT-C-01\'','FOT-E-01\'','FOT-F-01\'','FOT-J-01\'','FOT-K-01\'','FOT-L-01\'','FOT-C-04\'','FOT-E-04\'','FOT-F-04\'','FOT-J-04\'','FOT-K-04\'','FOT-L-04\'','FOT-C-03\'','FOT-E-03\'','FOT-F-03\'','FOT-J-03\'','FOT-K-03\'','FOT-L-03\'','FOT-C-02\'','FOT-E-02\'','FOT-F-02\'','FOT-J-02\'','FOT-K-02\'','FOT-L-02\''];
 	var childCode = ['FOT-D-01\'','FOT-H-01\'','FOT-D-04\'','FOT-H-04\'','FOT-D-03\'','FOT-H-03\'','FOT-D-02\'','FOT-H-02\''];
 
 	var wacthTypeArr = [1,2,3,4,5,6,7]
+	var newPointId;
 	// 选择视图
 	var MenuSelect = function(id){
 		$(id).siblings().removeClass('menuSelected');
@@ -48,7 +49,7 @@
 				ConfigPointUsed(i,a);
 			}
 			// 计算中间层
-			var d=1900;
+			var d=1906;
 			for(var i=0; i<14; i++){
 				var childPointList = {};
 				d++;
@@ -74,7 +75,7 @@
 		  	}
 				// 计算中间层
 				// console.log(childPointBase)
-				var d=1902;
+				var d=1908;
 				for(var i=0; i<14; i++){
 					var childPointList = {};
 					d++;
@@ -98,7 +99,7 @@
 		  	}
 				// 计算中间层
 				// console.log(childPointBase)
-				var d=1904;
+				var d=1910;
 				for(var i=0; i<14; i++){
 					var childPointList = {};
 					d++;
@@ -120,83 +121,7 @@
 					pointBase[i] = pointList;
 					ConfigPointUsed(i,a);
 		  	}
-				var d=1906;
-				for(var i=0; i<14; i++){
-					var childPointList = {};
-					d++;
-					// console.log(d);
-					childPointList['id'] = i;
-					childPointList['isUse'] = 0;
-					childPointList['pointId'] = d;
-					childPointBase[i] = childPointList;
-					ConfigChildPointUsed(i,d);
-				}
-			} else if (targetId===5){
-				var a=76;
-		  	for(var i=0;i<133; i++){
-					var pointList = {};
-					a++;
-					pointList['id'] = i;
-					pointList['isUse'] = 0;
-					pointList['pointId'] = a;
-					pointBase[i] = pointList;
-					ConfigPointUsed(i,a);
-		  	}
-				var d=1908;
-				for(var i=0; i<14; i++){
-					var childPointList = {};
-					d++;
-					// console.log(d);
-					childPointList['id'] = i;
-					childPointList['isUse'] = 0;
-					childPointList['pointId'] = d;
-					childPointBase[i] = childPointList;
-					ConfigChildPointUsed(i,d);
-				}
-			} else if (targetId===6){
-				var a=95;
-		  	for(var i=0;i<133; i++){
-					var pointList = {};
-					a++;
-					pointList['id'] = i;
-					pointList['isUse'] = 0;
-					pointList['pointId'] = a;
-					pointBase[i] = pointList;
-					ConfigPointUsed(i,a);
-		  	}
-				var d=1910;
-				for(var i=0; i<14; i++){
-					var childPointList = {};
-					d++;
-					// console.log(d);
-					childPointList['id'] = i;
-					childPointList['isUse'] = 0;
-					childPointList['pointId'] = d;
-					childPointBase[i] = childPointList;
-					ConfigChildPointUsed(i,d);
-				}
-			} else if (targetId===7){
-				var a=114;
-		  	for(var i=0;i<114; i++){
-					var pointList = {};
-					a++;
-					pointList['id'] = i;
-					pointList['isUse'] = 0;
-					pointList['pointId'] = a;
-					pointBase[i] = pointList;
-					ConfigPointUsed(i,a);
-		  	}
-		  	var b=0;
-		  	for(var i=114;i<133; i++){
-					var pointList = {};
-					b++;
-					pointList['id'] = i;
-					pointList['isUse'] = 0;
-					pointList['pointId'] = b;
-					pointBase[i] = pointList;
-					ConfigPointUsed(i,b);
-		  	}
-		  	// 计算中间层
+		  	// 计算中间层 起始位
 				var d=1912;
 				for(var i=0; i<12; i++){
 					var childPointList = {};
@@ -219,9 +144,9 @@
 					childPointBase[i] = childPointList;
 					ConfigChildPointUsed(i,e);
 				}
-			} else if (targetId===8){
-				var a=133;
-		  	for(var i=0;i<95; i++){
+			} else if (targetId===5){
+				var a=76;
+		  	for(var i=0;i<133; i++){
 					var pointList = {};
 					a++;
 					pointList['id'] = i;
@@ -229,16 +154,6 @@
 					pointList['pointId'] = a;
 					pointBase[i] = pointList;
 					ConfigPointUsed(i,a);
-		  	}
-		  	var b=0;
-		  	for(var i=95;i<133; i++){
-					var pointList = {};
-					b++;
-					pointList['id'] = i;
-					pointList['isUse'] = 0;
-					pointList['pointId'] = b;
-					pointBase[i] = pointList;
-					ConfigPointUsed(i,b);
 		  	}
 		  	// 计算中间层
 				var d=1914;
@@ -263,9 +178,9 @@
 					childPointBase[i] = childPointList;
 					ConfigChildPointUsed(i,e);
 				}
-			} else if (targetId===9){
-				var a=152;
-		  	for(var i=0;i<76; i++){
+			} else if (targetId===6){
+				var a=95;
+		  	for(var i=0;i<133; i++){
 					var pointList = {};
 					a++;
 					pointList['id'] = i;
@@ -273,16 +188,6 @@
 					pointList['pointId'] = a;
 					pointBase[i] = pointList;
 					ConfigPointUsed(i,a);
-		  	}
-		  	var b=0;
-		  	for(var i=76;i<133; i++){
-					var pointList = {};
-					b++;
-					pointList['id'] = i;
-					pointList['isUse'] = 0;
-					pointList['pointId'] = b;
-					pointBase[i] = pointList;
-					ConfigPointUsed(i,b);
 		  	}
 		  	// 计算中间层
 				var d=1916;
@@ -307,9 +212,9 @@
 					childPointBase[i] = childPointList;
 					ConfigChildPointUsed(i,e);
 				}
-			} else if (targetId===10){
-				var a=171;
-		  	for(var i=0;i<57; i++){
+			} else if (targetId===7){
+				var a=114;
+		  	for(var i=0;i<114; i++){
 					var pointList = {};
 					a++;
 					pointList['id'] = i;
@@ -319,7 +224,7 @@
 					ConfigPointUsed(i,a);
 		  	}
 		  	var b=0;
-		  	for(var i=57;i<133; i++){
+		  	for(var i=114;i<133; i++){
 					var pointList = {};
 					b++;
 					pointList['id'] = i;
@@ -351,9 +256,9 @@
 					childPointBase[i] = childPointList;
 					ConfigChildPointUsed(i,e);
 				}
-			} else if (targetId===11){
-				var a=190;
-		  	for(var i=0;i<38; i++){
+			} else if (targetId===8){
+				var a=133;
+		  	for(var i=0;i<95; i++){
 					var pointList = {};
 					a++;
 					pointList['id'] = i;
@@ -363,7 +268,7 @@
 					ConfigPointUsed(i,a);
 		  	}
 		  	var b=0;
-		  	for(var i=38;i<133; i++){
+		  	for(var i=95;i<133; i++){
 					var pointList = {};
 					b++;
 					pointList['id'] = i;
@@ -395,6 +300,116 @@
 					childPointBase[i] = childPointList;
 					ConfigChildPointUsed(i,e);
 				}
+			} else if (targetId===9){
+				var a=152;
+		  	for(var i=0;i<76; i++){
+					var pointList = {};
+					a++;
+					pointList['id'] = i;
+					pointList['isUse'] = 0;
+					pointList['pointId'] = a;
+					pointBase[i] = pointList;
+					ConfigPointUsed(i,a);
+		  	}
+		  	var b=0;
+		  	for(var i=76;i<133; i++){
+					var pointList = {};
+					b++;
+					pointList['id'] = i;
+					pointList['isUse'] = 0;
+					pointList['pointId'] = b;
+					pointBase[i] = pointList;
+					ConfigPointUsed(i,b);
+		  	}
+		  	// 计算中间层
+				var d=1922;
+				for(var i=0; i<2; i++){
+					var childPointList = {};
+					d++;
+					// console.log(d);
+					childPointList['id'] = i;
+					childPointList['isUse'] = 0;
+					childPointList['pointId'] = d;
+					childPointBase[i] = childPointList;
+					ConfigChildPointUsed(i,d);
+				}
+				var e=1900;
+				for(var i=2; i<14; i++){
+					var childPointList = {};
+					e++;
+					// console.log(d);
+					childPointList['id'] = i;
+					childPointList['isUse'] = 0;
+					childPointList['pointId'] = e;
+					childPointBase[i] = childPointList;
+					ConfigChildPointUsed(i,e);
+				}
+			} else if (targetId===10){
+				var a=171;
+		  	for(var i=0;i<57; i++){
+					var pointList = {};
+					a++;
+					pointList['id'] = i;
+					pointList['isUse'] = 0;
+					pointList['pointId'] = a;
+					pointBase[i] = pointList;
+					ConfigPointUsed(i,a);
+		  	}
+		  	var b=0;
+		  	for(var i=57;i<133; i++){
+					var pointList = {};
+					b++;
+					pointList['id'] = i;
+					pointList['isUse'] = 0;
+					pointList['pointId'] = b;
+					pointBase[i] = pointList;
+					ConfigPointUsed(i,b);
+		  	}
+		  	// 计算无间层
+				var d=1900;
+				for(var i=0; i<14; i++){
+					var childPointList = {};
+					d++;
+					// console.log(d);
+					childPointList['id'] = i;
+					childPointList['isUse'] = 0;
+					childPointList['pointId'] = d;
+					childPointBase[i] = childPointList;
+					ConfigChildPointUsed(i,d);
+				}
+			} else if (targetId===11){
+				var a=190;
+		  	for(var i=0;i<38; i++){
+					var pointList = {};
+					a++;
+					pointList['id'] = i;
+					pointList['isUse'] = 0;
+					pointList['pointId'] = a;
+					pointBase[i] = pointList;
+					ConfigPointUsed(i,a);
+		  	}
+		  	var b=0;
+		  	for(var i=38;i<133; i++){
+					var pointList = {};
+					b++;
+					pointList['id'] = i;
+					pointList['isUse'] = 0;
+					pointList['pointId'] = b;
+					pointBase[i] = pointList;
+					ConfigPointUsed(i,b);
+		  	}
+		  	// 计算无间层
+				var d=1902;
+				for(var i=0; i<14; i++){
+					var childPointList = {};
+					d++;
+					// console.log(d);
+					childPointList['id'] = i;
+					childPointList['isUse'] = 0;
+					childPointList['pointId'] = d;
+					childPointBase[i] = childPointList;
+					ConfigChildPointUsed(i,d);
+				}
 			} else if (targetId===12){
 				var a=209;
 		  	for(var i=0;i<19; i++){
@@ -418,8 +433,8 @@
 		  	}
 		  	// console.log(pointBase);
 		  	// 计算中间层
-				var d=1922;
-				for(var i=0; i<2; i++){
+				var d=1904;
+				for(var i=0; i<14; i++){
 					var childPointList = {};
 					d++;
 					// console.log(d);
@@ -428,17 +443,6 @@
 					childPointList['pointId'] = d;
 					childPointBase[i] = childPointList;
 					ConfigChildPointUsed(i,d);
-				}
-				var e=1900;
-				for(var i=2; i<14; i++){
-					var childPointList = {};
-					e++;
-					// console.log(d);
-					childPointList['id'] = i;
-					childPointList['isUse'] = 0;
-					childPointList['pointId'] = e;
-					childPointBase[i] = childPointList;
-					ConfigChildPointUsed(i,e);
 				}
 			}
 		}
@@ -481,15 +485,7 @@
 // ConfigChildPointUsed配置子集
 	var ConfigChildPointUsed = function(i,pointId){
 		usedPoint = childPoint;
-		// 配置点要转向90度
-		var newPointId;
-		if(pointId == 1905){
-			newPointId = 1923;
-		} else if (pointId ==1906){
-			newPointId = 1924;
-		} else {
-			newPointId = pointId - 6;
-		}
+		newPointId = pointId;
 		if(usedPoint.indexOf(newPointId)!=-1){
 			childPointBase[i]['isUse'] = 1;
 			var id = childNumber[i];

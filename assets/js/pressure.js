@@ -19,6 +19,7 @@
 
 	var wacthTypeArr = [1,2,3,4,5,6,7]
 	var targetIdNow;
+	var newPointId;
 	// console.log(uesdCode2.length);
 	// 选择视图
 	var MenuSelect = function(id){
