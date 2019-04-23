@@ -19,7 +19,7 @@
 	var childNumber = [1901,1902,1903,1904,1905,1906,1907,1908,1909,1910,1911,1912,1913,1914]
 	var usedPoint = []
 
-	var uesdCode7 = ['FOT-C-01\'','FOT-D-01\'','FOT-F-01\'','FOT-H-01\'','FOT-K-01\'','FOT-L-01\'','FOT-C-04\'','FOT-D-04\'','FOT-F-04\'','FOT-H-04\'','FOT-K-04\'','FOT-L-04\'','FOT-C-03\'','FOT-D-03\'','FOT-F-03\'','FOT-H-03\'','FOT-K-03\'','FOT-L-03\'','FOT-C-02\'','FOT-D-02\'','FOT-F-02\'','FOT-H-02\'','FOT-K-02\'','FOT-L-02\''];
+	var uesdCode7 = ['FOT-C-01\'','FOT-D-01\'','FOT-F-01\'','FOT-H-01\'','FOT-K-01\'','FOT-L-01\'','FOT-C-04\'','FOT-D-04\'','FOT-F-04\'','FOT-H-04\'','FOT-K-04\'','FOT-L-04\'','FOT-C-03\'','FOT-E-03\'','FOT-F-03\'','FOT-H-03\'','FOT-K-03\'','FOT-L-03\'','FOT-C-02\'','FOT-E-02\'','FOT-F-02\'','FOT-H-02\'','FOT-K-02\'','FOT-L-02\''];
 	var childCode = ['FOT-D-01\'','FOT-H-01\'','FOT-D-04\'','FOT-H-04\'','FOT-D-03\'','FOT-H-03\'','FOT-D-02\'','FOT-H-02\''];
 
 	var wacthTypeArr = [1,2,3,4,5,6,7]
