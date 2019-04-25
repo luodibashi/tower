@@ -248,15 +248,15 @@
 			usedPoint = usedPoint7;
 		}
 		// 配置点要转向90度
-		// var newPointId = pointId + 57;
-		// // console.log(newPointId);
-		// if(newPointId>228){
-		// 	newPointId = newPointId - 228;
-		// }
-		if(usedPoint.indexOf(pointId)!=-1){
+		var newPointId = pointId + 57;
+		// console.log(newPointId);
+		if(newPointId>228){
+			newPointId = newPointId - 228;
+		}
+		if(usedPoint.indexOf(newPointId)!=-1){
 			pointBase[i]['isUse'] = 1;
 			var id = i+1;
-			ConfigPointHtml(id,pointId);
+			ConfigPointHtml(id,newPointId);
 		} else {
 			pointBase[i]['isUse'] = 0;
 		}
