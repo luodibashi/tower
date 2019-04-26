@@ -13,7 +13,7 @@
 	// var usedPoint2 = [1,2,4,6,8,20,21,23,25,27,39,40,42,44,46,58,59,61,63,65,77,78,80,82,84,96,97,99,101,103,115,116,118,120,122,134,135,137,139,141,153,154,156,158,160,172,173,175,177,179,191,192,194,196,198,210,211,213,215,217]
 	// var usedPoint3 = [39,40,44,96,97,101,153,154,158,210,211,215]
 	// var usedPoint4 = [153,171]
-	var usedPoint4 = [171]
+	var usedPoint4 = [57]
 	var usedPoint = []
 	var usedCode4 = ['QXZ-L-FS']
 	var wacthTypeArr = [1,2,3,4,5,6,7]
@@ -253,6 +253,7 @@
 		if(newPointId>228){
 			newPointId = newPointId - 228;
 		}
+		// var newPointId = pointId ;
 		if(usedPoint.indexOf(newPointId)!=-1){
 			pointBase[i]['isUse'] = 1;
 			var id = i+1;
